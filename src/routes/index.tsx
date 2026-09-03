@@ -38,15 +38,7 @@ function Home() {
         </div>
 
         <div>
-          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
-            <span className="relative flex size-2">
-              <span className="absolute inline-flex size-2 animate-ping rounded-full bg-primary opacity-70" />
-              <span className="relative inline-flex size-2 rounded-full bg-primary" />
-            </span>
-            {profile.availability}
-          </div>
-
-          <h1 className="mt-8 font-display text-[2.7rem] leading-[1.02] font-semibold tracking-tight text-balance-tight sm:text-6xl">
+          <h1 className="font-display text-[2.7rem] leading-[1.02] font-semibold tracking-tight text-balance-tight sm:text-6xl">
             Hi, I'm Sean
           </h1>
 

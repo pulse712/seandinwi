@@ -83,33 +83,11 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-surface">
-      <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8">
-        <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
-          <div className="max-w-md">
-            <p className="font-mono text-xs uppercase tracking-[0.24em] text-primary">
-              {profile.availability}
-            </p>
-            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-              Let's build the thing.
-            </h2>
-            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              {profile.tagline}
-            </p>
-          </div>
-          <nav className="flex flex-col gap-3 font-mono text-xs uppercase tracking-[0.14em] text-muted-foreground">
-            {nav.slice(1).map((item) => (
-              <Link key={item.to} to={item.to} className="inline-flex items-center gap-1.5 hover:text-foreground">
-                {item.label} <ArrowUpRight className="size-3" />
-              </Link>
-            ))}
-          </nav>
-        </div>
-        <div className="mt-12 flex flex-col gap-2 border-t border-border/70 pt-6 font-mono text-[11px] uppercase tracking-[0.16em] text-muted-foreground sm:flex-row sm:justify-between">
-          <span>
-            © {new Date().getFullYear()} {profile.name}
-          </span>
-          <span>{profile.location}</span>
-        </div>
+      <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-8 font-mono text-[11px] uppercase tracking-[0.16em] text-muted-foreground sm:flex-row sm:justify-between sm:px-8">
+        <span>
+          © {new Date().getFullYear()} {profile.name}
+        </span>
+        <span>{profile.location}</span>
       </div>
     </footer>
   );
