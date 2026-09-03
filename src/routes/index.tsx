@@ -26,15 +26,19 @@ function Mark({ children }: { children: ReactNode }) {
 
 function Home() {
   return (
-    <section className="relative overflow-hidden">
-      <div className="pointer-events-none absolute inset-0 grid-field opacity-40" />
-      <div
-        className="pointer-events-none absolute -top-40 right-[-10%] size-[34rem] rounded-full opacity-25 blur-3xl"
-        style={{ background: "radial-gradient(circle, var(--primary), transparent 65%)" }}
-      />
-      <div className="relative mx-auto grid max-w-6xl items-start gap-10 px-5 pt-16 pb-24 sm:px-8 sm:pt-24 sm:pb-32 lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-16">
-        <div className="order-first mx-auto w-full max-w-[240px] lg:order-last lg:sticky lg:top-24 lg:mx-0 lg:max-w-none">
-          <Portrait className="w-full" />
+    <section className="relative">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 grid-field opacity-40" />
+        <div
+          className="absolute -top-40 right-[-10%] size-[34rem] rounded-full opacity-25 blur-3xl"
+          style={{ background: "radial-gradient(circle, var(--primary), transparent 65%)" }}
+        />
+      </div>
+      <div className="relative mx-auto grid max-w-6xl gap-10 px-5 pt-16 pb-24 sm:px-8 sm:pt-24 sm:pb-32 lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-16">
+        <div className="order-first mx-auto w-full max-w-[240px] lg:order-last lg:mx-0 lg:h-full lg:max-w-none">
+          <div className="lg:sticky lg:top-[calc(4rem+6rem)]">
+            <Portrait className="w-full" />
+          </div>
         </div>
 
         <div>
