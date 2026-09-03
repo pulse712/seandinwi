@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { profile } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
-import headshotAsset from "@/assets/sean-headshot.jpg.asset.json";
+import headshot from "@/assets/sean-headshot.jpg";
 
 const nav = [
   { to: "/", label: "About" },
@@ -128,7 +128,7 @@ export function Portrait({ className }: { className?: string }) {
     <figure className={cn("group relative", className)}>
       <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-card">
         <img
-          src={headshotAsset.url}
+          src={headshot}
           alt={`${profile.name}, ${profile.role}`}
           className="h-full w-full object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-[1.03]"
           loading="eager"
