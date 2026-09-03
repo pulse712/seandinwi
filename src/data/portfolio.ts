@@ -9,7 +9,7 @@ export const profile = {
   location: "Oregon, USA — working remotely (PT)",
   tagline: "I design, build and ship production web products end to end.",
   intro:
-    "For more than fifteen years I've been building software for other people — hundreds of projects, hundreds of clients, from quick fixes to platforms that run a whole business. I work solo or embedded with small teams, owning the stack from database schema to the last pixel of the interface.",
+    "Hi, I'm Sean, a freelancer based in Oregon, USA, with 15+ years of professional experience working with clients from different industries and from different parts of the world.",
   availability: "Booking new projects from October",
 };
 
