@@ -92,9 +92,8 @@ function Home() {
                 {profile.availability}
               </div>
 
-              <h1 className="mt-8 max-w-4xl font-display text-[2.7rem] leading-[1.02] font-semibold tracking-tight text-balance-tight sm:text-7xl">
-                I'm Sean — <span className="text-primary">fifteen years</span> of building software
-                people can <span className="text-ember">rely on</span>.
+<h1 className="mt-8 max-w-4xl font-display text-[2.7rem] leading-[1.02] font-semibold tracking-tight text-balance-tight sm:text-7xl">
+                Hi, it's nice to meet you!
               </h1>
 
               <p className="mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground">
