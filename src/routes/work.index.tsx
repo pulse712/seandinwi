@@ -6,7 +6,7 @@ import { ProjectGallery } from "@/components/project-gallery";
 import imgLaptop from "@/assets/projects/cta-laptop.jpg";
 import imgRocket from "@/assets/projects/cta-rocket.jpg";
 
-const title = "My Projects — Sean Dinwiddie";
+const title = "Projects — Sean Dinwiddie";
 const description =
   "Selected freelance work across web, apps, ecommerce, automation, design, video, trading systems, mobile and games.";
 
@@ -41,7 +41,7 @@ function WorkPage() {
           My work
         </p>
         <h1 className="mt-6 font-display text-5xl font-semibold tracking-tight sm:text-6xl md:text-7xl">
-          My <span className="text-gradient-signal">Projects</span>
+          <span className="text-gradient-signal">projects</span>
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
           A selection of builds across development, design, automation and more — real products

@@ -65,7 +65,7 @@ const accentStyles: Record<
   },
 };
 
-const title = "My Services — Sean Dinwiddie";
+const title = "Service — Sean Dinwiddie";
 const description =
   "Web & ecommerce, automation, design, video, trading systems, mobile apps and game development — delivered with quality, on time, and with long-term support.";
 
@@ -108,7 +108,7 @@ function ServicesPage() {
         </p>
 
         <h1 className="mt-6 font-display text-5xl font-semibold tracking-tight sm:text-6xl md:text-7xl">
-          My <span className="text-gradient-signal">Services</span>
+          <span className="text-gradient-signal">Service</span>
         </h1>
 
         <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
