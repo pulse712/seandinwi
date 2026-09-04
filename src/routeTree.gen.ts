@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as StartRouteImport } from './routes/start'
+import { Route as TestminalRouteImport } from './routes/testminal'
 import { Route as WorkRouteImport } from './routes/work'
 
 const IndexRoute = IndexRouteImport.update({
@@ -29,6 +30,11 @@ const StartRoute = StartRouteImport.update({
   path: '/start',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TestminalRoute = TestminalRouteImport.update({
+  id: '/testminal',
+  path: '/testminal',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WorkRoute = WorkRouteImport.update({
   id: '/work',
   path: '/work',
@@ -39,12 +45,14 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/services': typeof ServicesRoute
   '/start': typeof StartRoute
+  '/testminal': typeof TestminalRoute
   '/work': typeof WorkRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/services': typeof ServicesRoute
   '/start': typeof StartRoute
+  '/testminal': typeof TestminalRoute
   '/work': typeof WorkRoute
 }
 export interface FileRoutesById {
@@ -52,20 +60,22 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/services': typeof ServicesRoute
   '/start': typeof StartRoute
+  '/testminal': typeof TestminalRoute
   '/work': typeof WorkRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/services' | '/start' | '/work'
+  fullPaths: '/' | '/services' | '/start' | '/testminal' | '/work'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/services' | '/start' | '/work'
-  id: '__root__' | '/' | '/services' | '/start' | '/work'
+  to: '/' | '/services' | '/start' | '/testminal' | '/work'
+  id: '__root__' | '/' | '/services' | '/start' | '/testminal' | '/work'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ServicesRoute: typeof ServicesRoute
   StartRoute: typeof StartRoute
+  TestminalRoute: typeof TestminalRoute
   WorkRoute: typeof WorkRoute
 }
 
@@ -92,6 +102,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StartRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/testminal': {
+      id: '/testminal'
+      path: '/testminal'
+      fullPath: '/testminal'
+      preLoaderRoute: typeof TestminalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/work': {
       id: '/work'
       path: '/work'
@@ -106,6 +123,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ServicesRoute: ServicesRoute,
   StartRoute: StartRoute,
+  TestminalRoute: TestminalRoute,
   WorkRoute: WorkRoute,
 }
 export const routeTree = rootRouteImport

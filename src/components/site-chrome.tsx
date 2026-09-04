@@ -9,6 +9,7 @@ const nav = [
   { to: "/", label: "About" },
   { to: "/services", label: "My Services" },
   { to: "/work", label: "My projects" },
+  { to: "/testminal", label: "Testimonials" },
 ] as const;
 
 export function SiteHeader() {

@@ -275,24 +275,144 @@ export const process = [
   { step: "04", title: "Hand over", body: "Documentation, a walkthrough recording, and 30 days of post-launch support." },
 ];
 
-export const testimonials = [
+export type TestimonialCategory =
+  | "Web & App"
+  | "Ecommerce"
+  | "Automation"
+  | "Design"
+  | "Video Editing"
+  | "Trading & Forex"
+  | "Mobile Apps"
+  | "Games";
+
+export type Testimonial = {
+  id: string;
+  quote: string;
+  name: string;
+  role: string;
+  flag: string;
+  rating: number;
+  category: TestimonialCategory;
+  accent: "cyan" | "lime" | "ember" | "violet" | "sky";
+};
+
+export const testimonialCategories: Array<"All Testimonials" | TestimonialCategory> = [
+  "All Testimonials",
+  "Web & App",
+  "Ecommerce",
+  "Automation",
+  "Design",
+  "Video Editing",
+  "Trading & Forex",
+  "Mobile Apps",
+  "Games",
+];
+
+export const testimonialStats = [
+  { value: "40+", label: "Happy Clients" },
+  { value: "5.0", label: "Average Rating" },
+  { value: "100%", label: "Client Satisfaction" },
+];
+
+export const testimonials: Testimonial[] = [
   {
+    id: "nadia",
     quote:
       "Sean replaced what we thought was a six-month roadmap in eleven weeks. The code is the cleanest we've inherited from a contractor, full stop.",
     name: "Nadia Okonkwo",
-    title: "CTO, Harbor Ops",
+    role: "CTO, Harbor Ops",
+    flag: "🇳🇬",
+    rating: 5,
+    category: "Web & App",
+    accent: "cyan",
   },
   {
+    id: "tomas",
     quote:
       "Rare combination: writes serious backend code and has real taste in the UI. Our investors thought we had a design team.",
     name: "Tomas Rieger",
-    title: "Founder, Atlas Ledger",
+    role: "Startup Founder",
+    flag: "🇩🇪",
+    rating: 5,
+    category: "Ecommerce",
+    accent: "lime",
   },
   {
+    id: "priya",
     quote:
       "Communicates like a partner, not a vendor. Told us to cut two features that would have sunk the timeline — he was right.",
     name: "Priya Raman",
-    title: "Head of Product, Signal Desk",
+    role: "Head of Product",
+    flag: "🇮🇳",
+    rating: 5,
+    category: "Automation",
+    accent: "violet",
+  },
+  {
+    id: "marcus",
+    quote:
+      "Our brand finally feels consistent across web and print. Sean delivered a system we can actually hand to any designer.",
+    name: "Marcus Chen",
+    role: "Creative Director",
+    flag: "🇨🇦",
+    rating: 5,
+    category: "Design",
+    accent: "ember",
+  },
+  {
+    id: "elena",
+    quote:
+      "The launch videos looked premium and converted. Fast turns, clear feedback loops, zero drama.",
+    name: "Elena Vargas",
+    role: "Marketing Lead",
+    flag: "🇪🇸",
+    rating: 5,
+    category: "Video Editing",
+    accent: "violet",
+  },
+  {
+    id: "james",
+    quote:
+      "Solid trading tooling with careful risk controls. He understood the domain and didn't oversell magic bots.",
+    name: "James Whitfield",
+    role: "Independent Trader",
+    flag: "🇬🇧",
+    rating: 5,
+    category: "Trading & Forex",
+    accent: "sky",
+  },
+  {
+    id: "aisha",
+    quote:
+      "Shipped our iOS and Android apps on one codebase. Smooth store submission and a polish pass that felt native.",
+    name: "Aisha Rahman",
+    role: "Business Owner",
+    flag: "🇦🇪",
+    rating: 5,
+    category: "Mobile Apps",
+    accent: "cyan",
+  },
+  {
+    id: "leo",
+    quote:
+      "Gameplay felt snappy and the live-ops pipeline was documented. Rare to get both craft and production sense.",
+    name: "Leo Martins",
+    role: "Indie Studio Lead",
+    flag: "🇧🇷",
+    rating: 5,
+    category: "Games",
+    accent: "lime",
+  },
+  {
+    id: "sofia",
+    quote:
+      "From discovery to deploy, every Friday we saw real progress. Best freelance engagement we've had in years.",
+    name: "Sofia Andersson",
+    role: "Operations Manager",
+    flag: "🇸🇪",
+    rating: 5,
+    category: "Web & App",
+    accent: "ember",
   },
 ];
 
