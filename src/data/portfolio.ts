@@ -59,7 +59,8 @@ export type ProjectImageKey =
   | "kekoa2"
   | "kekoa3"
   | "kekoa4"
-  | "monee";
+  | "monee"
+  | "swipr";
 
 export type ProjectDetail = {
   role: string;
@@ -1007,6 +1008,105 @@ export const projects: Project[] = [
       ],
       results:
         "Monee is a live consumer finance product on both major mobile stores — publicly cited at 50K+ Play installs / ~4.7 rating and strong App Store ratings, with 200,000+ total downloads and 20+ languages — demonstrating real multi-platform usage at meaningful scale.",
+    },
+  },
+  {
+    slug: "swipr-photoclean",
+    title: "Swipr / PhotoClean — Smart Photo Cleaner",
+    category: "Mobile Apps",
+    badge: "iOS · Android · Photo Utility · Privacy-Focused",
+    summary:
+      "Built a privacy-focused iOS and Android photo-cleaning app that helps users reclaim storage through duplicate detection, bulk swipe cleanup, blurry-photo analysis, compression and biometric-protected private storage.",
+    stack: ["iOS", "Android", "Photo Processing", "Biometrics"],
+    accent: "sky",
+    image: "swipr",
+    detail: {
+      role: "Mobile App Developer",
+      client: "Swipr / PhotoClean — live on App Store & Google Play",
+      appStoreUrl: "https://apps.apple.com/us/app/swipr-photo-cleaner/id6756620076",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.mobile.pablo.swipr",
+      stackFull: [
+        "iOS Development",
+        "Android Development",
+        "On-device Photo Processing",
+        "Duplicate / Similar Detection",
+        "Photo & Video Compression",
+        "Biometric Authentication",
+        "Private Vault Storage",
+        "Offline-First Mobile UX",
+        "Storage Analytics",
+      ],
+      overview:
+        "I built Swipr, now released as PhotoClean — a cross-platform photo management app that helps users quickly reclaim device storage and organise large photo libraries. Photos are processed locally with intuitive swipe and batch-cleaning workflows for duplicates, similar/burst sequences, blurry images, screenshots and unnecessary videos, while keeping the experience fast and privacy-focused.",
+      problem:
+        "Large camera rolls are painful to clean. Finding duplicates, burst shots, blurry images and forgotten screenshots by hand is slow, and many cleaner apps feel invasive or push cloud uploads. Users needed a visual, efficient way to reclaim space without giving up privacy.",
+      solution:
+        "I designed swipe-first and batch cleanup flows around local processing: detect duplicates and similar photos, surface blurry shots, compress media, browse by Time Capsule (date/location), protect sensitive photos in a biometric vault, and show clear storage-savings analytics — turning gallery cleanup into a simple, visual workflow on both iOS and Android.",
+      featureGroups: [
+        {
+          title: "Core features",
+          items: [
+            "Duplicate finder",
+            "Similar / burst detection",
+            "Bulk swipe cleanup",
+            "Photo & video compression",
+            "Blurry photo detection",
+            "Time Capsule browsing by date/location",
+            "Private vault with biometrics",
+            "Storage-savings analytics",
+            "Cleanup reminders",
+            "System light/dark themes",
+            "Offline / on-device processing",
+            "iOS & Android production releases",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I developed the production mobile app end to end — cleanup workflows, local detection features, compression, vault security, analytics and cross-platform release.",
+      contributions: [
+        {
+          title: "Cleanup workflows",
+          items: [
+            "Built swipe and batch-cleaning flows so users can review and remove clutter quickly instead of hunting through the camera roll.",
+          ],
+        },
+        {
+          title: "Detection & compression",
+          items: [
+            "Implemented duplicate/similar/burst detection, blurry-photo analysis and photo/video compression to reclaim storage with clear savings feedback.",
+          ],
+        },
+        {
+          title: "Organisation & privacy",
+          items: [
+            "Added Time Capsule browsing by date/location plus a biometric-protected private vault for sensitive media, with local processing as the default.",
+          ],
+        },
+        {
+          title: "Production delivery",
+          items: [
+            "Shipped on both the Apple App Store and Google Play with themes, reminders and storage analytics for ongoing use.",
+          ],
+        },
+      ],
+      highlights: [
+        "Shipped a live cross-platform photo cleaner on App Store and Google Play.",
+        "Turned tedious gallery cleanup into swipe/batch workflows with on-device processing.",
+        "Combined duplicate detection, compression, blur analysis and a biometric private vault in one product.",
+      ],
+      skills: [
+        "iOS Development",
+        "Android Development",
+        "Mobile App Development",
+        "Photo & Video Utilities",
+        "On-device Processing",
+        "Duplicate Detection",
+        "Biometric Security",
+        "Storage Optimisation",
+        "Offline-First UX",
+      ],
+      results:
+        "A production mobile app that helps users reclaim device storage and organise large libraries through a fast, visual, privacy-focused cleaning experience on iOS and Android.",
     },
   },
   {
