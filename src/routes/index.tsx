@@ -31,7 +31,7 @@ function Home() {
       <img
         src={brandBg}
         alt=""
-        className="pointer-events-none fixed top-20 left-[36%] z-0 h-[min(70vh,40rem)] w-auto max-w-none -translate-x-1/2 object-contain opacity-[0.22] sm:top-24 sm:left-[38%] sm:h-[min(75vh,48rem)] sm:opacity-[0.28]"
+        className="pointer-events-none fixed top-20 left-[28%] z-0 h-[min(70vh,40rem)] w-auto max-w-none -translate-x-1/2 object-contain opacity-[0.22] sm:top-24 sm:left-[30%] sm:h-[min(75vh,48rem)] sm:opacity-[0.28]"
       />
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/75 to-background" />
