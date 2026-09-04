@@ -60,7 +60,8 @@ export type ProjectImageKey =
   | "kekoa3"
   | "kekoa4"
   | "monee"
-  | "swipr";
+  | "swipr"
+  | "wrpelevation";
 
 export type ProjectDetail = {
   role: string;
@@ -1107,6 +1108,99 @@ export const projects: Project[] = [
       ],
       results:
         "A production mobile app that helps users reclaim device storage and organise large libraries through a fast, visual, privacy-focused cleaning experience on iOS and Android.",
+    },
+  },
+  {
+    slug: "wrp-elevation-chart",
+    title: "WRPElevationChart — GPS Track & Elevation Viewer",
+    category: "Mobile Apps",
+    badge: "GPS Utility · Elevation Charts · Android",
+    summary:
+      "A lightweight niche GPS utility that turns GPX, FIT, TCX and KML tracks into clear 2D/3D elevation charts and map views for cyclists, hikers and trail runners — no accounts, no clutter.",
+    stack: ["Android", "GPS / GPX", "FIT / TCX", "3D Charts"],
+    accent: "cyan",
+    image: "wrpelevation",
+    detail: {
+      role: "Mobile App Developer",
+      client: "WRPElevationChart / WRP Soft — live Google Play utility (5K+ downloads)",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=de.wrpsoft.wrpelevationchartmaker",
+      stackFull: [
+        "Android",
+        "GPX / TCX / KML / KMZ Parsing",
+        "Garmin FIT Support",
+        "2D & 3D Elevation Charts",
+        "Map View (OSM / Mapsforge)",
+        "File Browser & Share Intents",
+        "FIT → GPX / TCX / CSV Conversion",
+        "Offline-Friendly Local Files",
+      ],
+      overview:
+        "WRPElevationChart is a simple, focused GPS viewer built for athletes who already record rides and hikes elsewhere. Instead of being another full logging suite, it specialises in bringing tracks to life: import routes from storage, email or messenger, render interactive elevation profiles (including 3D), sync the chart with a map view, convert FIT activities for apps that don’t support FIT natively, and share clean chart screenshots or GPX exports.",
+      problem:
+        "Cyclists, MTB riders and hikers often end up with GPX/FIT/TCX files scattered across devices and apps. Flat line charts hide climb character, few Android tools convert FIT cleanly, and heavy GPS suites bury basic “open this track and understand the terrain” behind accounts and feature bloat.",
+      solution:
+        "I built (and maintain as) a deliberately lightweight niche utility: open the track, see the elevation, explore it in 3D, jump between chart and map, convert formats when needed, and share — with no tracking, no accounts and a UI optimised for fast smartphone use.",
+      featureGroups: [
+        {
+          title: "Core capabilities",
+          items: [
+            "Import GPX, TCX, KML/KMZ and Garmin FIT files",
+            "2D elevation profiles with distance and climb metrics",
+            "Interactive 3D elevation charts (rotate / zoom into climbs)",
+            "Synchronised map view for track context",
+            "FIT conversion to GPX / TCX / CSV for other apps",
+            "Built-in browser for local track folders",
+            "Share charts and converted tracks with Wahoo, Garmin Connect, Locus Map and more",
+            "Metric / imperial units and Material3-oriented Android UX",
+            "No accounts, no ads-driven clutter — local file workflow",
+          ],
+        },
+      ],
+      contributionIntro:
+        "This project represents the niche-utility class of mobile work: a focused GPS tool that does one job extremely well for outdoor athletes and complementary apps.",
+      contributions: [
+        {
+          title: "Track parsing & visualisation",
+          items: [
+            "Implemented efficient parsing and rendering for multi-format GPS tracks with elevation profiles tuned for long tours and steep climbs.",
+          ],
+        },
+        {
+          title: "3D elevation experience",
+          items: [
+            "Added interactive 3D charting so riders can inspect peaks, valleys and gradients from multiple angles instead of flat profiles alone.",
+          ],
+        },
+        {
+          title: "Inter-app GPS workflow",
+          items: [
+            "Built share/convert paths so FIT activities can become GPX for apps that lack native FIT support, acting as a bridge utility in the Android GPS ecosystem.",
+          ],
+        },
+        {
+          title: "Simple production UX",
+          items: [
+            "Kept the product intentionally lean — portrait-first smartphone UI, local files, optional map tiles — so opening and understanding a track stays fast.",
+          ],
+        },
+      ],
+      highlights: [
+        "Shipped a live niche GPS utility on Google Play focused on elevation visualisation rather than full tracking suites.",
+        "Supports GPX, FIT, TCX and KML with 2D/3D charts and synced map views for cycling and hiking analysis.",
+        "Acts as a format-bridge helper (especially FIT → GPX) for popular outdoor apps.",
+      ],
+      skills: [
+        "Android Development",
+        "GPS / GIS Utilities",
+        "GPX / FIT / TCX Parsing",
+        "Data Visualisation",
+        "3D Charts",
+        "File Sharing Intents",
+        "Niche Product Design",
+        "Offline-Friendly Mobile UX",
+      ],
+      results:
+        "A production Android utility (5K+ Play downloads) that helps athletes visualise and share GPS elevation data without accounts or bloated feature sets — an example of focused niche mobile tooling.",
     },
   },
   {
