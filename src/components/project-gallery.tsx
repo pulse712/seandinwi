@@ -80,7 +80,7 @@ const categoryHashes: Record<"All" | ProjectCategory, string> = {
   Automation: "automation",
   "Logo & Graphic Design": "design",
   "Video Editing": "video",
-  "Trading Algo / Forex / Meta": "trading",
+  "Trading & Blockchain": "trading",
   "Mobile Apps": "mobile",
   "Game Development": "game",
 };
@@ -93,6 +93,9 @@ const hashToCategory = {
   app: "Web & SaaS",
   "web-development": "Web & SaaS",
   "app-development": "Web & SaaS",
+  "trading-algo": "Trading & Blockchain",
+  forex: "Trading & Blockchain",
+  meta: "Trading & Blockchain",
 } as Record<string, "All" | ProjectCategory>;
 
 function readCategoryFromHash(): "All" | ProjectCategory {
