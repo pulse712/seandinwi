@@ -104,6 +104,8 @@ export type Project = {
   slug: string;
   title: string;
   category: ProjectCategory;
+  /** Extra categories so a project can appear under multiple filters. */
+  categories?: ProjectCategory[];
   badge?: string;
   summary: string;
   stack: string[];
@@ -545,6 +547,7 @@ export const projects: Project[] = [
     slug: "daily-network",
     title: "Daily Network — Quantum-Ready Blockchain & Web3 Ecosystem",
     category: "Trading & Blockchain",
+    categories: ["Trading & Blockchain", "Web & SaaS"],
     badge: "Blockchain · Web3 · FinTech · Cryptocurrency",
     summary:
       "Developed a production Web3 ecosystem connecting a blockchain network with wallet infrastructure, staking, DEX, Mainnet/Testnet explorers, RPC services, faucet, network monitoring and developer funding tools.",

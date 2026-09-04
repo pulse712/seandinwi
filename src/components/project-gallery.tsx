@@ -127,7 +127,10 @@ export function ProjectGallery() {
 
   const filtered = useMemo(() => {
     if (active === "All") return projects;
-    return projects.filter((project) => project.category === active);
+    return projects.filter((project) => {
+      const categories = project.categories ?? [project.category];
+      return categories.includes(active);
+    });
   }, [active]);
 
   const selectCategory = (category: "All" | ProjectCategory) => {
