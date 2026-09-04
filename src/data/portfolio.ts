@@ -2573,21 +2573,21 @@ export const projects: Project[] = [
   {
     slug: "blok-watches",
     title: "Blok Watches — Kids' Analog Time Store",
-    category: "eCommerce",
-    badge: "eCommerce · Shopify · Product Storytelling · Interactive UX",
+    category: "Web Development",
+    badge: "Web · WordPress · Product Storytelling · Interactive UX",
     summary:
-      "Built a Shopify storefront for Blok — Swiss-powered analog kids' watches with interactive dial demos, BLOK 33 / 38 merchandising, bundles, straps and education-led product storytelling.",
-    stack: ["Shopify", "Custom JS", "Product UX", "Merchandising"],
+      "Built a WordPress storefront for Blok — Swiss-powered analog kids' watches with interactive dial demos, BLOK 33 / 38 merchandising, bundles, straps and education-led product storytelling.",
+    stack: ["WordPress", "Custom JS", "Product UX", "Merchandising"],
     accent: "cyan",
     image: "blok",
     url: "https://blokwatches.com/",
     detail: {
-      role: "Full-Stack / Shopify Developer",
+      role: "Full-Stack / WordPress Developer",
       client: "Blok Watches — live educational kids' watch brand",
       liveUrl: "https://blokwatches.com/",
       stackFull: [
-        "Shopify",
-        "Liquid / Theme Customisation",
+        "WordPress",
+        "Custom Theme / Template Development",
         "Custom JavaScript (interactive dial / bezel demo)",
         "Product Catalogue & Variants",
         "Collections & Merchandising",
@@ -2597,7 +2597,7 @@ export const projects: Project[] = [
         "Responsive Product Storytelling UX",
       ],
       overview:
-        "Blok Watches sells Swiss-powered analog watches that teach kids time with visual “Bloks” on the bezel — no gimmicks, no alarms. The live Shopify storefront at blokwatches.com presents BLOK 33 (from $189) and BLOK 38 GMT (from $379), colourways, straps, bundles, build specs (sapphire crystal, 100m WR, Swiss movements) and an interactive hero that lets shoppers set a blok and watch the dial demo before buying.",
+        "Blok Watches sells Swiss-powered analog watches that teach kids time with visual “Bloks” on the bezel — no gimmicks, no alarms. The live WordPress storefront at blokwatches.com presents BLOK 33 (from $189) and BLOK 38 GMT (from $379), colourways, straps, bundles, build specs (sapphire crystal, 100m WR, Swiss movements) and an interactive hero that lets shoppers set a blok and watch the dial demo before buying.",
       problem:
         "Premium kids' watches are sold on trust and understanding — parents need to grasp the dial innovation and timer bezel, not just see pretty product shots. Generic watch themes bury education, specs and social proof under flat grids.",
       solution:
@@ -2619,7 +2619,7 @@ export const projects: Project[] = [
         },
       ],
       contributionIntro:
-        "I developed the Shopify commerce and product-education experience — interactive demo UX, merchandising structure and conversion storytelling for a live watch brand.",
+        "I developed the WordPress commerce and product-education experience — interactive demo UX, merchandising structure and conversion storytelling for a live watch brand.",
       contributions: [
         {
           title: "Interactive product demo",
@@ -2642,17 +2642,17 @@ export const projects: Project[] = [
         {
           title: "Commerce operations UX",
           items: [
-            "Supported trust signals, email capture, reviews integrations and international checkout flows on Shopify.",
+            "Supported trust signals, email capture, reviews integrations and international checkout flows on WordPress.",
           ],
         },
       ],
       highlights: [
-        "Launched a production Shopify storefront at blokwatches.com for educational kids' watches.",
+        "Launched a production WordPress storefront at blokwatches.com for educational kids' watches.",
         "Combined interactive dial demos with clear BLOK 33 / 38 merchandising and accessories.",
         "Positioned a premium analog brand with specs, press, reviews and parent-focused storytelling.",
       ],
       skills: [
-        "Shopify",
+        "WordPress",
         "eCommerce UX",
         "Custom JavaScript",
         "Product Storytelling",
