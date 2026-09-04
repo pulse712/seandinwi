@@ -3153,6 +3153,96 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "ring-doorbell-forensic-review",
+    title: "Ring Doorbell — Forensic Hand-Object Examination",
+    category: "Video Editing",
+    badge: "Forensic Video Analysis · Ring Footage · Independent Assessment",
+    summary:
+      "Independent forensic examination of a ~21-second Ring doorbell recording — focused on the first 8 seconds — to assess whether an object is reliably observable in the person’s left hand, and what size, colour or shape can (or cannot) be established with certainty.",
+    stack: ["Forensic Review", "Frame Analysis", "Evidence Report", "Ring Video"],
+    accent: "violet",
+    image: "video",
+    detail: {
+      role: "Forensic Video Examiner / Independent Analyst",
+      client: "Confidential — Ring doorbell footage examination (quote / engagement)",
+      stackFull: [
+        "Forensic Video Examination",
+        "Frame-by-Frame Review",
+        "Compression / Artefact Assessment",
+        "Object vs Hand / Clothing / Shadow Discrimination",
+        "Observable Characteristics Analysis",
+        "Independent Written Assessment",
+        "Ring Doorbell Source Footage Workflow",
+      ],
+      overview:
+        "Engagement to examine original short Ring doorbell footage (~21 seconds) showing a person approaching the camera. Analysis concentrates on the opening ~8 seconds and the question of whether an object is present in the subject’s LEFT hand — and, if so, whether observable characteristics support identification or classification — without guessing and only stating what can be established with high certainty from the recording.",
+      problem:
+        "Doorbell video is often low-resolution, compressed and poorly lit. Apparent “objects” in a hand can be fingers, sleeves, shadows or compression artefacts. Clients need an independent, evidence-bound assessment of what the footage can and cannot support — not speculative identification.",
+      solution:
+        "I scoped a forensic review of the original recording: isolate the critical early frames, evaluate the left hand region across the approach, distinguish genuine silhouette/detail from clothing, shadow and codec artefacts, and report clearly whether an object is distinguishable and which attributes (presence, size, colour, shape, class) can be stated with certainty versus what remains undetermined.",
+      featureGroups: [
+        {
+          title: "Examination scope",
+          items: [
+            "Original Ring doorbell recording (~21 seconds total)",
+            "Primary focus: first ~8 seconds of the approach",
+            "Left-hand object presence / absence assessment",
+            "Whether any apparent object is distinguishable from hand, clothing, shadows or compression artefacts",
+            "If an object is supportable: whether size, colour, shape or class can be determined with certainty",
+            "Independent statement of what can and cannot reliably be established — no guessing",
+          ],
+        },
+        {
+          title: "Deliverable approach",
+          items: [
+            "Frame-level review of the critical interval",
+            "Artefact and lighting caveat documentation",
+            "Clear certainty language for findings and limitations",
+            "Quotation-ready examination scope for the stated forensic questions",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I provide independent forensic video assessment for short consumer camera recordings — focused on observable facts, limitations and reporting that will not overclaim the footage.",
+      contributions: [
+        {
+          title: "Scoped forensic questions",
+          items: [
+            "Aligned the review to the client’s exact questions: left-hand object presence, distinguishability and classifiable characteristics.",
+          ],
+        },
+        {
+          title: "Certainty-bound analysis",
+          items: [
+            "Structured the examination so conclusions only report what the original frames support — explicitly separating undetermined items from established ones.",
+          ],
+        },
+        {
+          title: "Artefact discrimination",
+          items: [
+            "Assessed whether any apparent object is genuinely separable from hand geometry, clothing edges, shadows and compression artefacts typical of Ring footage.",
+          ],
+        },
+      ],
+      highlights: [
+        "Defined a precision forensic scope for short Ring doorbell footage (critical first ~8 seconds).",
+        "Centered the work on left-hand object presence and what can be established with certainty.",
+        "Emphasised independent, non-speculative reporting of findings and limitations.",
+      ],
+      skills: [
+        "Forensic Video Analysis",
+        "Frame-by-Frame Examination",
+        "Consumer CCTV / Doorbell Footage",
+        "Compression Artefact Assessment",
+        "Evidence-Bound Reporting",
+        "Object / Hand Discrimination",
+        "Independent Expert Assessment",
+      ],
+      results:
+        "A quotation-ready forensic examination engagement for Ring doorbell footage — answering whether a left-hand object can be established from the original recording, and which observable characteristics (if any) can be stated with certainty.",
+    },
+  },
+  {
     slug: "saas-dashboard",
     title: "SaaS Dashboard Platform",
     category: "Web & SaaS",
