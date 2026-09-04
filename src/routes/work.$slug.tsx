@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowUpRight, ExternalLink } from "lucide-react";
 import { getProjectBySlug, profile } from "@/data/portfolio";
+import { projectImages } from "@/lib/project-images";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -50,6 +51,14 @@ function ProjectDetailPage() {
         >
           <ArrowLeft className="size-3.5" /> Back to projects
         </Link>
+
+        <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-surface">
+          <img
+            src={projectImages[project.image]}
+            alt={`${project.title} cover`}
+            className="aspect-[16/10] w-full object-cover object-center"
+          />
+        </div>
 
         <p className="mt-8 font-mono text-[11px] uppercase tracking-[0.22em] text-primary">
           {project.category}
