@@ -2947,16 +2947,6 @@ export const projects: Project[] = [
     image: "saas",
   },
   {
-    slug: "client-portal",
-    title: "Client Portal App",
-    category: "Web & SaaS",
-    summary:
-      "Secure customer portal for invoices, file exchange and status tracking — built for desktop-first power users.",
-    stack: ["React", "Node", "Auth", "Postgres"],
-    accent: "sky",
-    image: "saas",
-  },
-  {
     slug: "northline-store",
     title: "Online Store Platform",
     category: "eCommerce",
