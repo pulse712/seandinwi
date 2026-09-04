@@ -101,6 +101,26 @@ function ProjectDetailPage() {
               Visit live site <ExternalLink className="size-3.5" />
             </a>
           )}
+          {detail.appStoreUrl && (
+            <a
+              href={detail.appStoreUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-primary-foreground transition-transform hover:-translate-y-0.5"
+            >
+              App Store <ExternalLink className="size-3.5" />
+            </a>
+          )}
+          {detail.playStoreUrl && (
+            <a
+              href={detail.playStoreUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground transition-colors hover:border-primary/40"
+            >
+              Google Play <ExternalLink className="size-3.5" />
+            </a>
+          )}
           <a
             href={profile.hireUrl}
             target="_blank"

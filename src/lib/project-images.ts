@@ -16,6 +16,7 @@ import imgKekoa1 from "@/assets/projects/project-kekoa-1.png";
 import imgKekoa2 from "@/assets/projects/project-kekoa-2.png";
 import imgKekoa3 from "@/assets/projects/project-kekoa-3.png";
 import imgKekoa4 from "@/assets/projects/project-kekoa-4.png";
+import imgMonee from "@/assets/projects/project-monee.png";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -37,4 +38,5 @@ export const projectImages: Record<ProjectImageKey, string> = {
   kekoa2: imgKekoa2,
   kekoa3: imgKekoa3,
   kekoa4: imgKekoa4,
+  monee: imgMonee,
 };

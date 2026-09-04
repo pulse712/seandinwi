@@ -58,12 +58,15 @@ export type ProjectImageKey =
   | "kekoa1"
   | "kekoa2"
   | "kekoa3"
-  | "kekoa4";
+  | "kekoa4"
+  | "monee";
 
 export type ProjectDetail = {
   role: string;
   client: string;
   liveUrl?: string;
+  appStoreUrl?: string;
+  playStoreUrl?: string;
   stackFull: string[];
   overview?: string;
   problem: string;
@@ -882,10 +885,12 @@ export const projects: Project[] = [
       "Built a production personal-finance app for iOS and Android — fast expense/income entry, shared accounts, recurring transactions, analytics, multi-currency, exports and biometric protection.",
     stack: ["SwiftUI", "Jetpack Compose", "Firebase", "FinTech"],
     accent: "lime",
-    image: "mobile",
+    image: "monee",
     detail: {
       role: "Mobile App Developer / Product Engineer",
       client: "Monee — live production iOS / iPadOS & Android app",
+      appStoreUrl: "https://apps.apple.com/us/app/budget-expense-tracker-monee/id1617877213",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=app.monee",
       stackFull: [
         "Swift",
         "SwiftUI",
