@@ -544,7 +544,7 @@ export const projects: Project[] = [
   {
     slug: "daily-network",
     title: "Daily Network — Quantum-Ready Blockchain & Web3 Ecosystem",
-    category: "Web & SaaS",
+    category: "Trading & Blockchain",
     badge: "Blockchain · Web3 · FinTech · Cryptocurrency",
     summary:
       "Developed a production Web3 ecosystem connecting a blockchain network with wallet infrastructure, staking, DEX, Mainnet/Testnet explorers, RPC services, faucet, network monitoring and developer funding tools.",
