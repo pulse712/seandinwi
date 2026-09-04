@@ -12,7 +12,6 @@ import {
   Palette,
   ShoppingBag,
   Smartphone,
-  Sparkles,
   Workflow,
 } from "lucide-react";
 import {
@@ -86,14 +85,15 @@ const categoryHashes: Record<"All" | ProjectCategory, string> = {
   "Game Development": "game",
 };
 
-const hashToCategory = Object.fromEntries(
-  Object.entries(categoryHashes).map(([category, hash]) => [hash, category]),
-) as Record<string, "All" | ProjectCategory>;
-
-// Legacy hashes from renamed/removed filters
-hashToCategory.app = "Web & SaaS";
-hashToCategory["web-development"] = "Web & SaaS";
-hashToCategory["app-development"] = "Web & SaaS";
+const hashToCategory = {
+  ...Object.fromEntries(
+    Object.entries(categoryHashes).map(([category, hash]) => [hash, category]),
+  ),
+  // Legacy hashes from renamed/removed filters
+  app: "Web & SaaS",
+  "web-development": "Web & SaaS",
+  "app-development": "Web & SaaS",
+} as Record<string, "All" | ProjectCategory>;
 
 function readCategoryFromHash(): "All" | ProjectCategory {
   if (typeof window === "undefined") return "All";
