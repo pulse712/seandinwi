@@ -36,6 +36,7 @@ import imgFlyerBrochure from "@/assets/projects/project-flyer-brochure.png";
 import imgFlyerPosterGrid from "@/assets/projects/project-flyer-poster-grid.png";
 import imgBlok from "@/assets/projects/project-blok.png";
 import imgMurad from "@/assets/projects/project-murad.png";
+import imgNewman from "@/assets/projects/project-newman.png";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -77,4 +78,5 @@ export const projectImages: Record<ProjectImageKey, string> = {
   flyerpostergrid: imgFlyerPosterGrid,
   blok: imgBlok,
   murad: imgMurad,
+  newman: imgNewman,
 };

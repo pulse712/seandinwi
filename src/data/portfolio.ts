@@ -78,7 +78,8 @@ export type ProjectImageKey =
   | "flyerbrochure"
   | "flyerpostergrid"
   | "blok"
-  | "murad";
+  | "murad"
+  | "newman";
 
 export type ProjectDetail = {
   role: string;
@@ -2758,6 +2759,92 @@ export const projects: Project[] = [
       ],
       results:
         "A live LA luxury real estate marketing site that showcases Marisol Murad’s results, services and neighborhoods — with clear paths from discovery to valuation and contact.",
+    },
+  },
+  {
+    slug: "newman-tools",
+    title: "Newman Tools — Industrial Supply Catalog",
+    category: "eCommerce",
+    badge: "eCommerce · B2B Catalog · Industrial · Custom HTML",
+    summary:
+      "Built a deep industrial catalog for Newman Tools — 30,000+ machine-shop and maintenance SKUs, brand/product browsing, technical resources and worldwide B2B ordering since 1955.",
+    stack: ["Custom HTML", "Product Catalog", "B2B UX", "Search"],
+    accent: "ember",
+    image: "newman",
+    url: "https://www.newmantools.com/",
+    detail: {
+      role: "Full-Stack / Catalog Developer",
+      client: "Newman Tools Inc. — Ottawa / Stittsville industrial supplier",
+      liveUrl: "https://www.newmantools.com/",
+      stackFull: [
+        "Custom HTML / CSS Catalog Architecture",
+        "Product Category Taxonomy",
+        "Brand & Product Indexing",
+        "Technical Spec / MSDS Resource Pages",
+        "Price List & Shop Navigation",
+        "Search & Latest Additions",
+        "B2B Contact / Quote Pathways",
+        "Worldwide Shipping Messaging",
+      ],
+      overview:
+        "Newman Tools Inc. has supplied machine shops, plant engineering and maintenance teams since 1955. The live catalog at newmantools.com surfaces a vast selection — over 30,000 items including hard-to-find and special sizes — across cutting tools, hones, inserts, gauges, valve tools, nuclear lubricants and more, with brand browsing, technical info, MSDS/SDS, price lists and worldwide shipping.",
+      problem:
+        "Industrial buyers need specialty sizes and trusted brand SKUs fast — not a lifestyle storefront. Flat product dumps hide taps vs reamers vs Flex-hone® lines; missing technical and MSDS paths stall plant and MRO purchasing.",
+      solution:
+        "I structured a B2B catalog experience around product-category highlights, brand/product indexes, technical and safety documentation, price/shop entry points and clear contact for hard-to-find items — so buyers can move from category → SKU → quote/order efficiently.",
+      featureGroups: [
+        {
+          title: "Catalog capabilities",
+          items: [
+            "Product highlights across hex keys, contour cutters, dies, drills, Flex-hone®, Gap-A-Let®, Hollo-Bolt®, tubing tools, dial gauges, Keysert®, Neolube®, impact sockets, Petol/Titan valve tools, Pi Tape®, reamers, Recoil® inserts, taps, lapping compounds, Vortec air products, welding gauges and mini ratchets",
+            "Product categories index and brand browsing",
+            "Shop, price list and latest additions navigation",
+            "Technical info and MSDS/SDS resource links",
+            "Newsletter, about and contact paths",
+            "Hard-to-find / special size messaging",
+            "Worldwide shipping positioning for Canada, US and international",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I developed the industrial catalog architecture — category taxonomy, brand/product discovery, technical resources and B2B contact flows for a long-running specialty tools supplier.",
+      contributions: [
+        {
+          title: "Deep catalog taxonomy",
+          items: [
+            "Organised thousands of industrial SKUs into clear product-category and brand paths buyers recognise from the tool crib.",
+          ],
+        },
+        {
+          title: "Technical & compliance resources",
+          items: [
+            "Linked technical info and MSDS/SDS so plant and maintenance buyers can validate products before ordering.",
+          ],
+        },
+        {
+          title: "B2B conversion paths",
+          items: [
+            "Surfaced shop, price lists, latest additions and direct phone/email contact for specials and hard-to-find sizes.",
+          ],
+        },
+      ],
+      highlights: [
+        "Delivered a production industrial supply catalog at newmantools.com for a supplier since 1955.",
+        "Supported 30,000+ item discovery across machine-shop and maintenance categories.",
+        "Connected product browsing to technical docs, pricing and worldwide B2B ordering contact.",
+      ],
+      skills: [
+        "eCommerce Catalog UX",
+        "Custom HTML Development",
+        "B2B Product Taxonomy",
+        "Industrial Merchandising",
+        "Information Architecture",
+        "Search & Navigation",
+        "Technical Content Linking",
+        "Responsive / Legacy Web",
+      ],
+      results:
+        "A live B2B industrial tools catalog that helps machine shops and plant teams find specialty SKUs, technical data and ordering paths — worldwide shipping from Newman Tools Inc.",
     },
   },
   {
