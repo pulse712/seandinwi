@@ -69,7 +69,8 @@ export type ProjectImageKey =
   | "fire"
   | "southerndiesel"
   | "marquisvillage"
-  | "logocollection";
+  | "logocollection"
+  | "logocollection2";
 
 export type ProjectDetail = {
   role: string;
@@ -1947,6 +1948,96 @@ export const projects: Project[] = [
       ],
       results:
         "A premium multi-brand identity board that demonstrates logo range and print-ready craft — from gold foil stationery to artisanal and industrial hangtags.",
+    },
+  },
+  {
+    slug: "logo-applications",
+    title: "Logo Applications — Law, Wellness & Lifestyle",
+    category: "Logo & Graphic Design",
+    badge: "Logo Design · Stationery · Product Tags · Merch",
+    summary:
+      "Six applied brand marks — Borda Family Lawyers, Breeze & Body, Restored Vitality, Wolf & Shaw Travel, Skinovation and Olyo — shown on foil stationery, hangtags, business cards and tote merch.",
+    stack: ["Logo Design", "Stationery", "Hangtags", "Merch Mockups"],
+    accent: "lime",
+    image: "logocollection2",
+    detail: {
+      role: "Logo / Brand Designer",
+      client: "Multi-brand identity applications — law, wellness & lifestyle",
+      stackFull: [
+        "Logo Design",
+        "Wordmark & Icon Systems",
+        "Business Card Design",
+        "Hangtag / Product Label Design",
+        "Merchandise Mockups",
+        "Foil & Print Finishes",
+      ],
+      overview:
+        "A second identity application board spanning legal, wellness, travel, skincare and fashion brands. Each logo is shown in a real-world context — gold foil on navy, purple hangtags, serene wellness cards, travel tote printing, dual-tone foil cards and a geometric product tag — so the marks feel ready for client delivery.",
+      problem:
+        "Logos need to prove themselves off the screen. Legal brands want gravitas, wellness brands need calm, travel needs lightness, and beauty needs foil luxury — all without looking like the same template.",
+      solution:
+        "I designed six sector-true marks and applied them to the surfaces each brand would actually use: textured legal stationery, retail hangtags, wellness cards, a canvas tote, luxury foil business cards and a fashion hangtag.",
+      featureGroups: [
+        {
+          title: "Identity set",
+          items: [
+            "Borda Family Lawyers — BFL serif lockup, gold foil on navy textured stock",
+            "Breeze & Body — interlocking petal mark on purple hangtag over woven fabric",
+            "Restored Vitality — serif wordmark with abstract circular icon on wellness card",
+            "Wolf & Shaw Travel — wave icon + light sans lockup on white tote with teal straps",
+            "Skinovation — fluid S mark with Angelica Rose foil business cards (black / white)",
+            "Olyo — geometric circle-Y mark, gold on tan cardboard hangtag",
+          ],
+        },
+        {
+          title: "Application range",
+          items: [
+            "Foil and deboss stationery for professional services",
+            "Retail hangtags for wellness and fashion soft goods",
+            "Merchandise application for travel brand visibility",
+            "Dual-tone luxury business cards for aesthetics / skincare",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I owned mark design, typography and physical application mockups across the six-brand set.",
+      contributions: [
+        {
+          title: "Sector-fit identity",
+          items: [
+            "Tuned each logo’s voice for law, wellness, travel, skincare and fashion without repeating one style.",
+          ],
+        },
+        {
+          title: "Print & merch craft",
+          items: [
+            "Presented foil stationery, hangtags, cards and tote printing so clients see production-ready applications.",
+          ],
+        },
+        {
+          title: "Hierarchy & lockups",
+          items: [
+            "Built clean wordmark + icon systems that stay readable on tags, cards and fabric print.",
+          ],
+        },
+      ],
+      highlights: [
+        "Delivered six applied logos across law, wellness, travel, beauty and fashion.",
+        "Showed foil, hangtag, card and merch contexts in one presentation board.",
+        "Kept each brand distinct while holding a consistent premium craft standard.",
+      ],
+      skills: [
+        "Logo Design",
+        "Brand Identity",
+        "Typography",
+        "Business Card Design",
+        "Hangtag Design",
+        "Merchandise Mockups",
+        "Foil Presentation",
+        "Lifestyle Branding",
+      ],
+      results:
+        "A versatile identity applications board that proves logos in the contexts clients care about — stationery, tags, cards and merch.",
     },
   },
   {
