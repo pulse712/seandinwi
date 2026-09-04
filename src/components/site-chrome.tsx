@@ -39,12 +39,14 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <Link
-            to="/start"
+          <a
+            href={profile.hireUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="ml-3 inline-flex items-center gap-1.5 rounded-md bg-primary px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.12em] text-primary-foreground transition-transform hover:-translate-y-0.5"
           >
             Start your project <ArrowUpRight className="size-3.5" />
-          </Link>
+          </a>
         </nav>
 
         <button

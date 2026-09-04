@@ -11,6 +11,7 @@ export const profile = {
   intro:
     "Hi, I'm Sean, a freelancer based in Oregon, USA, with 15+ years of professional experience working with clients from different industries and from different parts of the world.",
   availability: "Booking new projects from October",
+  hireUrl: "https://www.freelancer.com/u/seandinwiddie",
 };
 
 export const stats = [
