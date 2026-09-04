@@ -62,7 +62,8 @@ export type ProjectImageKey =
   | "monee"
   | "swipr"
   | "wrpelevation"
-  | "doyobest";
+  | "doyobest"
+  | "joymade";
 
 export type ProjectDetail = {
   role: string;
@@ -1295,6 +1296,101 @@ export const projects: Project[] = [
       ],
       results:
         "A live personalized-gifts eCommerce platform at doyobest.com that helps shoppers find custom presents by recipient and occasion with a clean, promotion-ready shopping experience.",
+    },
+  },
+  {
+    slug: "joymade",
+    title: "JOYMADE — Personalized Gifts Store",
+    category: "eCommerce",
+    badge: "eCommerce · Shopify · Gifting · Multi-Currency",
+    summary:
+      "Built a Shopify storefront for personalized gifts — apparel, drinkware, home décor and accessories — with recipient/occasion navigation, seasonal campaigns and international checkout at joymade.co.",
+    stack: ["Shopify", "Liquid", "Merchandising", "Multi-Currency"],
+    accent: "lime",
+    image: "joymade",
+    url: "https://joymade.co/",
+    detail: {
+      role: "Full-Stack / Shopify Developer",
+      client: "JOYMADE — live personalized gifts storefront",
+      liveUrl: "https://joymade.co/",
+      stackFull: [
+        "Shopify",
+        "Liquid / Theme Customisation",
+        "HTML / CSS / JavaScript",
+        "Collections & Merchandising",
+        "Recipient & Occasion Navigation",
+        "Promotions & Discount Codes",
+        "Multi-Currency Markets",
+        "Checkout / Accelerated Payments",
+        "Customer Accounts & Rewards",
+      ],
+      overview:
+        "JOYMADE is a live Shopify storefront built around personalized gifts made with joy — custom apparel, accessories, drinkware, home & kitchen pieces and seasonal décor. Shoppers can browse by product type, recipient (her/him/couples/kids) and occasion (anniversary, graduation, Father’s Day, Christmas and more), with promotional campaigns and trending search support for gift intent.",
+      problem:
+        "Gift shoppers rarely start with a product SKU. They start with a person and a moment. Personalized catalogues get unwieldy fast across apparel, drinkware and home goods — so discovery, seasonal campaigns and international checkout have to stay clear or conversion drops.",
+      solution:
+        "I structured the storefront around gift intent: deep product taxonomy, recipient and occasion menus, promotional messaging, popular/trending search cues and multi-market currency support — so shoppers can move from “gift for husband / anniversary” to a personalized product and checkout without friction.",
+      featureGroups: [
+        {
+          title: "Storefront capabilities",
+          items: [
+            "Product catalogue across apparel, accessories, drinkware, home & kitchen and Christmas décor",
+            "Recipient navigation (Mom, Dad, wife, husband, couples, best friends, kids & babies)",
+            "Occasion shopping (anniversary, graduation, Father’s Day, Valentine’s, Christmas, back to school and more)",
+            "Seasonal campaign modules (e.g. Back to School / Summer Vibes)",
+            "Promotional discount flows (Buy 2+ get 10% — code JM2)",
+            "Trending search and popular categories",
+            "Customer accounts, login/register and rewards entry",
+            "Multi-currency storefront (USD and many international markets)",
+            "Modern payment options (Shop Pay, PayPal, Apple Pay, Google Pay, cards and more)",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I worked on the Shopify commerce experience — theme/UX structure, merchandising navigation, campaign presentation and conversion-oriented shopping flows for a live personalized-gifts brand.",
+      contributions: [
+        {
+          title: "Gift discovery architecture",
+          items: [
+            "Organised browsing by product, recipient and occasion so gift intent maps cleanly to collections and SKUs.",
+          ],
+        },
+        {
+          title: "Shopify theme & campaigns",
+          items: [
+            "Customised storefront modules for promotions, seasonal heroes and popular product surfacing.",
+          ],
+        },
+        {
+          title: "International commerce UX",
+          items: [
+            "Supported multi-currency market presentation and accelerated checkout payment options for global shoppers.",
+          ],
+        },
+        {
+          title: "Production delivery",
+          items: [
+            "Delivered a live storefront at joymade.co ready for ongoing catalogue, campaign and rewards updates.",
+          ],
+        },
+      ],
+      highlights: [
+        "Launched a production Shopify personalized-gifts storefront at joymade.co.",
+        "Built recipient- and occasion-first navigation across a deep product catalogue.",
+        "Supported seasonal campaigns, promotions and multi-currency international checkout.",
+      ],
+      skills: [
+        "Shopify",
+        "Liquid",
+        "eCommerce UX",
+        "Merchandising",
+        "Theme Customisation",
+        "Multi-Currency Commerce",
+        "Conversion Optimisation",
+        "Personalized Gifting",
+      ],
+      results:
+        "A live personalized-gifts commerce platform that helps shoppers find custom presents by person and occasion — with promotions, international markets and a polished Shopify checkout experience.",
     },
   },
   {
