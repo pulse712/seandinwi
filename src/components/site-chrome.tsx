@@ -21,9 +21,8 @@ export function SiteHeader() {
           <span className="grid size-8 place-items-center rounded-md bg-primary font-mono text-sm font-bold text-primary-foreground">
             {profile.name.charAt(0)}
           </span>
-          <span className="font-mono text-sm tracking-tight">
-            {profile.name.toLowerCase().replace(" ", "")}
-            <span className="text-primary">.dev</span>
+          <span className="font-display text-sm font-semibold tracking-tight">
+            {profile.fullName}
           </span>
         </Link>
 
