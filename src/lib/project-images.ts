@@ -12,6 +12,10 @@ import imgArtByNumber from "@/assets/projects/project-art-by-number.png";
 import imgDailyNetwork from "@/assets/projects/project-daily-network.png";
 import imgZantopheria from "@/assets/projects/project-zantopheria-front.png";
 import imgZantopheriaBack from "@/assets/projects/project-zantopheria-back.png";
+import imgKekoa1 from "@/assets/projects/project-kekoa-1.png";
+import imgKekoa2 from "@/assets/projects/project-kekoa-2.png";
+import imgKekoa3 from "@/assets/projects/project-kekoa-3.png";
+import imgKekoa4 from "@/assets/projects/project-kekoa-4.png";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -29,4 +33,8 @@ export const projectImages: Record<ProjectImageKey, string> = {
   dailynetwork: imgDailyNetwork,
   zantopheria: imgZantopheria,
   zantopheriaback: imgZantopheriaBack,
+  kekoa1: imgKekoa1,
+  kekoa2: imgKekoa2,
+  kekoa3: imgKekoa3,
+  kekoa4: imgKekoa4,
 };

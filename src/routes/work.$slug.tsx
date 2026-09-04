@@ -62,7 +62,7 @@ function ProjectDetailPage() {
                 <img
                   src={projectImages[item.image]}
                   alt={`${project.title} — ${item.label}`}
-                  className="mx-auto aspect-[2/3] w-full object-contain object-center"
+                  className="mx-auto aspect-[4/5] w-full bg-black/20 object-contain object-center"
                 />
                 <figcaption className="border-t border-border px-4 py-2.5 font-mono text-[10px] uppercase tracking-[0.16em] text-muted-foreground">
                   {item.label}

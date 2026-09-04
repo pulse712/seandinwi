@@ -54,7 +54,11 @@ export type ProjectImageKey =
   | "artbynumber"
   | "dailynetwork"
   | "zantopheria"
-  | "zantopheriaback";
+  | "zantopheriaback"
+  | "kekoa1"
+  | "kekoa2"
+  | "kekoa3"
+  | "kekoa4";
 
 export type ProjectDetail = {
   role: string;
@@ -767,6 +771,105 @@ export const projects: Project[] = [
       gallery: [
         { label: "Front cover", image: "zantopheria" },
         { label: "Back cover", image: "zantopheriaback" },
+      ],
+    },
+  },
+  {
+    slug: "kekoa-salem-graphics",
+    title: "Kekoa Salem — Athlete Brand Graphics",
+    category: "Logo & Graphic Design",
+    badge: "Sports Graphic Design · Athlete Branding",
+    summary:
+      "A set of high-energy basketball player graphics for Kekoa Salem — recruitment-style posters with bold typography, team colour systems, photo compositing and gritty athletic branding.",
+    stack: ["Sports Branding", "Photo Composite", "Typography", "Poster Design"],
+    accent: "ember",
+    image: "kekoa1",
+    detail: {
+      role: "Graphic Designer",
+      client: "Kekoa Salem — Athlete branding / sports graphics",
+      stackFull: [
+        "Sports Graphic Design",
+        "Photo Manipulation & Compositing",
+        "Typography & Layout",
+        "Colour Systems",
+        "Texture & Effects",
+        "Athlete Branding",
+      ],
+      overview:
+        "I designed a series of athlete profile and recruitment-style posters for basketball player Kekoa Salem (6'1\" | 195 lbs). Each piece uses a distinct team/colour identity — from gritty red Top Contenders posters to purple, Pioneers red/black, and Legacy navy/gold treatments — while keeping the player as the clear hero.",
+      problem:
+        "Athlete graphics need to feel game-day loud on social and still read clearly as branding: name, measurables, team cues and attitude. Generic templates flatten personality; over-designed posters bury the athlete.",
+      solution:
+        "I built a family of posters that share strong hierarchy (name → stats → attributes) but vary palette, texture and motion language so each look can serve a different team story or campaign moment without losing recognition of Kekoa as the subject.",
+      featureGroups: [
+        {
+          title: "Poster set",
+          items: [
+            "Top Contenders — Class of 2029 poster (red / white / black, torn-paper and court textures)",
+            "Purple #24 hero portrait with crown-shield branding",
+            "Pioneers #24 action dribble graphic (red rim light, grit, hustle word stack)",
+            "Legacy #21 navy/gold arena portrait with crowned lion identity",
+          ],
+        },
+        {
+          title: "Design system cues",
+          items: [
+            "Consistent athlete identity: Kekoa Salem, 6'1\" | 195 lbs",
+            "Bold condensed name lockups and jersey number treatments",
+            "Attribute messaging (teamwork, hard work, growth / relentless, discipline, hustle)",
+            "Logo and team badge integration per colour story",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I owned concept, compositing, typography, colour direction and finishing across the full poster set.",
+      contributions: [
+        {
+          title: "Photo compositing",
+          items: [
+            "Cut out and lit athlete photos against textured court/arena environments with motion streaks, smoke and torn-edge overlays.",
+          ],
+        },
+        {
+          title: "Typography & hierarchy",
+          items: [
+            "Built oversized name treatments, stats bars and supporting word stacks that stay readable at social thumbnail size.",
+          ],
+        },
+        {
+          title: "Brand colour systems",
+          items: [
+            "Developed distinct red, purple, and navy/gold identities so the same athlete can slot into different team narratives.",
+          ],
+        },
+        {
+          title: "Athletic attitude",
+          items: [
+            "Added grit, splatters, brush strokes and quotes like “Built for the moment” to push recruitment energy without cluttering the player.",
+          ],
+        },
+      ],
+      highlights: [
+        "Delivered a cohesive multi-look athlete branding set for Kekoa Salem.",
+        "Balanced photo-real action with bold sports typography and team identity systems.",
+        "Produced social/recruitment-ready posters that stay clear at thumbnail and full size.",
+      ],
+      skills: [
+        "Sports Graphic Design",
+        "Athlete Branding",
+        "Photo Manipulation",
+        "Typography",
+        "Colour Direction",
+        "Poster Layout",
+        "Texture Design",
+      ],
+      results:
+        "A flexible athlete brand toolkit — four campaign-ready looks that present Kekoa with clear stats, team flavour and high-energy sports attitude.",
+      gallery: [
+        { label: "Top Contenders — Class of 2029", image: "kekoa1" },
+        { label: "Purple #24 hero portrait", image: "kekoa2" },
+        { label: "Pioneers #24 action poster", image: "kekoa3" },
+        { label: "Legacy #21 navy & gold", image: "kekoa4" },
       ],
     },
   },
