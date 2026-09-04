@@ -66,7 +66,8 @@ export type ProjectImageKey =
   | "joymade"
   | "mariegems"
   | "kofi"
-  | "fire";
+  | "fire"
+  | "southerndiesel";
 
 export type ProjectDetail = {
   role: string;
@@ -1679,6 +1680,94 @@ export const projects: Project[] = [
       ],
       results:
         "A cohesive, high-energy food brand toolkit — logo, colour, packaging and place — that sells appetite and attitude at a glance.",
+    },
+  },
+  {
+    slug: "southern-diesel",
+    title: "Southern Diesel LLC — Trucking Logo",
+    category: "Logo & Graphic Design",
+    badge: "Logo Design · Trucking Brand · Badge Mark",
+    summary:
+      "Designed a royal-blue badge logo for Southern Diesel LLC in Pecos, Texas — classic semi-truck illustration inside an oval lockup with arched type and script location line.",
+    stack: ["Logo Design", "Illustration", "Badge Lockup", "Typography"],
+    accent: "sky",
+    image: "southerndiesel",
+    detail: {
+      role: "Logo / Graphic Designer",
+      client: "Southern Diesel LLC — Pecos, Texas",
+      stackFull: [
+        "Logo Design",
+        "Vehicle Illustration",
+        "Badge / Emblem Layout",
+        "Typography & Lettering",
+        "Monochrome Brand Colour",
+        "Print-Ready Vector Artwork",
+      ],
+      overview:
+        "Southern Diesel LLC needed a professional trucking identity rooted in classic American diesel culture. I designed a single-colour royal-blue emblem: a detailed semi-truck (stacks, grille, sleeper) framed in an oval, with SOUTHERN arched above, DIESEL LLC. arched below, a centered star divider, and a script “Pecos Tx.” location line under the badge.",
+      problem:
+        "Trucking logos have to work hard in the real world — truck doors, hats, business cards and shop signage — often in one colour. Overly complex marks fall apart at small sizes; generic fonts feel like clip art instead of a local diesel brand.",
+      solution:
+        "I built a balanced oval badge with the truck as the hero, arched type locked to the frame, and a clean monochrome blue treatment so the mark reproduces cleanly on vinyl, embroidery and print without losing industrial character.",
+      featureGroups: [
+        {
+          title: "Mark structure",
+          items: [
+            "Front three-quarter semi-truck illustration with stacks, grille and sleeper detail",
+            "Horizontal oval border framing the vehicle",
+            "Arched SOUTHERN wordmark along the top curve",
+            "Arched DIESEL LLC. lockup along the bottom curve",
+            "Centered five-point star with flanking rules as a divider accent",
+            "Script location line: Pecos Tx.",
+          ],
+        },
+        {
+          title: "Brand constraints",
+          items: [
+            "Single-colour royal blue on white for flexible reproduction",
+            "Symmetric, badge-style composition suited to fleet and apparel use",
+            "High-contrast linework that holds at thumbnail and door-size scales",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I owned concept, truck illustration, typography lockup and final monochrome badge art for Southern Diesel LLC.",
+      contributions: [
+        {
+          title: "Vehicle illustration",
+          items: [
+            "Drew a classic tractor-unit silhouette with enough detail to feel diesel-authentic without cluttering the oval.",
+          ],
+        },
+        {
+          title: "Badge typography",
+          items: [
+            "Set arched company type and a script location line so name, trade and hometown read as one emblem.",
+          ],
+        },
+        {
+          title: "Production-minded colour",
+          items: [
+            "Delivered a one-ink blue mark ready for signage, apparel and print without multi-colour separations.",
+          ],
+        },
+      ],
+      highlights: [
+        "Delivered a complete Southern Diesel LLC badge logo with truck illustration and location branding.",
+        "Designed for one-colour reproduction across fleet, shop and merch applications.",
+        "Balanced industrial detail with clean hierarchy for Pecos, Texas trucking identity.",
+      ],
+      skills: [
+        "Logo Design",
+        "Badge / Emblem Design",
+        "Vehicle Illustration",
+        "Typography",
+        "Lettering",
+        "Monochrome Branding",
+        "Trucking / Industrial Identity",
+      ],
+      results:
+        "A durable, classic trucking badge that presents Southern Diesel LLC as a local diesel brand — clear, reproducible and ready for real-world use in Pecos, Texas.",
     },
   },
   {
