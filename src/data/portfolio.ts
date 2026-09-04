@@ -65,7 +65,8 @@ export type ProjectImageKey =
   | "doyobest"
   | "joymade"
   | "mariegems"
-  | "kofi";
+  | "kofi"
+  | "fire";
 
 export type ProjectDetail = {
   role: string;
@@ -1583,6 +1584,101 @@ export const projects: Project[] = [
       ],
       results:
         "A live made-to-order embroidery commerce site that helps customers shop hand-stitched wall art, apparel and hats — with personalization, free proofs and a clear path to custom studio requests.",
+    },
+  },
+  {
+    slug: "fire-branding",
+    title: "FIRE — Food Brand Identity",
+    category: "Logo & Graphic Design",
+    badge: "Brand Identity · Logo · Packaging · Mockups",
+    summary:
+      "Bold red-and-yellow brand system for FIRE — logo with flame mark, tagline lockup, and applications across apparel, takeout packaging, staff apron and food-kiosk storefront.",
+    stack: ["Logo Design", "Brand Identity", "Packaging", "Mockups"],
+    accent: "ember",
+    image: "fire",
+    detail: {
+      role: "Brand / Graphic Designer",
+      client: "FIRE — food & beverage brand identity",
+      stackFull: [
+        "Logo Design",
+        "Brand Identity System",
+        "Typography & Colour Direction",
+        "Packaging Design",
+        "Apparel & Uniform Graphics",
+        "Environmental / Storefront Mockups",
+        "Visual Merchandising",
+      ],
+      overview:
+        "FIRE is a high-energy food brand built around the line “Fire up your tastebuds.” I designed a compact identity system: a bold white FIRE wordmark with a flame built into the letter I, a yellow tagline lockup, and a red/yellow palette applied consistently across merch, takeout packaging, staff apron and a kiosk / container storefront.",
+      problem:
+        "Fast-casual food brands need identity that reads hot, hungry and memorable in seconds — on a shirt, a takeout box and a street-side sign. Generic burger logos don’t travel well across print and physical spaces; weak systems look different on every surface.",
+      solution:
+        "I built a simple, high-contrast system: deep red + bright yellow, a flame-integrated wordmark, and one tagline. Then I proved the brand in context — tee, dual-colour takeout cartons, apron and a yellow/red food container with menu board and A-frame — so the identity feels ready for real service environments.",
+      featureGroups: [
+        {
+          title: "Core identity",
+          items: [
+            "FIRE wordmark with flame silhouette in the letter I",
+            "Inner yellow/orange flame accent for heat and appetite cues",
+            "Tagline lockup: Fire up your tastebuds",
+            "High-contrast red / yellow / white colour system",
+          ],
+        },
+        {
+          title: "Brand applications",
+          items: [
+            "Yellow apparel tee with red chest logo",
+            "Red and yellow takeout carton pair with mirrored logo treatments",
+            "Red staff apron with white logo on yellow backdrop",
+            "Yellow food-kiosk / container storefront with red fascia, menu board and sandwich board",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I owned the logo concept, colour system and application mockups that show how FIRE lives on product, people and place.",
+      contributions: [
+        {
+          title: "Logo & mark",
+          items: [
+            "Designed the flame-in-I wordmark so the brand name and heat metaphor read as one lockup.",
+          ],
+        },
+        {
+          title: "Colour & type",
+          items: [
+            "Set a red/yellow/white palette and bold sans hierarchy that stays loud at thumbnail and storefront scale.",
+          ],
+        },
+        {
+          title: "Packaging & merch",
+          items: [
+            "Applied the system to tee, takeout boxes and apron so print-ready assets feel cohesive across soft goods and food packaging.",
+          ],
+        },
+        {
+          title: "Environmental mockups",
+          items: [
+            "Visualised a kiosk storefront with fascia, menu and A-frame so stakeholders can see the brand in a real service setting.",
+          ],
+        },
+      ],
+      highlights: [
+        "Delivered a complete FIRE identity board: logo, tagline and multi-surface applications.",
+        "Built a red/yellow system that stays consistent from apparel to packaging to storefront.",
+        "Produced presentation-ready mockups for food brand pitches and client review.",
+      ],
+      skills: [
+        "Logo Design",
+        "Brand Identity",
+        "Packaging Design",
+        "Apparel Graphics",
+        "Colour Direction",
+        "Typography",
+        "Mockup Presentation",
+        "Food & Beverage Branding",
+      ],
+      results:
+        "A cohesive, high-energy food brand toolkit — logo, colour, packaging and place — that sells appetite and attitude at a glance.",
     },
   },
   {
