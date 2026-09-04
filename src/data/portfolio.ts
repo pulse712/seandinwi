@@ -79,7 +79,8 @@ export type ProjectImageKey =
   | "flyerpostergrid"
   | "blok"
   | "murad"
-  | "newman";
+  | "newman"
+  | "carbide";
 
 export type ProjectDetail = {
   role: string;
@@ -2845,6 +2846,93 @@ export const projects: Project[] = [
       ],
       results:
         "A live B2B industrial tools catalog that helps machine shops and plant teams find specialty SKUs, technical data and ordering paths — worldwide shipping from Newman Tools Inc.",
+    },
+  },
+  {
+    slug: "carbide-diamond-tooling",
+    title: "Carbide & Diamond Tooling — Industrial eCommerce",
+    category: "eCommerce",
+    badge: "eCommerce · B2B Catalog · Industrial · Cutting Tools",
+    summary:
+      "Built a deep B2B storefront for Carbide & Diamond Tooling — cutting tools, abrasives, workholding and shop supplies with US/CA shopping, quotes, technical resources and industry-focused merchandising.",
+    stack: ["Custom Catalog", "B2B eCommerce", "Search", "Quotes"],
+    accent: "ember",
+    image: "carbide",
+    url: "https://www.carbideanddiamondtooling.com/",
+    detail: {
+      role: "Full-Stack / Catalog Developer",
+      client: "Carbide & Diamond Tooling — CDTooling.com industrial supplier",
+      liveUrl: "https://www.carbideanddiamondtooling.com/",
+      stackFull: [
+        "B2B Product Catalog Architecture",
+        "Deep Category Taxonomy",
+        "Cart / Account Commerce Flows",
+        "US & Canada Storefronts (CDTooling.com / CDTooling.ca)",
+        "Search & Merchandising",
+        "Get-a-Quote / Lead Pathways",
+        "Technical Resources & Catalogs/Flyers",
+        "Industry-Focused Navigation",
+      ],
+      overview:
+        "Carbide & Diamond Tooling manufactures and supplies high-quality carbide and diamond cutting tools for demanding industries. The live storefront at carbideanddiamondtooling.com (CDTooling.com) presents a large industrial catalogue — cutting tools, abrasives, workholding, fasteners, automotive tools and more — with cart/account shopping, US vs Canada currency shops, promotions, technical resources and quote/contact paths for custom solutions.",
+      problem:
+        "Precision tooling buyers need SKU depth by retention knobs, carbide/diamond cutters, inserts and abrasives — not a generic hardware aisle. Missing industry context, dual-market currency and quote paths slow aerospace, automotive and medical purchasing.",
+      solution:
+        "I structured a B2B industrial commerce experience: deep category taxonomy, shop/cart/account flows, US/CA storefront switching, sale promotions, technical resources/catalogs and clear quote CTAs — so buyers can find precision tools by industry and order or request custom solutions.",
+      featureGroups: [
+        {
+          title: "Storefront capabilities",
+          items: [
+            "Deep categories: pull studs/retention knobs, abrasives, adhesives, automotive tools, bushings, workholding, cutting tools (carbide, diamond, CBN, HSS/cobalt, indexable), deburring, fasteners and more",
+            "Shopping cart, My Account and search",
+            "US (CDTooling.com) and Canada (CDTooling.ca) currency shopping",
+            "Current sale promotions / discounts",
+            "Technical resources and catalogs/flyers",
+            "Custom solutions and Get a Quote pathways",
+            "Industry coverage cues: aerospace, automotive, manufacturing, metal fab, plastics/composites, electronics, medical, stone & glass",
+            "Sister shop-supply link (cdt1.com) for additional products",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I developed the industrial eCommerce catalog experience — taxonomy, dual-market shopping, quote/support paths and conversion merchandising for a precision tooling brand.",
+      contributions: [
+        {
+          title: "Industrial taxonomy",
+          items: [
+            "Organised cutting tools, abrasives, workholding and related MRO lines into buyer-recognisable category trees.",
+          ],
+        },
+        {
+          title: "B2B commerce UX",
+          items: [
+            "Supported cart, account, search and US/CA storefront switching for cross-border industrial buyers.",
+          ],
+        },
+        {
+          title: "Quote & technical support",
+          items: [
+            "Surfaced Get a Quote, custom solutions, technical resources and catalogs so specialty orders aren’t blocked by self-serve SKU limits.",
+          ],
+        },
+      ],
+      highlights: [
+        "Launched a production industrial tooling storefront at carbideanddiamondtooling.com.",
+        "Combined deep cutting-tool taxonomy with cart commerce and dual US/CA shopping.",
+        "Connected industry buyers to quotes, technical resources and promotional merchandising.",
+      ],
+      skills: [
+        "B2B eCommerce",
+        "Product Catalog UX",
+        "Industrial Merchandising",
+        "Information Architecture",
+        "Search & Navigation",
+        "Multi-Market Commerce",
+        "Quote / Lead Generation",
+        "Responsive Web Design",
+      ],
+      results:
+        "A live B2B carbide and diamond tooling store that helps precision manufacturers shop, quote and source high-performance cutting tools across demanding industries.",
     },
   },
   {
