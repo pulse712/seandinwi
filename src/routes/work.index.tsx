@@ -1,12 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Award, BadgeCheck, BriefcaseBusiness, CalendarDays } from "lucide-react";
-import { profile, workStats } from "@/data/portfolio";
+import { ArrowRight } from "lucide-react";
+import { profile } from "@/data/portfolio";
 import { ProjectGallery } from "@/components/project-gallery";
 
 import imgLaptop from "@/assets/projects/cta-laptop.jpg";
 import imgRocket from "@/assets/projects/cta-rocket.jpg";
-
-const statIcons = [BriefcaseBusiness, CalendarDays, BadgeCheck, Award];
 
 const title = "My Projects — Sean Dinwiddie";
 const description =
@@ -59,27 +57,6 @@ function WorkPage() {
       </section>
 
       <ProjectGallery />
-
-      <section className="relative z-10 border-y border-border bg-surface/40">
-        <div className="mx-auto grid max-w-6xl gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
-          {workStats.map((stat, i) => {
-            const Icon = statIcons[i] ?? Award;
-            return (
-              <div key={stat.label} className="flex items-center gap-4 bg-background px-6 py-8">
-                <span className="grid size-11 place-items-center rounded-full border border-primary/30 bg-primary/10 text-primary">
-                  <Icon className="size-5" />
-                </span>
-                <div>
-                  <p className="font-display text-2xl font-semibold tracking-tight">{stat.value}</p>
-                  <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
-                    {stat.label}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
 
       <section className="relative z-10 mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
         <div className="relative overflow-hidden rounded-2xl border border-border bg-card px-6 py-12 sm:px-10 sm:py-14 glow-primary">
