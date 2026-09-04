@@ -112,7 +112,7 @@ export function Portrait({ className }: { className?: string }) {
       <img
         src={headshot}
         alt={`${profile.name}, ${profile.role}`}
-        className="h-auto w-full origin-top scale-150 object-contain transition-transform duration-700 group-hover:scale-[1.55]"
+        className="h-auto w-full origin-top scale-[0.85] object-contain transition-transform duration-700 group-hover:scale-90"
         loading="eager"
       />
     </figure>
