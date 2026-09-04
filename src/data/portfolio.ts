@@ -61,7 +61,8 @@ export type ProjectImageKey =
   | "kekoa4"
   | "monee"
   | "swipr"
-  | "wrpelevation";
+  | "wrpelevation"
+  | "doyobest";
 
 export type ProjectDetail = {
   role: string;
@@ -1201,6 +1202,99 @@ export const projects: Project[] = [
       ],
       results:
         "A production Android utility (5K+ Play downloads) that helps athletes visualise and share GPS elevation data without accounts or bloated feature sets — an example of focused niche mobile tooling.",
+    },
+  },
+  {
+    slug: "doyobest",
+    title: "DoyoBest — Personalized Gifts eCommerce",
+    category: "eCommerce",
+    badge: "eCommerce · Shopify · Personalization · UI/UX",
+    summary:
+      "Built a Shopify storefront for personalized gifts and custom home décor — recipient-led browsing, occasion merchandising, promotional flows and a conversion-focused shopping experience at doyobest.com.",
+    stack: ["Shopify", "Liquid", "Theme UX", "eCommerce"],
+    accent: "ember",
+    image: "doyobest",
+    url: "https://doyobest.com/",
+    detail: {
+      role: "Full-Stack / Shopify Developer",
+      client: "DoyoBest — live personalized gifts store",
+      liveUrl: "https://doyobest.com/",
+      stackFull: [
+        "Shopify",
+        "Liquid / Theme Customisation",
+        "HTML / CSS / JavaScript",
+        "Responsive Storefront UX",
+        "Collections & Merchandising",
+        "Promotions & Discount Codes",
+        "Checkout & Payment Integrations",
+        "Gift Finder / Recipient Navigation",
+      ],
+      overview:
+        "DoyoBest is a live Shopify storefront focused on personalized gifts and custom home décor for occasions like birthdays, Christmas, Valentine’s Day and everyday “for someone special” shopping. The catalogue spans home & living, drinkware, clothing & jewelry, accessories and sports & outdoors, organised so shoppers can browse by recipient, occasion and interest rather than hunting through a flat product dump.",
+      problem:
+        "Personalized-gift shoppers usually start with a person or moment (“for Dad”, “for couples”), not a SKU. Generic gift stores bury that intent under dense catalogues, weak discovery and checkout friction — especially when promotions, new arrivals and best-sellers all compete for attention.",
+      solution:
+        "I shaped the storefront around recipient and occasion discovery, clear merchandising modules (best sellers, new arrivals, gift finder), promotional messaging (e.g. multi-buy discount codes) and a clean path from browse → product → cart → checkout with modern payment options.",
+      featureGroups: [
+        {
+          title: "Storefront & merchandising",
+          items: [
+            "Recipient-led shopping (Dad, Mom, Grandpa, Grandma, couples, friends)",
+            "Occasion and interest navigation",
+            "Best sellers and new arrival modules",
+            "Gift Finder entry point",
+            "Category coverage across home décor, drinkware, apparel, accessories and outdoors",
+            "Promo bar and discount-code driven campaigns",
+            "Order tracking and customer help/policy pages",
+            "Multi-gateway checkout (Visa, PayPal, Apple Pay, Google Pay, Shop Pay and more)",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I worked on the Shopify storefront experience — theme structure, merchandising UX, promotional presentation and conversion-oriented shopping flows for a live personalized-gifts brand.",
+      contributions: [
+        {
+          title: "Discovery architecture",
+          items: [
+            "Organised browsing around who the gift is for and when it’s needed, so shoppers reach relevant products faster.",
+          ],
+        },
+        {
+          title: "Shopify theme & UX",
+          items: [
+            "Customised the theme for promotional storytelling, collection highlighting and mobile-friendly gift shopping.",
+          ],
+        },
+        {
+          title: "Conversion & trust",
+          items: [
+            "Supported clear CTAs, promo incentives, reviews/track-order entry points and polished checkout payment options.",
+          ],
+        },
+        {
+          title: "Production storefront",
+          items: [
+            "Delivered a live commerce site at doyobest.com ready for ongoing catalogue and campaign updates.",
+          ],
+        },
+      ],
+      highlights: [
+        "Launched a production Shopify gifts storefront focused on personalized products and occasion shopping.",
+        "Built recipient- and occasion-first navigation instead of catalogue-only browsing.",
+        "Supported promotions, merchandising modules and modern checkout payment options.",
+      ],
+      skills: [
+        "Shopify",
+        "Liquid",
+        "eCommerce UX",
+        "Merchandising",
+        "Theme Customisation",
+        "Responsive Web Design",
+        "Conversion Optimisation",
+        "Personalized Commerce",
+      ],
+      results:
+        "A live personalized-gifts eCommerce platform at doyobest.com that helps shoppers find custom presents by recipient and occasion with a clean, promotion-ready shopping experience.",
     },
   },
   {

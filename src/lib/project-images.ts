@@ -19,6 +19,7 @@ import imgKekoa4 from "@/assets/projects/project-kekoa-4.png";
 import imgMonee from "@/assets/projects/project-monee.png";
 import imgSwipr from "@/assets/projects/project-swipr.png";
 import imgWrpElevation from "@/assets/projects/project-wrp-elevation.png";
+import imgDoyobest from "@/assets/projects/project-doyobest.png";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -43,4 +44,5 @@ export const projectImages: Record<ProjectImageKey, string> = {
   monee: imgMonee,
   swipr: imgSwipr,
   wrpelevation: imgWrpElevation,
+  doyobest: imgDoyobest,
 };
