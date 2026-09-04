@@ -72,7 +72,8 @@ export type ProjectImageKey =
   | "logocollection"
   | "logocollection2"
   | "aestheticsbeaverton"
-  | "galloperworld";
+  | "galloperworld"
+  | "castlesoap";
 
 export type ProjectDetail = {
   role: string;
@@ -2212,6 +2213,93 @@ export const projects: Project[] = [
       ],
       results:
         "A minimal, premium brand system for Galloper World — geometric gold mark, clear wordmark hierarchy and signage-ready applications in light and dark.",
+    },
+  },
+  {
+    slug: "castle-soap",
+    title: "Castle Soap Company — Brand Identity",
+    category: "Logo & Graphic Design",
+    badge: "Brand Identity · Logo · Stationery · Merch",
+    summary:
+      "Earthy forest-green identity for Castle Soap Company — floral mandala mark, serif/sans lockup, business card on stone and cream logo tote mockup.",
+    stack: ["Logo Design", "Packaging Identity", "Stationery", "Merch"],
+    accent: "lime",
+    image: "castlesoap",
+    detail: {
+      role: "Brand / Graphic Designer",
+      client: "Castle Soap Company — artisanal soap / natural goods identity",
+      stackFull: [
+        "Logo Design",
+        "Floral / Mandala Mark",
+        "Typography Direction",
+        "Brand Colour System",
+        "Business Card Design",
+        "Merchandise Mockups",
+        "Natural / Artisanal Branding",
+      ],
+      overview:
+        "Castle Soap Company needed an artisanal identity rooted in nature. I designed a symmetrical leaf-mandala emblem with a bold serif CASTLE wordmark and tracked SOAP COMPANY subline in cream on forest green — then applied it to a sunlit business card on river stones and a dark green tote for tactile, eco-premium presentation.",
+      problem:
+        "Natural soap brands often look handmade-but-messy or overly spa-generic. The mark needed botanical structure, premium hierarchy and surfaces that feel organic without sacrificing clarity on cards and soft goods.",
+      solution:
+        "I built a tight green/cream system around one floral emblem and a two-tier type lockup, then showed it on natural materials — stone and fabric — so the brand reads as artisanal luxury rather than mass CPG.",
+      featureGroups: [
+        {
+          title: "Core identity",
+          items: [
+            "Eight-leaf mandala emblem with centered geometric anchor",
+            "Bold serif CASTLE + spaced sans SOAP COMPANY lockup",
+            "Forest green and cream colour pairing for organic premium tone",
+          ],
+        },
+        {
+          title: "Applications",
+          items: [
+            "Forest-green business card with cream logo, staged on speckled river stones",
+            "Primary brand sheet — cream mark on solid green field",
+            "Dark green fabric tote with cream logo print on concrete under natural light",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I owned emblem concept, typography, colour system and the stationery / merch mockups.",
+      contributions: [
+        {
+          title: "Botanical mark",
+          items: [
+            "Designed a symmetrical floral emblem that feels natural and structured for soap / wellness branding.",
+          ],
+        },
+        {
+          title: "Type hierarchy",
+          items: [
+            "Paired a strong serif name with a light tracked subline so category reads cleanly under the mark.",
+          ],
+        },
+        {
+          title: "Material mockups",
+          items: [
+            "Presented the identity on stone-staged cards and a tote so clients see tactile, real-world use.",
+          ],
+        },
+      ],
+      highlights: [
+        "Delivered a complete Castle Soap Company identity: emblem, type, card and tote.",
+        "Built a forest green / cream system suited to artisanal natural goods.",
+        "Grounded the brand in natural light and materials without losing logo clarity.",
+      ],
+      skills: [
+        "Logo Design",
+        "Brand Identity",
+        "Emblem Design",
+        "Typography",
+        "Stationery Design",
+        "Merchandise Mockups",
+        "Natural / Artisanal Branding",
+        "Colour Direction",
+      ],
+      results:
+        "An earthy, premium soap brand system — floral mark, green/cream palette and tactile applications ready for stationery and soft-goods merch.",
     },
   },
   {
