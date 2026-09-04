@@ -19,6 +19,21 @@ function initials(name: string) {
     .toUpperCase();
 }
 
+function CountryFlag({ code, country }: { code: string; country: string }) {
+  return (
+    <img
+      src={`https://flagcdn.com/w40/${code.toLowerCase()}.png`}
+      srcSet={`https://flagcdn.com/w80/${code.toLowerCase()}.png 2x`}
+      alt={`${country} flag`}
+      title={country}
+      width={20}
+      height={15}
+      className="inline-block h-[15px] w-5 rounded-[2px] object-cover ring-1 ring-border/80"
+      loading="lazy"
+    />
+  );
+}
+
 export function TestimonialGallery() {
   return (
     <section className="relative z-10 mx-auto max-w-6xl px-5 pb-16 sm:px-8 sm:pb-20">
@@ -55,9 +70,7 @@ function TestimonialCard({ item }: { item: Testimonial }) {
         <div>
           <p className="flex items-center gap-2 font-display text-sm font-semibold tracking-tight">
             {item.name}
-            <span className="text-base leading-none" aria-hidden>
-              {item.flag}
-            </span>
+            <CountryFlag code={item.countryCode} country={item.country} />
           </p>
           <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
             {item.role}
