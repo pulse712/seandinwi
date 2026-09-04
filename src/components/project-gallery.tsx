@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   ArrowUpRight,
   Clapperboard,
@@ -93,13 +93,59 @@ const filterIcons: Record<"All" | ProjectCategory, typeof LayoutGrid> = {
   "Game Development": Gamepad2,
 };
 
+const categoryHashes: Record<"All" | ProjectCategory, string> = {
+  All: "all",
+  "Web Development": "web",
+  "App Development": "app",
+  eCommerce: "ecommerce",
+  Automation: "automation",
+  "Logo & Graphic Design": "design",
+  "Video Editing": "video",
+  "Trading Algo / Forex / Meta": "trading",
+  "Mobile Apps": "mobile",
+  "Game Development": "game",
+};
+
+const hashToCategory = Object.fromEntries(
+  Object.entries(categoryHashes).map(([category, hash]) => [hash, category]),
+) as Record<string, "All" | ProjectCategory>;
+
+function readCategoryFromHash(): "All" | ProjectCategory {
+  if (typeof window === "undefined") return "All";
+  const slug = window.location.hash.replace(/^#/, "").toLowerCase();
+  if (!slug) return "All";
+  return hashToCategory[slug] ?? "All";
+}
+
+function writeCategoryHash(category: "All" | ProjectCategory) {
+  const slug = categoryHashes[category];
+  const next =
+    category === "All"
+      ? `${window.location.pathname}${window.location.search}`
+      : `${window.location.pathname}${window.location.search}#${slug}`;
+  window.history.replaceState(null, "", next);
+}
+
 export function ProjectGallery() {
   const [active, setActive] = useState<"All" | ProjectCategory>("All");
+
+  useEffect(() => {
+    setActive(readCategoryFromHash());
+
+    const onHashChange = () => setActive(readCategoryFromHash());
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
+  }, []);
 
   const filtered = useMemo(() => {
     if (active === "All") return projects;
     return projects.filter((project) => project.category === active);
   }, [active]);
+
+  const selectCategory = (category: "All" | ProjectCategory) => {
+    setActive(category);
+    writeCategoryHash(category);
+  };
 
   return (
     <div className="relative z-10">
@@ -108,13 +154,15 @@ export function ProjectGallery() {
           {projectCategories.map((category) => {
             const Icon = filterIcons[category];
             const isActive = active === category;
+            const hash = categoryHashes[category];
             return (
               <button
                 key={category}
+                id={hash}
                 type="button"
                 role="tab"
                 aria-selected={isActive}
-                onClick={() => setActive(category)}
+                onClick={() => selectCategory(category)}
                 className={cn(
                   "relative z-10 inline-flex cursor-pointer items-center gap-2 rounded-full border px-3.5 py-2 font-mono text-[11px] uppercase tracking-[0.12em] transition-all",
                   isActive
