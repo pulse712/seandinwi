@@ -874,6 +874,137 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "monee",
+    title: "Monee — Budget & Expense Tracker",
+    category: "Mobile Apps",
+    badge: "iOS · Android · FinTech · SwiftUI · Compose · Firebase",
+    summary:
+      "Built a production personal-finance app for iOS and Android — fast expense/income entry, shared accounts, recurring transactions, analytics, multi-currency, exports and biometric protection.",
+    stack: ["SwiftUI", "Jetpack Compose", "Firebase", "FinTech"],
+    accent: "lime",
+    image: "mobile",
+    detail: {
+      role: "Mobile App Developer / Product Engineer",
+      client: "Monee — live production iOS / iPadOS & Android app",
+      stackFull: [
+        "Swift",
+        "SwiftUI",
+        "Kotlin",
+        "Jetpack Compose",
+        "Firebase",
+        "Biometric Authentication",
+        "Localisation (20+ languages)",
+        "Charts / Data Visualisation",
+        "CSV / Excel / PDF Export",
+        "Multi-Currency",
+      ],
+      overview:
+        "Monee is a privacy-focused personal finance app built for speed: enter an amount, choose a category, optionally add a note, and the transaction is recorded — without bank connections, ads, tracking, or subscription gates. I developed native iOS (SwiftUI) and Android (Jetpack Compose) apps with shared financial logic, covering personal and shared household budgeting, recurring transactions, custom categories, analytics, filtering, multiple currencies, exports and biometric protection.",
+      problem:
+        "The hard part wasn’t building another expense tracker — it was keeping the product simple while supporting accounts, sharing, recurrings, budgets, reports, search, multi-currency, exports and security. Everyday entry had to stay seconds-fast. Recurring payments also needed reliable scheduling across weekly/biweekly/monthly/yearly rules, month lengths, time zones and daylight-saving changes without duplicates or skipped periods.",
+      solution:
+        "I centred the product on Record → Understand → Improve, with a minimal Amount → Category → Optional Note → Done loop. Feature depth lives behind that loop. Native UIs stay platform-appropriate while a shared domain model and Firebase sync keep iOS and Android financially consistent for personal and collaborative accounts.",
+      featureGroups: [
+        {
+          title: "Core product features",
+          items: [
+            "Native iOS / iPadOS and Android applications",
+            "Fast expense and income entry",
+            "Unlimited transactions and financial accounts",
+            "Shared household / couple / group finances with realtime sync",
+            "Recurring expenses and income engine",
+            "Unlimited custom categories",
+            "Financial analytics and monthly cash-flow overview",
+            "Advanced transaction filtering and search",
+            "Multiple currencies worldwide",
+            "CSV / Excel / PDF export",
+            "Face ID / Touch ID / passcode protection",
+            "Custom financial month start and previous-balance carry-over",
+            "20+ language support",
+            "No mandatory registration, ads or tracking",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I developed Monee as a production-grade personal finance application across iOS and Android — domain modelling, native UI, Firebase sync, financial calculations and production hardening — with special focus on recurring transactions, collaborative accounts, privacy and keeping entry extremely fast.",
+      contributions: [
+        {
+          title: "Native iOS (SwiftUI)",
+          items: [
+            "Built the iPhone/iPad experience for transactions, accounts, categories, charts, filtering, recurrings, shared finances, export, settings and biometric security.",
+          ],
+        },
+        {
+          title: "Native Android (Jetpack Compose)",
+          items: [
+            "Implemented Android with Compose so interaction patterns feel native while financial rules match the iOS product.",
+          ],
+        },
+        {
+          title: "Fast transaction entry",
+          items: [
+            "Designed the primary flow around Amount → Category → Optional Note → Done so everyday purchases stay frictionless.",
+          ],
+        },
+        {
+          title: "Multi-account & shared finances",
+          items: [
+            "Supported unlimited personal/household/business-style accounts plus invite-based shared budgeting with Firebase-backed sync across users and devices.",
+          ],
+        },
+        {
+          title: "Recurring transaction engine",
+          items: [
+            "Built reliable scheduling for rent, salary, utilities and subscriptions across period boundaries, time zones and month-length edge cases.",
+          ],
+        },
+        {
+          title: "Analytics, filters & multi-currency",
+          items: [
+            "Turned raw transactions into category aggregates, income vs expense views and filtered insights, with locale-aware currency formatting.",
+          ],
+        },
+        {
+          title: "Exports, security & localisation",
+          items: [
+            "Added CSV/Excel/PDF export, biometric/passcode locks, configurable month starts and UI that tolerates 20+ languages and varying text widths.",
+          ],
+        },
+        {
+          title: "Production hardening",
+          items: [
+            "Focused on sync concurrency, offline behaviour, duplicate prevention, device differences and the real-world date issues that only show up after sustained use.",
+          ],
+        },
+      ],
+      highlights: [
+        "Shipped a live multi-platform FinTech product on the App Store and Google Play.",
+        "Kept transaction entry seconds-fast while supporting sharing, recurrings, analytics and exports.",
+        "Maintained consistent financial logic across SwiftUI and Jetpack Compose with Firebase sync.",
+        "Hardened recurring schedules, collaborative accounts and privacy-first product architecture.",
+      ],
+      skills: [
+        "Swift",
+        "SwiftUI",
+        "Kotlin",
+        "Jetpack Compose",
+        "Firebase",
+        "iOS Development",
+        "Android Development",
+        "FinTech",
+        "Realtime Sync",
+        "Data Visualisation",
+        "Recurring Transactions",
+        "Localisation",
+        "Biometric Authentication",
+        "Multi-Currency",
+        "Production App Maintenance",
+      ],
+      results:
+        "Monee is a live consumer finance product on both major mobile stores — publicly cited at 50K+ Play installs / ~4.7 rating and strong App Store ratings, with 200,000+ total downloads and 20+ languages — demonstrating real multi-platform usage at meaningful scale.",
+    },
+  },
+  {
     slug: "saas-dashboard",
     title: "SaaS Dashboard Platform",
     category: "Web Development",
