@@ -64,7 +64,8 @@ export type ProjectImageKey =
   | "wrpelevation"
   | "doyobest"
   | "joymade"
-  | "mariegems";
+  | "mariegems"
+  | "kofi";
 
 export type ProjectDetail = {
   role: string;
@@ -1487,6 +1488,101 @@ export const projects: Project[] = [
       ],
       results:
         "A live specialty commerce site at mariegems.com helping makers order ready-to-press DTF transfers by design and size — with bundles, custom uploads and clear pressing guidance from a small Wichita studio.",
+    },
+  },
+  {
+    slug: "kofi-clothing",
+    title: "Kofi Clothing — Made-to-Order Embroidery Studio",
+    category: "eCommerce",
+    badge: "eCommerce · Custom Embroidery · Made-to-Order",
+    summary:
+      "Built a boutique storefront for hand-embroidered wall art, apparel and hats — made-to-order personalization, free design proofs and collection shopping from a Doral, Florida studio.",
+    stack: ["Custom Storefront", "Product Catalog", "Personalization UX", "Cart"],
+    accent: "ember",
+    image: "kofi",
+    url: "https://koficlothing.us/",
+    detail: {
+      role: "Full-Stack / Storefront Developer",
+      client: "KOFI CLOTHING LLC — Doral, FL embroidery studio",
+      liveUrl: "https://koficlothing.us/",
+      stackFull: [
+        "Custom HTML / CSS / JavaScript Storefront",
+        "Product Catalog Architecture",
+        "Collections & Merchandising",
+        "Cart / Checkout UX",
+        "Personalization Options (names, dates, logos)",
+        "Responsive Design",
+        "Studio Brand Storytelling",
+        "Contact & Custom Request Flows",
+      ],
+      overview:
+        "Kofi Clothing is a family-run embroidery studio in Doral, Florida selling hand-embroidered wall art hoops, custom apparel and personalized hats — every piece sketched, stitched and finished to order. The storefront presents collections, featured products, trust messaging (free U.S. shipping $35+, free design proofs, personalization, Made in Florida), customer quotes, newsletter signup and direct contact for custom work.",
+      problem:
+        "Made-to-order embroidery needs more than a generic product grid. Shoppers want to understand craft quality, personalization options, lead times and proofing — while browsing wall art, apparel and hats as distinct collections without feeling like mass marketplace inventory.",
+      solution:
+        "I built a boutique commerce experience centered on studio storytelling and clear shopping paths: shop by collection, feature best sellers, highlight free proofs and personalization, and make custom/rush inquiries easy through a real-person contact flow.",
+      featureGroups: [
+        {
+          title: "Storefront capabilities",
+          items: [
+            "Collections for embroidered wall art, apparel and hats",
+            "Featured / best-seller product merchandising",
+            "Made-to-order personalization (names, dates, custom logos)",
+            "Free digital design proof messaging before production",
+            "Trust strip: free shipping threshold, proofs, personalization, Florida-made",
+            "Customer testimonials and keepsake-focused storytelling",
+            "Newsletter signup for collection drops and holiday cutoffs",
+            "Contact flow for custom designs, sizing, logos and rush production",
+            "Studio location and hours (Doral, FL)",
+            "Links to Etsy / Facebook social presence",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I developed the boutique storefront experience — catalog structure, collection browsing, personalization messaging and conversion content for a made-to-order embroidery brand.",
+      contributions: [
+        {
+          title: "Catalog & collections UX",
+          items: [
+            "Organised wall art, apparel and hats into clear shop-by-collection paths with featured pieces for discovery.",
+          ],
+        },
+        {
+          title: "Made-to-order personalization",
+          items: [
+            "Surfaced free design proofs, personalization options and lead-time expectations so custom orders feel low-risk.",
+          ],
+        },
+        {
+          title: "Studio brand storytelling",
+          items: [
+            "Built about/trust content around hand embroidery in Doral — family-owned, no mass production, free proofs from a real designer.",
+          ],
+        },
+        {
+          title: "Conversion & support",
+          items: [
+            "Added testimonials, newsletter capture and a direct contact path for custom logos, school orders and rush requests.",
+          ],
+        },
+      ],
+      highlights: [
+        "Launched a boutique made-to-order embroidery storefront at koficlothing.us.",
+        "Combined collection shopping with personalization and free design-proof messaging.",
+        "Positioned a small Doral studio brand with clear trust signals and custom-order support.",
+      ],
+      skills: [
+        "eCommerce UX",
+        "Custom Storefront Development",
+        "Product Catalog Design",
+        "Personalization Commerce",
+        "Brand Storytelling",
+        "Responsive Web Design",
+        "Conversion Content",
+        "Boutique Retail",
+      ],
+      results:
+        "A live made-to-order embroidery commerce site that helps customers shop hand-stitched wall art, apparel and hats — with personalization, free proofs and a clear path to custom studio requests.",
     },
   },
   {

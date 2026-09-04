@@ -22,6 +22,7 @@ import imgWrpElevation from "@/assets/projects/project-wrp-elevation.png";
 import imgDoyobest from "@/assets/projects/project-doyobest.png";
 import imgJoymade from "@/assets/projects/project-joymade.jpg";
 import imgMarieGems from "@/assets/projects/project-marie-gems.jpg";
+import imgKofi from "@/assets/projects/project-kofi.png";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -49,4 +50,5 @@ export const projectImages: Record<ProjectImageKey, string> = {
   doyobest: imgDoyobest,
   joymade: imgJoymade,
   mariegems: imgMarieGems,
+  kofi: imgKofi,
 };
