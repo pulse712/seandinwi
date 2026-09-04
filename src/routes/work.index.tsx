@@ -41,7 +41,7 @@ function WorkPage() {
           My work
         </p>
         <h1 className="mt-6 font-display text-5xl font-semibold tracking-tight sm:text-6xl md:text-7xl">
-          <span className="text-gradient-signal">projects</span>
+          <span className="text-gradient-signal">Projects</span>
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
           A selection of builds across development, design, automation and more — real products

@@ -8,7 +8,7 @@ import headshot from "@/assets/sean-headshot.png";
 const nav = [
   { to: "/", label: "About" },
   { to: "/services", label: "Service" },
-  { to: "/work", label: "projects" },
+  { to: "/work", label: "Projects" },
   { to: "/testminal", label: "Testimonials" },
 ] as const;
 
