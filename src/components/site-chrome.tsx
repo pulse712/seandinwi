@@ -18,8 +18,12 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
         <Link to="/" className="group flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <span className="grid size-8 place-items-center rounded-md bg-primary font-mono text-sm font-bold text-primary-foreground">
-            {profile.name.charAt(0)}
+          <span className="relative size-8 overflow-hidden rounded-md border border-border bg-card">
+            <img
+              src={headshot}
+              alt=""
+              className="size-full object-cover object-[center_20%]"
+            />
           </span>
           <span className="font-display text-sm font-semibold tracking-tight">
             {profile.fullName}
