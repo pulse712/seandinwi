@@ -75,7 +75,8 @@ export type Project = {
     | "game"
     | "patmyback"
     | "chocolatewood"
-    | "artbynumber";
+    | "artbynumber"
+    | "dailynetwork";
   url?: string;
   detail?: ProjectDetail;
 };
@@ -507,6 +508,160 @@ export const projects: Project[] = [
       ],
       results:
         "The beta transforms photos into numbered paint-by-number artwork with a printable SVG output and a clear end-to-end workflow — validating the core idea with real users before expanding into a larger creative platform.",
+    },
+  },
+  {
+    slug: "daily-network",
+    title: "Daily Network — Quantum-Ready Blockchain & Web3 Ecosystem",
+    category: "Web Development",
+    badge: "Blockchain · Web3 · FinTech · Cryptocurrency",
+    summary:
+      "Developed a production Web3 ecosystem connecting a blockchain network with wallet infrastructure, staking, DEX, Mainnet/Testnet explorers, RPC services, faucet, network monitoring and developer funding tools.",
+    stack: ["Blockchain", "Web3", "EVM", "TypeScript"],
+    accent: "sky",
+    image: "dailynetwork",
+    url: "https://dailycrypto.net",
+    detail: {
+      role: "Full-Stack / Web3 Developer",
+      client: "Daily Network / DLY Ecosystem — Production / Mainnet",
+      liveUrl: "https://dailycrypto.net",
+      stackFull: [
+        "React / Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Web3.js / Ethers.js / Viem",
+        "Solidity",
+        "JSON-RPC",
+        "Safe / MetaMask Integration",
+        "Blockscout",
+        "REST APIs",
+        "Responsive UI",
+        "Web3 Wallet Integration",
+      ],
+      overview:
+        "Daily Network is a Web3 ecosystem built around blockchain infrastructure positioned for post-quantum security, scalability, and EVM-compatible developer access. I developed a polished public-facing experience that brings together the protocol story, network statistics, wallet infrastructure, staking, block explorers, DEX access, testnet tooling, service monitoring, and ecosystem funding into one coherent product — an entry point into an entire blockchain ecosystem rather than a typical crypto landing page. The homepage introduces lattice cryptography, zero-knowledge proofs, DAG architecture, sharding and quantum RNG, then connects users directly to wallet, mainnet/testnet RPC, staking, explorers, DEX, status monitoring and the testnet faucet.",
+      problem:
+        "Blockchain infrastructure is hard to present well. Too much jargon makes the site feel inaccessible; oversimplifying makes it feel like empty marketing. The challenge was Complex Blockchain Infrastructure → Clear Digital Experience → Real Network Tools — serving investors, developers, token holders, builders and everyday users without losing technical credibility.",
+      solution:
+        "I separated the platform into clear layers: vision and technology communication; network infrastructure and statistics; and direct access to functional ecosystem products (wallet, RPC, explorer, staking, DEX, faucet, status, grants). That kept the interface approachable while still supporting serious Web3 users, under a consistent futuristic dark visual identity.",
+      featureGroups: [
+        {
+          title: "Ecosystem products",
+          items: [
+            "Main website with protocol education and network metrics",
+            "Browser wallet and Safe / multisig wallet paths",
+            "Mainnet (Chain ID 824) and Testnet (Chain ID 825) RPC access",
+            "Testnet faucet (100 test DLY / 24h cooldown)",
+            "Blockscout-based Mainnet and Testnet explorers",
+            "Staking interface integrated into the product flow",
+            "Dedicated DEX entry point",
+            "Real-time status monitoring for RPCs, explorers, staking, wallet, faucet and docs",
+            "Ecosystem grant application workflow with DLY wallet addresses",
+            "Responsive desktop and mobile experience",
+          ],
+        },
+        {
+          title: "Protocol concepts presented",
+          items: [
+            "Lattice cryptography & CRYSTALS-Dilithium3 post-quantum layer",
+            "Zero-knowledge proofs",
+            "DAG / aBFT ledger model",
+            "Dynamic sharding",
+            "Quantum RNG",
+            "Daily Core architecture",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I owned development of the Daily Network digital ecosystem — translating complex blockchain infrastructure into a polished, approachable Web3 experience across frontend architecture, responsive UI/UX, wallet and RPC integration, network tooling, Mainnet/Testnet flows, explorers, developer utilities and production deployment.",
+      contributions: [
+        {
+          title: "Product & ecosystem architecture",
+          items: [
+            "Mapped audiences and structured the platform as interconnected products: Website → Wallet → RPC → Explorer → Staking → DEX → Faucet → Status → Ecosystem Funding.",
+          ],
+        },
+        {
+          title: "Web3-focused UI/UX",
+          items: [
+            "Built a dark, high-tech visual language emphasising infrastructure, security, performance and network technology — including interactive touches like initialization, network viewer and Genesis Block personality.",
+          ],
+        },
+        {
+          title: "Protocol & technology presentation",
+          items: [
+            "Structured sophisticated concepts (lattice crypto, ZK proofs, DAG, sharding, quantum RNG) into clear product sections without burying visitors in jargon.",
+          ],
+        },
+        {
+          title: "Blockchain wallet experience",
+          items: [
+            "Delivered Browser Wallet onboarding (create/import with recovery phrase or private key, keys in-browser) and Safe/multisig paths for teams (e.g. 2-of-3) with MetaMask integration.",
+          ],
+        },
+        {
+          title: "Mainnet & testnet infrastructure",
+          items: [
+            "Exposed clearly separated Mainnet (824) and Testnet (825) RPC workflows so developers can Build → Test → Inspect → Mainnet without mixing environments.",
+          ],
+        },
+        {
+          title: "Testnet faucet",
+          items: [
+            "Built faucet flow issuing 100 testnet DLY per request with 24-hour cooldown, explicitly separated from real-value assets.",
+          ],
+        },
+        {
+          title: "Explorer, staking & DEX",
+          items: [
+            "Integrated Blockscout explorers for both chains, connected staking into the main journey, and placed DEX access inside the branded ecosystem rather than as an unrelated external tool.",
+          ],
+        },
+        {
+          title: "Status dashboard & grants",
+          items: [
+            "Added real-time monitoring for major services plus a structured grant application flow (project, team, contact, DLY amount, wallet, docs) with a clear success state.",
+          ],
+        },
+        {
+          title: "Responsive experience",
+          items: [
+            "Designed navigation, content density, CTAs, tables, cards and forms for readable mobile Web3 use — not desktop-only crypto UI.",
+          ],
+        },
+      ],
+      highlights: [
+        "Built a production Web3/blockchain ecosystem connecting network infrastructure, wallet, staking, DEX, explorers, faucet and service monitoring.",
+        "Designed a futuristic technical UI that communicates advanced blockchain concepts without overwhelming non-technical users.",
+        "Integrated Daily Network Mainnet (Chain ID 824) and Testnet (Chain ID 825) workflows with dedicated RPC and developer tooling.",
+        "Created wallet onboarding for both individual browser-wallet users and Safe multisig team workflows.",
+        "Integrated Mainnet/Testnet explorers, test-token faucet and real-time infrastructure status monitoring.",
+        "Built an ecosystem-grant application flow connecting project submissions directly with DLY wallet addresses.",
+        "Delivered responsive Web3 UX across desktop and mobile while keeping a consistent identity across ecosystem apps.",
+      ],
+      skills: [
+        "Blockchain",
+        "Web3",
+        "Cryptocurrency",
+        "React",
+        "TypeScript",
+        "Solidity",
+        "EVM",
+        "Smart Contracts",
+        "JSON-RPC",
+        "Wallet Integration",
+        "MetaMask",
+        "Safe Multisig",
+        "Blockscout",
+        "Mainnet/Testnet",
+        "DEX",
+        "Staking",
+        "Web3 Security",
+        "Responsive UI/UX",
+        "API Integration",
+      ],
+      results:
+        "The platform became a complete entry point into Daily Network — protocol education, infrastructure, wallet onboarding, developer tooling, monitoring and ecosystem growth in one branded experience. Users can move from Discover Network → Understand Technology → Create Wallet → Connect Mainnet/Testnet → Explore Transactions → Test with Faucet → Stake → Access DEX → Build on the Network.",
     },
   },
   {
