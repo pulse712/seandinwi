@@ -108,11 +108,11 @@ export function SectionLabel({ children, className }: { children: React.ReactNod
 
 export function Portrait({ className }: { className?: string }) {
   return (
-    <figure className={cn("group relative", className)}>
+    <figure className={cn("group relative origin-top", className)}>
       <img
         src={headshot}
         alt={`${profile.name}, ${profile.role}`}
-        className="h-auto w-full object-contain transition-transform duration-700 group-hover:scale-[1.02]"
+        className="h-auto w-full origin-top scale-150 object-contain transition-transform duration-700 group-hover:scale-[1.55]"
         loading="eager"
       />
     </figure>
