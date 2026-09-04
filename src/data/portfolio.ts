@@ -28,7 +28,7 @@ export type ProjectCategory =
   | "Automation"
   | "Logo & Graphic Design"
   | "Video Editing"
-  | "Trading Algo / Forex / Meta"
+  | "Trading & Blockchain"
   | "Mobile Apps"
   | "Game Development";
 
@@ -120,7 +120,7 @@ export const projectCategories: Array<"All" | ProjectCategory> = [
   "Automation",
   "Logo & Graphic Design",
   "Video Editing",
-  "Trading Algo / Forex / Meta",
+  "Trading & Blockchain",
   "Mobile Apps",
   "Game Development",
 ];
@@ -2996,7 +2996,7 @@ export const projects: Project[] = [
   {
     slug: "signal-trader",
     title: "Trading Signal Desk",
-    category: "Trading Algo / Forex / Meta",
+    category: "Trading & Blockchain",
     summary:
       "Strategy dashboard with candlestick views, alert rules and MetaTrader-facing hooks for disciplined entries.",
     stack: ["Python", "MetaTrader", "Charts", "APIs"],

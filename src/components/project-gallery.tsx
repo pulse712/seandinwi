@@ -68,7 +68,7 @@ const filterIcons: Record<"All" | ProjectCategory, typeof LayoutGrid> = {
   Automation: Workflow,
   "Logo & Graphic Design": Palette,
   "Video Editing": Clapperboard,
-  "Trading Algo / Forex / Meta": LineChart,
+  "Trading & Blockchain": LineChart,
   "Mobile Apps": Smartphone,
   "Game Development": Gamepad2,
 };
