@@ -68,7 +68,8 @@ export type ProjectImageKey =
   | "kofi"
   | "fire"
   | "southerndiesel"
-  | "marquisvillage";
+  | "marquisvillage"
+  | "logocollection";
 
 export type ProjectDetail = {
   role: string;
@@ -1857,6 +1858,95 @@ export const projects: Project[] = [
       ],
       results:
         "A polished luxury residential brand toolkit — monogram, type and stationery — that presents Marquis Village as elevated, calm and print-ready.",
+    },
+  },
+  {
+    slug: "premium-logo-collection",
+    title: "Premium Logo Identity Collection",
+    category: "Logo & Graphic Design",
+    badge: "Logo Design · Brand Marks · Foil Mockups",
+    summary:
+      "A six-mark identity collection — Aviation 1903, Herzog Capital, Curated Dermatology, Keas & Edward, 525 and Wright Source Group — shown as foil and hangtag applications on textured print surfaces.",
+    stack: ["Logo Design", "Monograms", "Foil Mockups", "Typography"],
+    accent: "cyan",
+    image: "logocollection",
+    detail: {
+      role: "Logo / Brand Designer",
+      client: "Multi-brand identity collection — logos & print mockups",
+      stackFull: [
+        "Logo Design",
+        "Monogram & Wordmark Systems",
+        "Custom Typography",
+        "Foil / Emboss Presentation",
+        "Hangtag & Packaging Mockups",
+        "Luxury & Corporate Branding",
+      ],
+      overview:
+        "A curated set of six logo identities spanning aviation heritage, finance, clinical aesthetics, luxury fashion, artisanal apparel and industrial services. Each mark is designed for premium reproduction — gold and silver foil, embossed cardstock, gift boxes and fabric hangtags — so the brands feel tangible, not just digital.",
+      problem:
+        "Portfolio logos often look flat on white. Clients need to see how marks hold up as foil stamps, hangtags and packaging — and each category (finance vs. dermatology vs. fashion) needs a distinct voice without losing craft quality.",
+      solution:
+        "I designed six category-true identities and presented them in physical mockups: textured foils, black gift-box stamping and fabric tags. The grid shows range — from vintage aviation wings to clinical monograms to geometric industrial hex marks — while keeping a consistent premium finish language.",
+      featureGroups: [
+        {
+          title: "Identity set",
+          items: [
+            "Aviation 1903 — winged bar mark, gold foil on light textured card",
+            "Herzog Capital — script HC monogram + wordmark, silver on charcoal texture",
+            "Curated Dermatology & Aesthetics — interlocking C monogram, gold on cream card",
+            "Keas & Edward — crowned ampersand lockup, gold foil on matte black gift box",
+            "525 — intertwined numeric mark on artisanal hangtag with linen fabric",
+            "Wright Source Group — hexagonal segment mark, metallic ink on grommeted hangtag",
+          ],
+        },
+        {
+          title: "Craft & finish",
+          items: [
+            "Foil and emboss treatments for luxury stationery cues",
+            "Hangtag and packaging applications for soft-goods and industrial brands",
+            "Minimalist mark systems tuned to each sector’s tone",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I owned concept, mark design, typography and physical mockup presentation across the full six-brand set.",
+      contributions: [
+        {
+          title: "Category-fit marks",
+          items: [
+            "Built distinct logo languages for aviation, capital, aesthetics, fashion, apparel and industrial services.",
+          ],
+        },
+        {
+          title: "Monogram & type craft",
+          items: [
+            "Combined script monograms, geometric icons and refined wordmarks so each brand reads clearly at foil size.",
+          ],
+        },
+        {
+          title: "Application mockups",
+          items: [
+            "Presented marks on textured cards, gift boxes and hangtags to prove print-ready premium finishes.",
+          ],
+        },
+      ],
+      highlights: [
+        "Delivered a six-brand logo collection with foil and hangtag applications.",
+        "Covered luxury, clinical, corporate and artisanal sectors in one cohesive craft standard.",
+        "Showed how each mark performs as physical branding, not only a flat lockup.",
+      ],
+      skills: [
+        "Logo Design",
+        "Brand Identity",
+        "Monogram Design",
+        "Typography",
+        "Foil & Print Mockups",
+        "Hangtag Design",
+        "Luxury Branding",
+        "Corporate Identity",
+      ],
+      results:
+        "A premium multi-brand identity board that demonstrates logo range and print-ready craft — from gold foil stationery to artisanal and industrial hangtags.",
     },
   },
   {
