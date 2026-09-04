@@ -58,6 +58,7 @@
   --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-script: "Caveat", ui-sans-serif, cursive;
 }
 
 :root {
@@ -119,6 +120,22 @@
 
 @utility text-balance-tight {
   text-wrap: balance;
+}
+
+@utility text-gradient-signal {
+  background-image: linear-gradient(
+    120deg,
+    var(--primary) 0%,
+    color-mix(in oklab, var(--primary) 55%, var(--ember)) 45%,
+    var(--ember) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility font-script {
+  font-family: var(--font-script);
 }
 
 @layer base {

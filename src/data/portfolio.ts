@@ -102,7 +102,7 @@ export const projects: Project[] = [
   },
 ];
 
-export const services = [
+export const engagementShapes = [
   {
     title: "Product engineering",
     price: "From $7.5k / project",
@@ -122,6 +122,79 @@ export const services = [
     points: ["Performance profiling", "Security review", "Refactor roadmap"],
   },
 ];
+
+export type ServiceAccent = "cyan" | "lime" | "ember" | "violet" | "sky";
+
+export type ServiceOffering = {
+  slug: string;
+  title: string;
+  body: string;
+  tags: string[];
+  accent: ServiceAccent;
+  image: "web" | "automation" | "design" | "video" | "trading" | "mobile" | "game";
+};
+
+export const serviceCatalog: ServiceOffering[] = [
+  {
+    slug: "web-app-ecommerce",
+    title: "Web, App & Ecommerce Development",
+    body: "Responsive websites, web apps and online stores built to convert — from landing pages to full storefronts with payments and admin.",
+    tags: ["Web Development", "Shopify", "WordPress", "React"],
+    accent: "cyan",
+    image: "web",
+  },
+  {
+    slug: "automation",
+    title: "Automation",
+    body: "Workflows that remove busywork: integrations, bots, scheduled jobs and internal tools that keep your business moving while you sleep.",
+    tags: ["Zapier", "n8n", "APIs", "Scripts"],
+    accent: "lime",
+    image: "automation",
+  },
+  {
+    slug: "logo-graphic-art",
+    title: "Logo, Graphic & Art Design",
+    body: "Brand marks, marketing visuals and art direction that feel intentional — clear identity for products, campaigns and socials.",
+    tags: ["Logo Design", "Branding", "Illustrator", "Photoshop"],
+    accent: "ember",
+    image: "design",
+  },
+  {
+    slug: "video-editing",
+    title: "Video Editing",
+    body: "Crisp cuts for product demos, ads and social content — paced for attention, branded for consistency, delivered ready to publish.",
+    tags: ["Premiere", "After Effects", "Shorts", "Ads"],
+    accent: "violet",
+    image: "video",
+  },
+  {
+    slug: "trading-algorithms",
+    title: "Trading Algorithm, Forex & Meta",
+    body: "Strategy tooling and automation around markets: indicators, bots, dashboards and MetaTrader-facing systems with careful risk controls.",
+    tags: ["Forex", "MetaTrader", "Python", "APIs"],
+    accent: "sky",
+    image: "trading",
+  },
+  {
+    slug: "mobile-apps",
+    title: "Mobile Apps",
+    body: "Native-feeling iOS and Android apps with shared code where it helps — polished UI, solid backend hooks and store-ready builds.",
+    tags: ["iOS", "Android", "Flutter", "React Native"],
+    accent: "violet",
+    image: "mobile",
+  },
+  {
+    slug: "game-development",
+    title: "Game Development",
+    body: "Playable prototypes and shipped games across engines — systems, UI, performance tuning and packaging for the platforms you need.",
+    tags: ["Unity", "Godot", "C#", "Gameplay"],
+    accent: "cyan",
+    image: "game",
+  },
+];
+
+/** @deprecated Use engagementShapes — kept as alias for older imports */
+export const services = engagementShapes;
 
 export const skillGroups = [
   { label: "Frontend", items: ["React", "TypeScript", "TanStack", "Tailwind", "Motion", "Accessibility"] },
