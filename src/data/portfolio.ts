@@ -77,7 +77,8 @@ export type ProjectImageKey =
   | "lovebomb"
   | "flyerbrochure"
   | "flyerpostergrid"
-  | "blok";
+  | "blok"
+  | "murad";
 
 export type ProjectDetail = {
   role: string;
@@ -2662,6 +2663,101 @@ export const projects: Project[] = [
       ],
       results:
         "A live educational watch commerce site that helps parents understand and buy Blok — interactive demos, clear product lines and trust-backed checkout from $189.",
+    },
+  },
+  {
+    slug: "murad-realty",
+    title: "Murad Realty — Luxury LA Real Estate",
+    category: "Web Development",
+    badge: "Web · WordPress · Real Estate · Lead Capture",
+    summary:
+      "Built a luxury real estate site for Murad Realty — sold/active listings, neighborhood guides, home valuation, market reports, team profiles and lead capture for Los Angeles buyers and sellers.",
+    stack: ["WordPress", "Elementor", "Listings UX", "Lead Gen"],
+    accent: "violet",
+    image: "murad",
+    url: "https://muradrealty.com/",
+    detail: {
+      role: "Full-Stack / WordPress Developer",
+      client: "Murad Realty — Marisol Murad / Compass, Los Angeles",
+      liveUrl: "https://muradrealty.com/",
+      stackFull: [
+        "WordPress",
+        "Elementor",
+        "Custom Theme / Template Layouts",
+        "Property Listings Presentation",
+        "Neighborhood Guides",
+        "Home Valuation & Lead Forms",
+        "Market Reports / Mortgage Calculator",
+        "Testimonials & Press Modules",
+        "Responsive Luxury Brand UX",
+      ],
+      overview:
+        "Murad Realty is a boutique Los Angeles real estate brand led by Marisol Murad (Top 10 Compass Sunset Strip). The live site at muradrealty.com presents luxury sold properties (Beverly Hills, Westchester, Woodland Hills and more), active listings, neighborhood exploration (West Hollywood, Beverly Hills, Santa Monica), full service offerings, team bios, client testimonials, press and conversion paths for valuation and contact.",
+      problem:
+        "Luxury agents need more than a generic IDX dump. Clients expect editorial property storytelling, clear service depth (buyer/seller, luxury, short sales, foreclosures, investments) and easy ways to value a home or reach the team — while keeping a polished Compass-aligned brand.",
+      solution:
+        "I built a WordPress/Elementor marketing site centered on Marisol’s brand: hero CTAs for sold properties, valuation and contact; featured sold portfolio with beds/baths/sqft; services grid; team and testimonials; neighborhood hubs; and lead capture for off-market updates.",
+      featureGroups: [
+        {
+          title: "Site capabilities",
+          items: [
+            "Sold and active property presentation with key stats and sold prices",
+            "Neighborhood guides (West Hollywood, Beverly Hills, Santa Monica and more)",
+            "Home valuation and contact conversion paths",
+            "Market reports and mortgage calculator entry points",
+            "Services: buyer/seller representation, luxury sales, investments, relocation, property management, short sales, foreclosures, pricing strategy",
+            "Meet Marisol / Meet the Team profiles",
+            "Client testimonials carousel and press/media modules",
+            "Email lead capture for off-market and featured listings",
+            "Listing compare UI scaffolding",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I developed the WordPress real-estate marketing experience — listings storytelling, service architecture, neighborhood content and lead-generation flows for a luxury LA brokerage brand.",
+      contributions: [
+        {
+          title: "Listings & portfolio UX",
+          items: [
+            "Presented high-value sold properties with clear hierarchy so past results sell future listings.",
+          ],
+        },
+        {
+          title: "Service & brand storytelling",
+          items: [
+            "Structured comprehensive service offerings around Marisol’s hospitality-rooted luxury positioning.",
+          ],
+        },
+        {
+          title: "Local discovery",
+          items: [
+            "Built neighborhood and market-report paths so shoppers explore LA areas before contacting the team.",
+          ],
+        },
+        {
+          title: "Lead generation",
+          items: [
+            "Wired valuation, contact and newsletter capture so inquiry intents convert without friction.",
+          ],
+        },
+      ],
+      highlights: [
+        "Launched a production luxury real estate site at muradrealty.com.",
+        "Combined sold-property portfolio, neighborhoods and full-service offerings in one brand experience.",
+        "Supported lead capture for valuations, contact and off-market listing updates.",
+      ],
+      skills: [
+        "WordPress",
+        "Elementor",
+        "Real Estate Web Design",
+        "Lead Generation UX",
+        "Content Architecture",
+        "Responsive Design",
+        "Luxury Brand Presentation",
+        "Conversion Optimisation",
+      ],
+      results:
+        "A live LA luxury real estate marketing site that showcases Marisol Murad’s results, services and neighborhoods — with clear paths from discovery to valuation and contact.",
     },
   },
   {
