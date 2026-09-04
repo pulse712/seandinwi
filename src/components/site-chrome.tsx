@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { profile } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
-import headshot from "@/assets/sean-headshot.jpg";
+import headshot from "@/assets/sean-headshot.png";
 
 const nav = [
   { to: "/", label: "About" },
@@ -109,16 +109,12 @@ export function SectionLabel({ children, className }: { children: React.ReactNod
 export function Portrait({ className }: { className?: string }) {
   return (
     <figure className={cn("group relative", className)}>
-      <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-card">
-        <img
-          src={headshot}
-          alt={`${profile.name}, ${profile.role}`}
-          className="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.03]"
-          loading="eager"
-        />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
-      </div>
-      <div className="pointer-events-none absolute -inset-4 -z-10 rounded-[2.25rem] bg-primary/8 blur-3xl" />
+      <img
+        src={headshot}
+        alt={`${profile.name}, ${profile.role}`}
+        className="h-auto w-full object-contain transition-transform duration-700 group-hover:scale-[1.02]"
+        loading="eager"
+      />
     </figure>
   );
 }
