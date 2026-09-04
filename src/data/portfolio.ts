@@ -79,7 +79,8 @@ export type ProjectImageKey =
   | "blok"
   | "murad"
   | "newman"
-  | "carbide";
+  | "carbide"
+  | "languagecafe";
 
 export type ProjectDetail = {
   role: string;
@@ -2934,6 +2935,117 @@ export const projects: Project[] = [
       ],
       results:
         "A live B2B carbide and diamond tooling store that helps precision manufacturers shop, quote and source high-performance cutting tools across demanding industries.",
+    },
+  },
+  {
+    slug: "language-cafe",
+    title: "Language Cafe — Social Language Learning Platform",
+    category: "Mobile Apps",
+    categories: ["Mobile Apps", "Web & SaaS"],
+    badge: "iOS · Android · Web · EdTech · Social Learning",
+    summary:
+      "Built a multi-language social learning platform — live voice cafés, scheduled rooms, adaptive practice, reading library, AI feedback and communities across iOS, Android and web.",
+    stack: ["iOS", "Android", "Realtime Voice", "AI Learning"],
+    accent: "ember",
+    image: "languagecafe",
+    url: "https://www.languagescafe.com/",
+    detail: {
+      role: "Full-Stack / Mobile Product Engineer",
+      client: "Language Cafe — live social language-learning platform",
+      liveUrl: "https://www.languagescafe.com/",
+      appStoreUrl: "https://apps.apple.com/us/app/language-cafe-hub/id6762572618",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.languagescafe.app",
+      stackFull: [
+        "iOS (Language Cafe Hub)",
+        "Android (Language Cafe)",
+        "Web Marketing / Product Site",
+        "Realtime Voice Rooms",
+        "Scheduled Sessions & RSVPs",
+        "AI Writing / Speaking Feedback",
+        "AI Conversation Companion",
+        "Communities, Tandem Matching & Messaging",
+        "Premium Subscription & Ads",
+        "Moderation / Safety Tooling",
+      ],
+      overview:
+        "Language Cafe is a live social language-learning platform — not a single-language vocabulary app. Learners join or host realtime voice cafés, schedule topic rooms, practice speaking, play in-room games, follow an adaptive daily plan, read A1–C2 content, build a word bank, get AI feedback, chat with an AI companion, join communities, match for tandem practice and message peers — with profiles, goals, notifications, moderation and premium/ads monetisation across Android, iOS and web.",
+      problem:
+        "Solo flashcard apps rarely create speaking confidence. Pure chat exchanges lack structure, scheduling and study tools. Learners need one place that connects live conversation, self-study and community without locking the product to English-only.",
+      solution:
+        "I shaped Language Cafe as a multi-language social learning system: voice-first cafés and scheduled rooms for speaking, structured practice (reading, vocabulary, adaptive daily plans, AI feedback) for solo progress, and communities/tandem/DM for ongoing accountability — with safety controls and subscription monetisation for a live product.",
+      featureGroups: [
+        {
+          title: "Live practice & social",
+          items: [
+            "Live voice cafés — join or host realtime voice rooms",
+            "Scheduled rooms with topics, reminders and RSVPs",
+            "Speaking practice with other learners",
+            "Interactive games inside voice rooms",
+            "Communities for study groups, book clubs and language exchange",
+            "Tandem matching between learners",
+            "Direct messaging",
+            "Profiles and learning goals",
+            "Notifications and reminders",
+            "Moderation, blocking and reporting",
+          ],
+        },
+        {
+          title: "Study tools & AI",
+          items: [
+            "Adaptive daily practice plan based on performance",
+            "Reading library from A1 to C2",
+            "Vocabulary / word bank with review and quizzes",
+            "AI feedback for writing and speaking",
+            "AI conversation companion",
+            "Premium subscription and advertising",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I developed the multi-platform Language Cafe product experience — realtime social practice, structured learning tools, AI assistance and safety/monetisation for a live iOS, Android and web presence.",
+      contributions: [
+        {
+          title: "Realtime voice social layer",
+          items: [
+            "Built join/host café flows, scheduled rooms and in-room practice modes so speaking stays central.",
+          ],
+        },
+        {
+          title: "Structured multi-language learning",
+          items: [
+            "Connected adaptive daily plans, A1–C2 reading and vocabulary review so progress continues outside live rooms.",
+          ],
+        },
+        {
+          title: "AI & community systems",
+          items: [
+            "Integrated AI writing/speaking feedback and companion chat alongside communities, tandem matching and DMs.",
+          ],
+        },
+        {
+          title: "Safety & monetisation",
+          items: [
+            "Supported moderation/blocking/reporting plus premium subscription and advertising for a production marketplace.",
+          ],
+        },
+      ],
+      highlights: [
+        "Shipped a live multi-language social learning platform on web, Android and iOS (Language Cafe Hub).",
+        "Combined realtime voice cafés with adaptive study tools, AI feedback and community features.",
+        "Positioned the product beyond English-only vocab apps — speaking, study and social in one system.",
+      ],
+      skills: [
+        "Mobile App Development",
+        "Realtime Voice / Social UX",
+        "EdTech Product Design",
+        "AI Feature Integration",
+        "Community & Messaging Systems",
+        "Subscription Monetisation",
+        "Trust & Safety",
+        "Cross-Platform Delivery",
+      ],
+      results:
+        "A live social language-learning platform at languagescafe.com with Android and iOS apps — helping learners practice multiple languages through voice cafés, structured study, AI support and community.",
     },
   },
   {
