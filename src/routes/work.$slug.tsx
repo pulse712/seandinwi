@@ -98,7 +98,10 @@ function ProjectDetailPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-primary-foreground transition-transform hover:-translate-y-0.5"
             >
-              Visit live site <ExternalLink className="size-3.5" />
+              {detail.liveUrl.includes("freelancer.com")
+                ? "View Freelancer listing"
+                : "Visit live site"}{" "}
+              <ExternalLink className="size-3.5" />
             </a>
           )}
           {detail.appStoreUrl && (

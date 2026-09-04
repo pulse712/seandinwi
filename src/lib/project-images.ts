@@ -40,6 +40,7 @@ import imgNewman from "@/assets/projects/project-newman.png";
 import imgCarbide from "@/assets/projects/project-carbide.png";
 import imgLanguageCafe from "@/assets/projects/project-language-cafe.png";
 import imgCirkus from "@/assets/projects/project-cirkus.png";
+import imgRingForensic from "@/assets/projects/project-ring-forensic.png";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -85,4 +86,5 @@ export const projectImages: Record<ProjectImageKey, string> = {
   carbide: imgCarbide,
   languagecafe: imgLanguageCafe,
   cirkus: imgCirkus,
+  ringforensic: imgRingForensic,
 };

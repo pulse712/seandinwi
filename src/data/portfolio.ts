@@ -81,7 +81,8 @@ export type ProjectImageKey =
   | "newman"
   | "carbide"
   | "languagecafe"
-  | "cirkus";
+  | "cirkus"
+  | "ringforensic";
 
 export type ProjectDetail = {
   role: string;
@@ -3161,10 +3162,13 @@ export const projects: Project[] = [
       "Independent forensic examination of a ~21-second Ring doorbell recording — focused on the first 8 seconds — to assess whether an object is reliably observable in the person’s left hand, and what size, colour or shape can (or cannot) be established with certainty.",
     stack: ["Forensic Review", "Frame Analysis", "Evidence Report", "Ring Video"],
     accent: "violet",
-    image: "video",
+    image: "ringforensic",
+    url: "https://www.freelancer.com/projects/image-processing/Video-Analysis-Ring-Doorbell-Footage/proposals",
     detail: {
       role: "Forensic Video Examiner / Independent Analyst",
       client: "Confidential — Ring doorbell footage examination (quote / engagement)",
+      liveUrl:
+        "https://www.freelancer.com/projects/image-processing/Video-Analysis-Ring-Doorbell-Footage/proposals",
       stackFull: [
         "Forensic Video Examination",
         "Frame-by-Frame Review",
