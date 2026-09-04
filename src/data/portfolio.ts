@@ -2574,8 +2574,8 @@ export const projects: Project[] = [
   {
     slug: "blok-watches",
     title: "Blok Watches — Kids' Analog Time Store",
-    category: "Web Development",
-    badge: "Web · WordPress · Product Storytelling · Interactive UX",
+    category: "eCommerce",
+    badge: "eCommerce · WordPress · Product Storytelling · Interactive UX",
     summary:
       "Built a WordPress storefront for Blok — Swiss-powered analog kids' watches with interactive dial demos, BLOK 33 / 38 merchandising, bundles, straps and education-led product storytelling.",
     stack: ["WordPress", "Custom JS", "Product UX", "Merchandising"],
@@ -2669,8 +2669,8 @@ export const projects: Project[] = [
   {
     slug: "murad-realty",
     title: "Murad Realty — Luxury LA Real Estate",
-    category: "Web Development",
-    badge: "Web · WordPress · Real Estate · Lead Capture",
+    category: "eCommerce",
+    badge: "eCommerce · WordPress · Real Estate · Lead Capture",
     summary:
       "Built a luxury real estate site for Murad Realty — sold/active listings, neighborhood guides, home valuation, market reports, team profiles and lead capture for Los Angeles buyers and sellers.",
     stack: ["WordPress", "Elementor", "Listings UX", "Lead Gen"],
