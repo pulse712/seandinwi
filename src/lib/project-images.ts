@@ -28,6 +28,7 @@ import imgSouthernDiesel from "@/assets/projects/project-southern-diesel.png";
 import imgMarquisVillage from "@/assets/projects/project-marquis-village.png";
 import imgLogoCollection from "@/assets/projects/project-logo-collection.png";
 import imgLogoCollection2 from "@/assets/projects/project-logo-collection-2.png";
+import imgAestheticsBeaverton from "@/assets/projects/project-aesthetics-beaverton.png";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -61,4 +62,5 @@ export const projectImages: Record<ProjectImageKey, string> = {
   marquisvillage: imgMarquisVillage,
   logocollection: imgLogoCollection,
   logocollection2: imgLogoCollection2,
+  aestheticsbeaverton: imgAestheticsBeaverton,
 };

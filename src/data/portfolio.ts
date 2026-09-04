@@ -70,7 +70,8 @@ export type ProjectImageKey =
   | "southerndiesel"
   | "marquisvillage"
   | "logocollection"
-  | "logocollection2";
+  | "logocollection2"
+  | "aestheticsbeaverton";
 
 export type ProjectDetail = {
   role: string;
@@ -2038,6 +2039,93 @@ export const projects: Project[] = [
       ],
       results:
         "A versatile identity applications board that proves logos in the contexts clients care about — stationery, tags, cards and merch.",
+    },
+  },
+  {
+    slug: "aesthetics-beaverton",
+    title: "Aesthetics Beaverton — Brand Identity",
+    category: "Logo & Graphic Design",
+    badge: "Brand Identity · Monogram · Stationery · Signage",
+    summary:
+      "Elegant AB monogram with botanical accent for Aesthetics Beaverton — navy primary lockup, gold-foil black business cards and a backlit lavender exterior sign mockup.",
+    stack: ["Logo Design", "Monogram", "Stationery", "Signage"],
+    accent: "violet",
+    image: "aestheticsbeaverton",
+    detail: {
+      role: "Brand / Graphic Designer",
+      client: "Aesthetics Beaverton — aesthetics / beauty studio identity",
+      stackFull: [
+        "Logo Design",
+        "Script Monogram",
+        "Brand Identity System",
+        "Typography Direction",
+        "Business Card / Stationery Design",
+        "Exterior Signage Mockup",
+        "Foil & Colour Application",
+      ],
+      overview:
+        "Aesthetics Beaverton needed a calm, premium clinic identity. I designed an intertwined AB script monogram with a delicate leaf branch, paired with serif AESTHETICS / BEAVERTON typography in deep navy — then applied the system to matte black gold-foil business cards and a glowing lavender hanging sign on a brick facade.",
+      problem:
+        "Aesthetics brands often default to generic script logos that don’t travel from card to storefront. The mark needed to feel soft and botanical without losing legibility as a foil monogram or illuminated sign.",
+      solution:
+        "I built a monogram-first system: AB as the hero for cards and signage, with a restrained serif wordmark for full lockups. Colour shifts by surface — navy on white for brand sheets, gold on black for stationery, warm gold glow on lavender for night signage — while keeping the same mark structure.",
+      featureGroups: [
+        {
+          title: "Core identity",
+          items: [
+            "Intertwined AB script monogram with botanical leaf accent",
+            "Serif AESTHETICS wordmark with tracked BEAVERTON subline",
+            "Primary navy-on-white brand lockup",
+          ],
+        },
+        {
+          title: "Applications",
+          items: [
+            "Matte black business cards with metallic gold/copper foil monogram and full name",
+            "Premium card stack presentation in dark packaging",
+            "Backlit lavender exterior hanging sign with illuminated gold logo on brick facade",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I owned the monogram concept, typography, colour applications and mockups for stationery and exterior signage.",
+      contributions: [
+        {
+          title: "Monogram craft",
+          items: [
+            "Designed a soft AB lockup with a leaf detail that feels clinical-elegant without clutter.",
+          ],
+        },
+        {
+          title: "Typography system",
+          items: [
+            "Set serif hierarchy so location and category read clearly under the monogram at print and sign scale.",
+          ],
+        },
+        {
+          title: "Touchpoint mockups",
+          items: [
+            "Applied the identity to foil business cards and a dusk storefront sign so stakeholders see day-to-day brand use.",
+          ],
+        },
+      ],
+      highlights: [
+        "Delivered a complete Aesthetics Beaverton identity: monogram, type, cards and signage.",
+        "Balanced botanical softness with premium foil and illuminated sign applications.",
+        "Kept one mark consistent across navy brand sheets, black stationery and lavender outdoor light.",
+      ],
+      skills: [
+        "Logo Design",
+        "Brand Identity",
+        "Monogram Design",
+        "Typography",
+        "Stationery Design",
+        "Signage Design",
+        "Luxury Branding",
+        "Aesthetics / Beauty Identity",
+      ],
+      results:
+        "A refined aesthetics studio brand system — monogram, stationery and signage — that feels calm, premium and ready for print and storefront use.",
     },
   },
   {
