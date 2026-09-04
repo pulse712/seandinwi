@@ -5,7 +5,7 @@
 
 export const profile = {
   name: "Sean",
-  fullName: "Sean Dinwiddie",
+  fullName: "Sean Tech Solutions",
   role: "Freelance Full-Stack Developer",
   location: "Oregon, USA — working remotely (PT)",
   tagline: "I design, build and ship production web products end to end.",
