@@ -63,7 +63,8 @@ export type ProjectImageKey =
   | "swipr"
   | "wrpelevation"
   | "doyobest"
-  | "joymade";
+  | "joymade"
+  | "mariegems";
 
 export type ProjectDetail = {
   role: string;
@@ -1391,6 +1392,101 @@ export const projects: Project[] = [
       ],
       results:
         "A live personalized-gifts commerce platform that helps shoppers find custom presents by person and occasion — with promotions, international markets and a polished Shopify checkout experience.",
+    },
+  },
+  {
+    slug: "marie-gems",
+    title: "Marie Gems — Ready-to-Press DTF Transfers",
+    category: "eCommerce",
+    badge: "eCommerce · Shopify · DTF · Custom Uploads",
+    summary:
+      "Built a Shopify storefront for ready-to-press DTF transfers — individual sizes, curated bundles and custom artwork uploads — so makers can shop designs without building gang sheets.",
+    stack: ["Shopify", "Liquid", "Product UX", "Custom Upload"],
+    accent: "violet",
+    image: "mariegems",
+    url: "https://mariegems.com/",
+    detail: {
+      role: "Full-Stack / Shopify Developer",
+      client: "Marie Gems — Wichita, KS DTF transfer shop (500+ orders shipped)",
+      liveUrl: "https://mariegems.com/",
+      stackFull: [
+        "Shopify",
+        "Liquid / Theme Customisation",
+        "Responsive Storefront UX",
+        "Catalog & Bundle Merchandising",
+        "Custom Design Upload Flow",
+        "Guides (Size / Pressing)",
+        "FAQ & Trust Content",
+        "Contact / Custom Request Forms",
+      ],
+      overview:
+        "Marie Gems is a live Shopify storefront selling physical ready-to-press DTF transfers from a small studio in Wichita, KS. Shoppers browse seasonal and niche design catalogs, pick sizes (4\"–12\"), order singles or curated 5-design bundles, or upload their own artwork — without creating gang sheets. The site educates with a clear three-step flow (pick → ship → press), pressing specs (320°F / 15s / cold peel), FAQs, reviews and custom-request support.",
+      problem:
+        "Many DTF shops push gang-sheet workflows that intimidate casual makers and one-off order sellers. Buyers need individual transfers, clear sizing, fast education on how to press, and an easy path for custom artwork — not a warehouse-style file dump.",
+      solution:
+        "I structured the storefront around individual ready-to-press transfers: catalog shopping by theme, size selection without gang sheets, bundle pricing for restockers, custom upload, educational guides, and conversion content that proves the product is a physical transfer — not a digital download.",
+      featureGroups: [
+        {
+          title: "Storefront capabilities",
+          items: [
+            "Ready-to-press DTF catalog (holidays, seasons, school, sports, faith, humor and more)",
+            "Individual transfer sizes: 4\", 6\", 8\", 10\", 12\"",
+            "No gang sheet required for singles",
+            "Curated 5-design bundles priced for shop restocks",
+            "Custom upload for customer artwork",
+            "How-it-works education and pressing instructions",
+            "Size guide and pressing guide content",
+            "Customer reviews and FAQs",
+            "Custom design / order question contact flow",
+            "Local Wichita studio brand positioning with fast shipping messaging",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I worked on the Shopify commerce experience — product discovery, education-led conversion, bundle merchandising and custom-upload pathways for a specialty DTF brand.",
+      contributions: [
+        {
+          title: "Product discovery UX",
+          items: [
+            "Organised catalog and weekly featured designs so makers can find niche transfers quickly and buy by size.",
+          ],
+        },
+        {
+          title: "Education-led conversion",
+          items: [
+            "Built clear pick → ship → press storytelling with temperature/time/peel specs so first-time buyers understand the product.",
+          ],
+        },
+        {
+          title: "Bundles & custom uploads",
+          items: [
+            "Supported single vs bundle pricing paths plus custom artwork upload for print-ready customer designs.",
+          ],
+        },
+        {
+          title: "Trust & support content",
+          items: [
+            "Integrated guides, FAQs, reviews and a custom-request form with one-business-day response expectations.",
+          ],
+        },
+      ],
+      highlights: [
+        "Launched a production Shopify DTF storefront focused on individual transfers instead of gang sheets.",
+        "Combined catalog shopping, curated bundles and custom uploads in one maker-friendly flow.",
+        "Used education, pressing specs and reviews to reduce first-order friction for heat-press users.",
+      ],
+      skills: [
+        "Shopify",
+        "Liquid",
+        "eCommerce UX",
+        "Specialty Product Merchandising",
+        "Custom Upload Flows",
+        "Content-led Conversion",
+        "Theme Customisation",
+        "Maker / Craft Commerce",
+      ],
+      results:
+        "A live specialty commerce site at mariegems.com helping makers order ready-to-press DTF transfers by design and size — with bundles, custom uploads and clear pressing guidance from a small Wichita studio.",
     },
   },
   {
