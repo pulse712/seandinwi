@@ -28,12 +28,12 @@ function Mark({ children }: { children: ReactNode }) {
 function Home() {
   return (
     <section className="relative">
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <img
-          src={brandBg}
-          alt=""
-          className="absolute left-1/2 top-8 h-[min(70vh,40rem)] w-auto max-w-none -translate-x-1/2 object-contain opacity-[0.22] sm:top-12 sm:h-[min(75vh,48rem)] sm:opacity-[0.28]"
-        />
+      <img
+        src={brandBg}
+        alt=""
+        className="pointer-events-none fixed top-20 left-[36%] z-0 h-[min(70vh,40rem)] w-auto max-w-none -translate-x-1/2 object-contain opacity-[0.22] sm:top-24 sm:left-[38%] sm:h-[min(75vh,48rem)] sm:opacity-[0.28]"
+      />
+      <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/75 to-background" />
         <div className="absolute inset-0 grid-field opacity-25" />
         <div
@@ -41,7 +41,7 @@ function Home() {
           style={{ background: "radial-gradient(circle, var(--primary), transparent 65%)" }}
         />
       </div>
-      <div className="relative mx-auto grid max-w-6xl gap-10 px-5 pt-16 pb-24 sm:px-8 sm:pt-24 sm:pb-32 lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-16">
+      <div className="relative z-10 mx-auto grid max-w-6xl gap-10 px-5 pt-16 pb-24 sm:px-8 sm:pt-24 sm:pb-32 lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-16">
         <div className="order-first mx-auto w-full max-w-[240px] lg:order-last lg:mx-0 lg:h-full lg:max-w-none">
           <div className="lg:sticky lg:top-[calc(4rem+6rem)]">
             <Portrait className="w-full" />
