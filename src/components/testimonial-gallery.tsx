@@ -35,20 +35,34 @@ function CountryFlag({ code, country }: { code: string; country: string }) {
 }
 
 export function TestimonialGallery() {
+  const loop = [...testimonials, ...testimonials];
+
   return (
-    <section className="relative z-10 mx-auto max-w-6xl px-5 pb-16 sm:px-8 sm:pb-20">
-      <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-        {testimonials.map((item) => (
-          <TestimonialCard key={item.id} item={item} />
-        ))}
+    <section className="relative z-10 pb-16 sm:pb-20" aria-label="Client testimonials slideshow">
+      <div className="overflow-hidden">
+        <div className="animate-marquee-rtl flex w-max gap-5 py-2 hover:[animation-play-state:paused]">
+          {loop.map((item, index) => (
+            <TestimonialCard
+              key={`${item.id}-${index}`}
+              item={item}
+              ariaHidden={index >= testimonials.length}
+            />
+          ))}
+        </div>
       </div>
+      <p className="mt-4 text-center font-mono text-[10px] uppercase tracking-[0.16em] text-muted-foreground">
+        Hover to pause
+      </p>
     </section>
   );
 }
 
-function TestimonialCard({ item }: { item: Testimonial }) {
+function TestimonialCard({ item, ariaHidden }: { item: Testimonial; ariaHidden?: boolean }) {
   return (
-    <article className="flex h-full flex-col rounded-2xl border border-border bg-card p-6 transition-transform duration-300 hover:-translate-y-1">
+    <article
+      aria-hidden={ariaHidden || undefined}
+      className="flex h-full w-[min(85vw,22rem)] shrink-0 flex-col rounded-2xl border border-border bg-card p-6 sm:w-[24rem]"
+    >
       <div className="flex items-start justify-between gap-3">
         <Quote className="size-8 text-primary/80" />
         <div className="flex items-center gap-0.5" aria-label={`${item.rating} out of 5 stars`}>
