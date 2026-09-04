@@ -33,6 +33,7 @@ import imgGalloperWorld from "@/assets/projects/project-galloper-world.png";
 import imgCastleSoap from "@/assets/projects/project-castle-soap.png";
 import imgLovebomb from "@/assets/projects/project-lovebomb.png";
 import imgFlyerBrochure from "@/assets/projects/project-flyer-brochure.png";
+import imgFlyerPosterGrid from "@/assets/projects/project-flyer-poster-grid.png";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -71,4 +72,5 @@ export const projectImages: Record<ProjectImageKey, string> = {
   castlesoap: imgCastleSoap,
   lovebomb: imgLovebomb,
   flyerbrochure: imgFlyerBrochure,
+  flyerpostergrid: imgFlyerPosterGrid,
 };

@@ -75,7 +75,8 @@ export type ProjectImageKey =
   | "galloperworld"
   | "castlesoap"
   | "lovebomb"
-  | "flyerbrochure";
+  | "flyerbrochure"
+  | "flyerpostergrid";
 
 export type ProjectDetail = {
   role: string;
@@ -2475,6 +2476,96 @@ export const projects: Project[] = [
       ],
       results:
         "A versatile flyer portfolio that shows print marketing range — retail promo, restaurant opening and bar event — with clear offers and scan-ready CTAs.",
+    },
+  },
+  {
+    slug: "multi-industry-flyers",
+    title: "Multi-Industry Flyer & Poster Set",
+    category: "Logo & Graphic Design",
+    badge: "Print Design · Events · Corporate · Lifestyle",
+    summary:
+      "A large isometric board of event and marketing flyers — singles mixers, tropical parties, cannabis & cars, wellness, air quality, insurance and cafe ownership promos.",
+    stack: ["Flyer Design", "Event Posters", "Promo Layout", "Typography"],
+    accent: "violet",
+    image: "flyerpostergrid",
+    detail: {
+      role: "Print / Graphic Designer",
+      client: "Multi-industry flyer & poster marketing set",
+      stackFull: [
+        "Flyer & Poster Design",
+        "Event Marketing Layout",
+        "Corporate Promo Design",
+        "Typography & Colour Systems",
+        "Photo-Led Composition",
+        "Call-to-Action Hierarchy",
+        "Multi-Industry Branding",
+      ],
+      overview:
+        "A gallery-style set of 10+ portrait flyers spanning nightlife and social events, lifestyle promotions and professional services. Pieces include Mix & Mingle singles nights, Island Breeze Hawaiian parties, Cannabis & Cars Classic, neon birthday/club promos, Purium wellness, indoor air quality, family protection insurance, cafe ownership opportunities and Drive-Thru PR — each with its own palette and hierarchy.",
+      problem:
+        "Agencies and freelancers need proof of range: the same designer must switch from gold-elegant mixer nights to tropical parties, technical service flyers and corporate opportunity sheets without making every piece look like one template.",
+      solution:
+        "I designed industry-true flyers with distinct colour systems, typography energy and photo treatments — then presented them as an isometric grid so the volume and variety read at a glance for portfolio and client review.",
+      featureGroups: [
+        {
+          title: "Event & social",
+          items: [
+            "Mix & Mingle — singles night with warm dark gold elegance",
+            "Island Breeze Hawaiian — tropical shirts & flip flops edition",
+            "Cannabis & Cars Classic — vintage car + leaf motif promo",
+            "Glowing on 13 — neon purple/pink nightlife / birthday energy",
+            "Drive-Thru PR — street-art purple/pink event graphics",
+          ],
+        },
+        {
+          title: "Services & lifestyle",
+          items: [
+            "Indoor air quality — clean blue technical product flyer",
+            "Family protection — corporate insurance / legal-style family promo",
+            "Cafe or tea shop ownership — structured opportunity grid",
+            "Awakening Champions / Purium — sunset wellness lifestyle flyer",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I owned concept, layout, typography and promo hierarchy across the full multi-industry flyer board.",
+      contributions: [
+        {
+          title: "Range without sameness",
+          items: [
+            "Gave each flyer a sector-true voice — neon events, tropical parties, calm corporate blues and wellness sunsets.",
+          ],
+        },
+        {
+          title: "Print hierarchy",
+          items: [
+            "Kept headlines, dates, offers and CTAs scannable across busy event layouts and quieter service sheets.",
+          ],
+        },
+        {
+          title: "Portfolio presentation",
+          items: [
+            "Composed an isometric grid so clients see volume, craft and industry coverage in one board.",
+          ],
+        },
+      ],
+      highlights: [
+        "Delivered a large multi-industry flyer/poster set covering events, wellness and professional services.",
+        "Demonstrated rapid style switching without collapsing into one template look.",
+        "Presented the collection as a gallery grid for strong portfolio impact.",
+      ],
+      skills: [
+        "Flyer Design",
+        "Poster Design",
+        "Event Marketing",
+        "Corporate Promo Design",
+        "Typography",
+        "Colour Direction",
+        "Photo Layout",
+        "Print Marketing",
+      ],
+      results:
+        "A high-volume flyer portfolio that proves marketing design range — from nightlife and tropical events to air quality, insurance and wellness promotions.",
     },
   },
   {
