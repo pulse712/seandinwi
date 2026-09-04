@@ -22,7 +22,7 @@ export function SiteHeader() {
             <img
               src={headshot}
               alt=""
-              className="size-full object-cover object-[center_20%]"
+              className="size-full object-cover object-center"
             />
           </span>
           <span className="font-display text-sm font-semibold tracking-tight">
@@ -113,7 +113,7 @@ export function Portrait({ className }: { className?: string }) {
         <img
           src={headshot}
           alt={`${profile.name}, ${profile.role}`}
-          className="h-full w-full object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-[1.03]"
+          className="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.03]"
           loading="eager"
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
