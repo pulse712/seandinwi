@@ -74,7 +74,8 @@ export type Project = {
     | "mobile"
     | "game"
     | "patmyback"
-    | "chocolatewood";
+    | "chocolatewood"
+    | "artbynumber";
   url?: string;
   detail?: ProjectDetail;
 };
@@ -378,6 +379,134 @@ export const projects: Project[] = [
       ],
       results:
         "The finished product is a live production eCommerce platform supporting Chocolate Wood’s ongoing retail operations and extensive furniture catalogue — easier navigation, stronger premium presentation, and a consistent journey across desktop, mobile, checkout, custom furniture discovery, and in-person product viewing.",
+    },
+  },
+  {
+    slug: "art-by-number",
+    title: "Art by Number Generator",
+    category: "App Development",
+    badge: "Creative Tool · Image Processing · Web Application",
+    summary:
+      "Built the beta of a web-based tool that converts uploaded photographs into printable paint-by-number artwork using automated colour reduction, numbered palettes, grid-based processing and scalable SVG generation.",
+    stack: ["TypeScript", "React", "Canvas API", "SVG"],
+    accent: "violet",
+    image: "artbynumber",
+    url: "https://art-by-number-gen.lovable.app",
+    detail: {
+      role: "Full-Stack Developer / Product Engineer",
+      client: "Art by Number Generator — Beta / Initial Release",
+      liveUrl: "https://art-by-number-gen.lovable.app",
+      stackFull: [
+        "React / TanStack Start",
+        "TypeScript",
+        "Tailwind CSS",
+        "HTML5 Canvas API",
+        "SVG",
+        "Browser File API / FileReader",
+        "Blob / Object URL APIs",
+        "Lovable",
+      ],
+      overview:
+        "Art by Number Generator is a browser-based creative application that transforms ordinary photographs into structured paint-by-number artwork. Users upload an image, choose a grid layout, process the image into simplified colour regions, assign numbered colours, and export a printable SVG template. The beta was designed around one clear objective: make the process extremely simple for non-technical users — start with a normal JPG or PNG and create a paint-by-number template directly in the browser, without Photoshop or specialist tools. The live beta supports image upload, grid selection, generation controls and a numbered palette of up to 25 colours.",
+      problem:
+        "Turning a photograph into paint-by-number artwork requires reducing hundreds of thousands of colours, gradients, shadows and tiny regions into something paintable. Too much simplification loses detail; too little produces hundreds of regions nobody can paint. The core challenge was balancing image detail, number of regions, colour count and print readability — while keeping the user journey as simple as Upload → Select Layout → Generate → Review Colours → Export.",
+      solution:
+        "I structured the beta around a minimal decision set and put the hard visual-processing work behind the interface: validate and pre-process uploads, reduce colours via quantisation into a numbered palette (01–25), segment with a user-selected grid layout, map numbers onto regions, and generate resolution-independent SVG for clean printing. Client-side image processing keeps the loop fast and validates the workflow before investing in advanced editing features.",
+      featureGroups: [
+        {
+          title: "Beta capabilities",
+          items: [
+            "Upload JPG and PNG images (up to 20 MB)",
+            "Validate file type, size and dimensions (min 40 × 60 px)",
+            "Grid / layout selection before generation",
+            "Colour reduction into a numbered palette (up to 25 colours)",
+            "Paintable region generation from the processed image",
+            "Printable SVG template download",
+            "Simple Upload → Generate → Download workflow",
+            "Foundation for future advanced image-processing options",
+          ],
+        },
+        {
+          title: "Technical challenges addressed",
+          items: [
+            "Colour simplification while keeping recognisable structure",
+            "Region readability for actual painting",
+            "Performance with large photographs",
+            "Vector conversion suitable for clean printing",
+            "Deterministic number-to-colour mapping",
+            "Hiding processing complexity from casual users",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I converted the client concept into a minimal user journey and built the full processing pipeline behind a deliberately simple beta UI.",
+      contributions: [
+        {
+          title: "Requirements & user flow",
+          items: [
+            "Structured the beta around Upload → Choose grid → Generate → Review palette → Export, keeping complex settings out of the first release.",
+          ],
+        },
+        {
+          title: "Image upload pipeline",
+          items: [
+            "Browser-friendly upload with format, size, dimension and empty-state validation, plus clear loading/generation states to prevent later pipeline failures.",
+          ],
+        },
+        {
+          title: "Image pre-processing",
+          items: [
+            "Normalised large photographs by reading dimensions, calculating working resolution, resampling, extracting RGB data and reducing noise before conversion.",
+          ],
+        },
+        {
+          title: "Colour reduction / quantisation",
+          items: [
+            "Clustered similar RGB shades into a practical numbered paint palette (01–25) instead of treating every slight colour difference as unique.",
+          ],
+        },
+        {
+          title: "Grid & artwork segmentation",
+          items: [
+            "Exposed a Grid Layout selector so users trade off larger easier regions vs finer detail that better resembles the original photo.",
+          ],
+        },
+        {
+          title: "Number mapping",
+          items: [
+            "Mapped each palette colour to an identifier and placed those numbers into corresponding artwork regions — Canvas Region → Colour Number → Palette Colour.",
+          ],
+        },
+        {
+          title: "SVG generation",
+          items: [
+            "Chose SVG over raster export for resolution-independent outlines, scalable templates, smaller vector files and high-quality multi-size printing.",
+          ],
+        },
+        {
+          title: "Beta UI/UX",
+          items: [
+            "Kept the main screen focused on Image Upload, Grid Layout, Generate and Palette so users can produce a first result with almost no friction.",
+          ],
+        },
+      ],
+      highlights: [
+        "Built the complete browser-based paint-by-number pipeline: validation, grid conversion, colour reduction, palette mapping, numbered artwork and vector export.",
+        "Kept the UX to a simple Upload → Generate → Download flow while handling complex image processing behind the scenes.",
+        "Established a technical foundation for a larger creative platform (adjustable colours, editing tools, print presets, accounts) without redesigning from scratch.",
+      ],
+      skills: [
+        "TypeScript",
+        "React / TanStack Start",
+        "Tailwind CSS",
+        "HTML5 Canvas",
+        "SVG",
+        "Browser File APIs",
+        "Image Processing",
+        "Lovable",
+      ],
+      results:
+        "The beta transforms photos into numbered paint-by-number artwork with a printable SVG output and a clear end-to-end workflow — validating the core idea with real users before expanding into a larger creative platform.",
     },
   },
   {
