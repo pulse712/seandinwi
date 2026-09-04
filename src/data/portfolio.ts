@@ -71,7 +71,8 @@ export type ProjectImageKey =
   | "marquisvillage"
   | "logocollection"
   | "logocollection2"
-  | "aestheticsbeaverton";
+  | "aestheticsbeaverton"
+  | "galloperworld";
 
 export type ProjectDetail = {
   role: string;
@@ -2126,6 +2127,91 @@ export const projects: Project[] = [
       ],
       results:
         "A refined aesthetics studio brand system — monogram, stationery and signage — that feels calm, premium and ready for print and storefront use.",
+    },
+  },
+  {
+    slug: "galloper-world",
+    title: "Galloper World — Brand Identity",
+    category: "Logo & Graphic Design",
+    badge: "Brand Identity · Logo · Signage · Colourways",
+    summary:
+      "Minimal geometric mark and two-tone wordmark for Galloper World — gold icon with charcoal/black type, shown on a storefront blade sign plus light and dark logo colourways.",
+    stack: ["Logo Design", "Wordmark", "Signage", "Brand Colourways"],
+    accent: "ember",
+    image: "galloperworld",
+    detail: {
+      role: "Brand / Graphic Designer",
+      client: "Galloper World — brand identity & signage",
+      stackFull: [
+        "Logo Design",
+        "Geometric Mark Development",
+        "Typography & Wordmark Hierarchy",
+        "Brand Colour System",
+        "Exterior Signage Mockup",
+        "Light / Dark Logo Colourways",
+      ],
+      overview:
+        "Galloper World needed a clean, premium identity that reads at storefront scale. I designed a gold geometric mark (interlocking GW / W silhouette) paired with a modern all-caps wordmark — GALLOPER in charcoal, WORLD in bold black — then proved the system on a white blade sign against stone, plus white and black logo sheets.",
+      problem:
+        "Corporate lifestyle brands often get either too ornate or too generic. The mark needed to stay sharp as a hanging sign while holding contrast on both light and dark backgrounds without redesigning the lockup.",
+      solution:
+        "I built a simple gold + charcoal/black system: one geometric icon, one two-weight wordmark, and dual colourways (dark type on white, white type on black with gold mark retained) so the brand stays consistent indoors and on the street.",
+      featureGroups: [
+        {
+          title: "Core identity",
+          items: [
+            "Geometric interlocking mark in mustard gold",
+            "All-caps sans GALLOPER WORLD with light/bold weight hierarchy",
+            "Charcoal + black type pairing for premium contrast",
+          ],
+        },
+        {
+          title: "Applications",
+          items: [
+            "Square blade sign on textured stone facade with city-glass reflection context",
+            "Primary lockup on white brand sheet",
+            "Inverted colourway on black — white type, gold mark intact",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I owned mark concept, wordmark hierarchy, colourways and the storefront signage mockup.",
+      contributions: [
+        {
+          title: "Geometric mark",
+          items: [
+            "Designed an abstract interlocking icon that reads as brand geometry without relying on literal illustration.",
+          ],
+        },
+        {
+          title: "Wordmark hierarchy",
+          items: [
+            "Set GALLOPER / WORLD as a two-tone weight system so the name stays clear at sign and thumbnail sizes.",
+          ],
+        },
+        {
+          title: "Signage & colourways",
+          items: [
+            "Mocked a blade sign in context and delivered light/dark logo sheets for flexible brand use.",
+          ],
+        },
+      ],
+      highlights: [
+        "Delivered a complete Galloper World identity: mark, wordmark, signage and dual colourways.",
+        "Kept gold as the constant accent across white and black presentations.",
+        "Proved the lockup at real storefront scale on a stone facade blade sign.",
+      ],
+      skills: [
+        "Logo Design",
+        "Brand Identity",
+        "Geometric Mark Design",
+        "Typography",
+        "Signage Design",
+        "Colourway Systems",
+        "Corporate Branding",
+      ],
+      results:
+        "A minimal, premium brand system for Galloper World — geometric gold mark, clear wordmark hierarchy and signage-ready applications in light and dark.",
     },
   },
   {
