@@ -64,8 +64,7 @@ const accentStyles: Record<
 
 const filterIcons: Record<"All" | ProjectCategory, typeof LayoutGrid> = {
   All: LayoutGrid,
-  "Web Development": Code2,
-  "App Development": Sparkles,
+  "Web & SaaS": Code2,
   eCommerce: ShoppingBag,
   Automation: Workflow,
   "Logo & Graphic Design": Palette,
@@ -77,8 +76,7 @@ const filterIcons: Record<"All" | ProjectCategory, typeof LayoutGrid> = {
 
 const categoryHashes: Record<"All" | ProjectCategory, string> = {
   All: "all",
-  "Web Development": "web",
-  "App Development": "app",
+  "Web & SaaS": "web",
   eCommerce: "ecommerce",
   Automation: "automation",
   "Logo & Graphic Design": "design",
@@ -91,6 +89,11 @@ const categoryHashes: Record<"All" | ProjectCategory, string> = {
 const hashToCategory = Object.fromEntries(
   Object.entries(categoryHashes).map(([category, hash]) => [hash, category]),
 ) as Record<string, "All" | ProjectCategory>;
+
+// Legacy hashes from renamed/removed filters
+hashToCategory.app = "Web & SaaS";
+hashToCategory["web-development"] = "Web & SaaS";
+hashToCategory["app-development"] = "Web & SaaS";
 
 function readCategoryFromHash(): "All" | ProjectCategory {
   if (typeof window === "undefined") return "All";

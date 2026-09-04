@@ -23,8 +23,7 @@ export const stats = [
 ];
 
 export type ProjectCategory =
-  | "Web Development"
-  | "App Development"
+  | "Web & SaaS"
   | "eCommerce"
   | "Automation"
   | "Logo & Graphic Design"
@@ -116,8 +115,7 @@ export type Project = {
 
 export const projectCategories: Array<"All" | ProjectCategory> = [
   "All",
-  "Web Development",
-  "App Development",
+  "Web & SaaS",
   "eCommerce",
   "Automation",
   "Logo & Graphic Design",
@@ -131,7 +129,7 @@ export const projects: Project[] = [
   {
     slug: "pat-my-back",
     title: "Pat My Back",
-    category: "App Development",
+    category: "Web & SaaS",
     summary:
       "Peer-support marketplace PWA where clients connect with vetted coaches via realtime chat, audio, and video — billed per minute from a prepaid wallet.",
     stack: ["React", "Supabase", "Stripe", "Agora"],
@@ -418,7 +416,7 @@ export const projects: Project[] = [
   {
     slug: "art-by-number",
     title: "Art by Number Generator",
-    category: "App Development",
+    category: "Web & SaaS",
     badge: "Creative Tool · Image Processing · Web Application",
     summary:
       "Built the beta of a web-based tool that converts uploaded photographs into printable paint-by-number artwork using automated colour reduction, numbered palettes, grid-based processing and scalable SVG generation.",
@@ -546,7 +544,7 @@ export const projects: Project[] = [
   {
     slug: "daily-network",
     title: "Daily Network — Quantum-Ready Blockchain & Web3 Ecosystem",
-    category: "Web Development",
+    category: "Web & SaaS",
     badge: "Blockchain · Web3 · FinTech · Cryptocurrency",
     summary:
       "Developed a production Web3 ecosystem connecting a blockchain network with wallet infrastructure, staking, DEX, Mainnet/Testnet explorers, RPC services, faucet, network monitoring and developer funding tools.",
@@ -2938,7 +2936,7 @@ export const projects: Project[] = [
   {
     slug: "saas-dashboard",
     title: "SaaS Dashboard Platform",
-    category: "Web Development",
+    category: "Web & SaaS",
     summary:
       "A realtime analytics console with role-based access, custom widgets and exportable reports for a B2B operations team.",
     stack: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL"],
@@ -2948,7 +2946,7 @@ export const projects: Project[] = [
   {
     slug: "client-portal",
     title: "Client Portal App",
-    category: "App Development",
+    category: "Web & SaaS",
     summary:
       "Secure customer portal for invoices, file exchange and status tracking — built for desktop-first power users.",
     stack: ["React", "Node", "Auth", "Postgres"],
