@@ -86,9 +86,6 @@ const promises = [
 ];
 
 function ServicesPage() {
-  const top = serviceCatalog.slice(0, 4);
-  const bottom = serviceCatalog.slice(4);
-
   return (
     <div className="relative overflow-x-hidden">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -138,13 +135,8 @@ function ServicesPage() {
 
       {/* Cards */}
       <section className="relative mx-auto max-w-6xl px-5 pb-16 sm:px-8 sm:pb-24">
-        <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
-          {top.map((service) => (
-            <ServiceCard key={service.slug} service={service} />
-          ))}
-        </div>
-        <div className="mt-5 grid gap-5 sm:grid-cols-2 xl:mx-auto xl:max-w-[75%] xl:grid-cols-3">
-          {bottom.map((service) => (
+        <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+          {serviceCatalog.map((service) => (
             <ServiceCard key={service.slug} service={service} />
           ))}
         </div>
