@@ -22,84 +22,141 @@ export const stats = [
   { value: "Long-term", label: "Working relationships" },
 ];
 
+export type ProjectCategory =
+  | "Web Development"
+  | "App Development"
+  | "eCommerce"
+  | "Automation"
+  | "Logo & Graphic Design"
+  | "Video Editing"
+  | "Trading Algo / Forex / Meta"
+  | "Mobile Apps"
+  | "Game Development";
+
+export type ProjectAccent = "cyan" | "lime" | "ember" | "violet" | "sky";
+
 export type Project = {
   slug: string;
   title: string;
-  client: string;
-  year: string;
+  category: ProjectCategory;
   summary: string;
-  outcome: string;
   stack: string[];
-  accent: "primary" | "ember" | "muted";
+  accent: ProjectAccent;
+  image: "saas" | "ecommerce" | "automation" | "brand" | "video" | "trading" | "mobile" | "game";
+  url?: string;
 };
+
+export const projectCategories: Array<"All" | ProjectCategory> = [
+  "All",
+  "Web Development",
+  "App Development",
+  "eCommerce",
+  "Automation",
+  "Logo & Graphic Design",
+  "Video Editing",
+  "Trading Algo / Forex / Meta",
+  "Mobile Apps",
+  "Game Development",
+];
 
 export const projects: Project[] = [
   {
-    slug: "harbor-ops",
-    title: "Harbor Ops",
-    client: "Logistics startup",
-    year: "2026",
+    slug: "saas-dashboard",
+    title: "SaaS Dashboard Platform",
+    category: "Web Development",
     summary:
-      "Realtime fleet dispatch console handling 3k concurrent vehicle streams, with offline-first driver PWA.",
-    outcome: "Dispatch latency down 71%",
-    stack: ["TypeScript", "React", "Postgres", "WebSockets"],
-    accent: "primary",
+      "A realtime analytics console with role-based access, custom widgets and exportable reports for a B2B operations team.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL"],
+    accent: "cyan",
+    image: "saas",
   },
   {
-    slug: "atlas-ledger",
-    title: "Atlas Ledger",
-    client: "Fintech scale-up",
-    year: "2025",
+    slug: "client-portal",
+    title: "Client Portal App",
+    category: "App Development",
     summary:
-      "Double-entry accounting core with audit trails, multi-currency settlement and a self-serve reporting builder.",
-    outcome: "Closed books in 2 days, not 3 weeks",
-    stack: ["Node", "Postgres", "Stripe", "Zod"],
+      "Secure customer portal for invoices, file exchange and status tracking — built for desktop-first power users.",
+    stack: ["React", "Node", "Auth", "Postgres"],
+    accent: "sky",
+    image: "saas",
+  },
+  {
+    slug: "northline-store",
+    title: "Online Store Platform",
+    category: "eCommerce",
+    summary:
+      "Conversion-focused storefront with collections, checkout and inventory sync for a direct-to-consumer brand.",
+    stack: ["Shopify", "Liquid", "React", "Stripe"],
+    accent: "lime",
+    image: "ecommerce",
+  },
+  {
+    slug: "workflow-hub",
+    title: "Workflow Automation Hub",
+    category: "Automation",
+    summary:
+      "Internal automation board connecting CRM, email and accounting so routine handoffs run without manual chase.",
+    stack: ["n8n", "APIs", "Webhooks", "Postgres"],
+    accent: "violet",
+    image: "automation",
+  },
+  {
+    slug: "brand-system",
+    title: "Brand Identity System",
+    category: "Logo & Graphic Design",
+    summary:
+      "Logo suite, color system and marketing templates that stay consistent across web, print and social.",
+    stack: ["Illustrator", "Figma", "Brand Kit"],
     accent: "ember",
+    image: "brand",
   },
   {
-    slug: "verdant",
-    title: "Verdant CMS",
-    client: "Independent publisher",
-    year: "2025",
+    slug: "launch-reels",
+    title: "Product Launch Video Suite",
+    category: "Video Editing",
     summary:
-      "Editorial platform with block-based authoring, scheduled publishing and edge-rendered pages scoring 100 on Core Web Vitals.",
-    outcome: "Page loads under 400ms globally",
-    stack: ["React", "Edge SSR", "S3", "Algolia"],
-    accent: "muted",
+      "Short-form launch cuts and a long demo edit paced for ads, social and the product homepage.",
+    stack: ["Premiere", "After Effects", "Sound"],
+    accent: "violet",
+    image: "video",
   },
   {
-    slug: "signal-desk",
-    title: "Signal Desk",
-    client: "B2B SaaS",
-    year: "2024",
+    slug: "signal-trader",
+    title: "Trading Signal Desk",
+    category: "Trading Algo / Forex / Meta",
     summary:
-      "AI-assisted support inbox that drafts replies from a company knowledge base and routes by intent confidence.",
-    outcome: "38% of tickets resolved first-touch",
-    stack: ["Python", "pgvector", "React", "Queues"],
-    accent: "ember",
+      "Strategy dashboard with candlestick views, alert rules and MetaTrader-facing hooks for disciplined entries.",
+    stack: ["Python", "MetaTrader", "Charts", "APIs"],
+    accent: "sky",
+    image: "trading",
   },
   {
-    slug: "orbit-analytics",
-    title: "Orbit Analytics",
-    client: "Growth agency",
-    year: "2024",
+    slug: "pulse-fit",
+    title: "Pulse Fit Mobile",
+    category: "Mobile Apps",
     summary:
-      "Privacy-first product analytics with cohort funnels, event schema validation and shareable dashboards.",
-    outcome: "Replaced a $4k/mo vendor",
-    stack: ["ClickHouse", "TypeScript", "Recharts"],
-    accent: "primary",
+      "Cross-platform fitness companion with workouts, progress rings and coach messaging that feels native on both stores.",
+    stack: ["Flutter", "Firebase", "iOS", "Android"],
+    accent: "violet",
+    image: "mobile",
   },
   {
-    slug: "meridian",
-    title: "Meridian Booking",
-    client: "Boutique hotel group",
-    year: "2023",
+    slug: "orbit-raiders",
+    title: "Orbit Raiders",
+    category: "Game Development",
     summary:
-      "Direct booking engine with dynamic pricing rules, channel sync and a checkout that converts on mobile.",
-    outcome: "+27% direct reservations",
-    stack: ["React", "Postgres", "Payments", "CRON"],
-    accent: "muted",
+      "Arcade-style mobile game with tight controls, polished VFX and a live-ops friendly level pack pipeline.",
+    stack: ["Unity", "C#", "Mobile"],
+    accent: "cyan",
+    image: "game",
   },
+];
+
+export const workStats = [
+  { value: "100s", label: "Projects Delivered" },
+  { value: "15+", label: "Years Experience" },
+  { value: "100%", label: "Client Satisfaction" },
+  { value: "High", label: "Quality Standards" },
 ];
 
 export const engagementShapes = [
