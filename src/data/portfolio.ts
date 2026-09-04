@@ -61,7 +61,7 @@ export type Project = {
   summary: string;
   stack: string[];
   accent: ProjectAccent;
-  image: "saas" | "ecommerce" | "automation" | "brand" | "video" | "trading" | "mobile" | "game";
+  image: "saas" | "ecommerce" | "automation" | "brand" | "video" | "trading" | "mobile" | "game" | "patmyback";
   url?: string;
   detail?: ProjectDetail;
 };
@@ -88,7 +88,7 @@ export const projects: Project[] = [
       "Peer-support marketplace PWA where clients connect with vetted coaches via realtime chat, audio, and video — billed per minute from a prepaid wallet.",
     stack: ["React", "Supabase", "Stripe", "Agora"],
     accent: "lime",
-    image: "mobile",
+    image: "patmyback",
     url: "https://patmyback.com",
     detail: {
       role: "Full-stack engineer (sole primary developer)",

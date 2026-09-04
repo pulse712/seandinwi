@@ -24,26 +24,7 @@ import {
   type ProjectCategory,
 } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
-
-import imgSaas from "@/assets/projects/project-saas.jpg";
-import imgEcommerce from "@/assets/projects/project-ecommerce.jpg";
-import imgAutomation from "@/assets/projects/project-automation.jpg";
-import imgBrand from "@/assets/projects/project-brand.jpg";
-import imgVideo from "@/assets/projects/project-video.jpg";
-import imgTrading from "@/assets/projects/project-trading.jpg";
-import imgMobile from "@/assets/projects/project-mobile.jpg";
-import imgGame from "@/assets/projects/project-game.jpg";
-
-const images = {
-  saas: imgSaas,
-  ecommerce: imgEcommerce,
-  automation: imgAutomation,
-  brand: imgBrand,
-  video: imgVideo,
-  trading: imgTrading,
-  mobile: imgMobile,
-  game: imgGame,
-} as const;
+import { projectImages as images } from "@/lib/project-images";
 
 const accentStyles: Record<
   ProjectAccent,
