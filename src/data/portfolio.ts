@@ -80,7 +80,8 @@ export type ProjectImageKey =
   | "murad"
   | "newman"
   | "carbide"
-  | "languagecafe";
+  | "languagecafe"
+  | "cirkus";
 
 export type ProjectDetail = {
   role: string;
@@ -3046,6 +3047,109 @@ export const projects: Project[] = [
       ],
       results:
         "A live social language-learning platform at languagescafe.com with Android and iOS apps — helping learners practice multiple languages through voice cafés, structured study, AI support and community.",
+    },
+  },
+  {
+    slug: "cirkus",
+    title: "Cirkus — Team Scheduling & Project Management",
+    category: "Mobile Apps",
+    categories: ["Mobile Apps", "Web & SaaS"],
+    badge: "iOS · Android · Web · Productivity · 1K+ Downloads",
+    summary:
+      "Built a cross-platform team scheduling and project management app — timeline bookings, multi-assignee tasks, milestones, templates, file sharing and permissions synced across iPhone, iPad, Android and web.",
+    stack: ["iOS", "Android", "Web", "Collaboration"],
+    accent: "violet",
+    image: "cirkus",
+    url: "https://www.cirkus.com/",
+    detail: {
+      role: "Full-Stack / Mobile Product Engineer",
+      client: "Cirkus (farmerswife) — live team scheduling & PM platform",
+      liveUrl: "https://www.cirkus.com/",
+      appStoreUrl: "https://apps.apple.com/us/app/cirkus-schedule-your-tasks/id1157319715",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.farmerswife.cirkus",
+      stackFull: [
+        "iOS / iPadOS App",
+        "Android App (1K+ downloads)",
+        "Web Application",
+        "Timeline Scheduling & Resource Booking",
+        "Task & Project Management",
+        "Multi-Assignee Roles & Permissions",
+        "Comments, Files & Notifications",
+        "Templates, Milestones & Subprojects",
+        "Cross-Device Sync",
+      ],
+      overview:
+        "Cirkus is a team scheduling and project management platform built around a timeline — plan work, book people and resources, and keep projects on track without spreadsheets. The live product syncs across iPhone, iPad, Android and web, combining resource scheduling with task collaboration for media, production and creative teams (a farmerswife solution).",
+      problem:
+        "Teams often split scheduling (who’s booked when) from task tools (what’s due). Spreadsheets and generic PM apps leave capacity, roles and project progress disconnected — especially when freelancers, equipment and multi-person tasks need clear ownership.",
+      solution:
+        "I helped shape Cirkus as one system for schedule + work: timeline bookings linked to projects/tasks, multi-assignee roles with per-person status, deadlines/reminders, comments and files inside the work, plus projects, subprojects, milestones and templates for repeatable delivery — with permissions and notifications across devices.",
+      featureGroups: [
+        {
+          title: "Team collaboration",
+          items: [
+            "Assign tasks with multiple assignees and roles",
+            "Deadlines, reminders and task tracking",
+            "Comments and file sharing inside work items",
+            "Team members, permissions and notifications",
+          ],
+        },
+        {
+          title: "Scheduling & project management",
+          items: [
+            "Schedule team members, roles and resources on a timeline",
+            "Projects, subprojects and milestones",
+            "Project/task templates for repeatable workflows",
+            "Bookings linked to projects, tasks and subprojects",
+            "Cross-platform sync: iPhone, iPad, Android and web",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I worked on the cross-platform Cirkus product experience — scheduling, task collaboration and project structure for teams that need capacity and delivery in one place.",
+      contributions: [
+        {
+          title: "Timeline scheduling UX",
+          items: [
+            "Connected people/resource bookings to projects and tasks so capacity and delivery stay visible together.",
+          ],
+        },
+        {
+          title: "Multi-assignee collaboration",
+          items: [
+            "Supported roles, shared task status, comments, files and notifications for real team handoffs.",
+          ],
+        },
+        {
+          title: "Project structure",
+          items: [
+            "Organised projects, subprojects, milestones and templates for structured, repeatable production work.",
+          ],
+        },
+        {
+          title: "Multi-platform delivery",
+          items: [
+            "Kept workflows consistent across mobile and web so teams can plan and update from any device.",
+          ],
+        },
+      ],
+      highlights: [
+        "Shipped a live team scheduling + PM product at cirkus.com with iOS, Android (1K+ downloads) and web.",
+        "Combined resource timeline booking with multi-assignee tasks, milestones and templates.",
+        "Supported permissions, notifications and in-work collaboration for production-style teams.",
+      ],
+      skills: [
+        "Mobile App Development",
+        "SaaS / Web Apps",
+        "Project Management UX",
+        "Resource Scheduling",
+        "Team Collaboration Systems",
+        "Permissions & Notifications",
+        "Cross-Platform Sync",
+        "Productivity Software",
+      ],
+      results:
+        "A live cross-platform productivity suite that helps teams schedule people and resources, manage projects and collaborate on tasks — without splitting calendars from project tools.",
     },
   },
   {
