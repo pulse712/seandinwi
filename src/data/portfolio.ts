@@ -73,7 +73,8 @@ export type ProjectImageKey =
   | "logocollection2"
   | "aestheticsbeaverton"
   | "galloperworld"
-  | "castlesoap";
+  | "castlesoap"
+  | "lovebomb";
 
 export type ProjectDetail = {
   role: string;
@@ -2300,6 +2301,92 @@ export const projects: Project[] = [
       ],
       results:
         "An earthy, premium soap brand system — floral mark, green/cream palette and tactile applications ready for stationery and soft-goods merch.",
+    },
+  },
+  {
+    slug: "lovebomb-craft-rum",
+    title: "Lovebomb Craft Rum — Can Label Design",
+    category: "Logo & Graphic Design",
+    badge: "Packaging · Illustration · Label Design · Beverage",
+    summary:
+      "Wraparound 330ml can label for Lovebomb Craft Rum — neo-traditional heart, thorns and roses illustration with metallic gold type and side panels for slogan and product info.",
+    stack: ["Packaging Design", "Illustration", "Label Design", "Typography"],
+    accent: "ember",
+    image: "lovebomb",
+    detail: {
+      role: "Packaging / Graphic Designer",
+      client: "Lovebomb Craft Rum — canned cocktail packaging",
+      stackFull: [
+        "Beverage Packaging Design",
+        "Wraparound Can Label",
+        "Neo-Traditional Illustration",
+        "Typography & Metallic Type Treatments",
+        "Product Information Hierarchy",
+        "3D Can Mockup Presentation",
+      ],
+      overview:
+        "Lovebomb Craft Rum needed a loud, shelf-stopping can. I designed a full wraparound label: an anatomical heart wrapped in thorny vines and sunflowers on the front, LOVE / BOMB split across the sides in gold, a “Rum & Coke, no joke” banner, and rum info with a recyclable seal — shown on three 330ml cans so the continuous art reads from every angle.",
+      problem:
+        "RTD cocktail cans compete in a crowded cooler. Flat logos disappear; overly complex wraps look muddy at arm’s length. The design needed tattoo-energy illustration, clear brand naming and usable side panels without breaking the wrap.",
+      solution:
+        "I built a continuous illustrative wrap around one heroic heart motif, then locked brand type and legal/info panels into the side arcs so LOVEBOMB stays readable front-on while the story continues around the can.",
+      featureGroups: [
+        {
+          title: "Front label",
+          items: [
+            "Anatomical heart in red/orange with thorny green vine wrap",
+            "Sunflower and blossom accents with a small flaming heart detail",
+            "Metallic gold LOVEBOMB wordmark with CRAFT RUM ribbon and 330 ML",
+          ],
+        },
+        {
+          title: "Side panels",
+          items: [
+            "LOVE panel with rose and “Rum & Coke, no joke” banner",
+            "BOMB panel with rose, rum information block and 100% recyclable seal",
+            "Continuous wrap composition presented across three can angles",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I owned illustration direction, wrap layout, typography and the three-can mockup presentation.",
+      contributions: [
+        {
+          title: "Illustrative wrap",
+          items: [
+            "Designed a neo-traditional heart, thorn and rose system that holds impact at cooler and close-up distances.",
+          ],
+        },
+        {
+          title: "Brand typography",
+          items: [
+            "Set metallic LOVEBOMB / LOVE / BOMB hierarchy so the name reads as attitude, not just a logo stamp.",
+          ],
+        },
+        {
+          title: "Packaging structure",
+          items: [
+            "Organised slogan, product info and recyclable seal into side panels without breaking the wrap narrative.",
+          ],
+        },
+      ],
+      highlights: [
+        "Delivered a full wraparound Lovebomb Craft Rum can label with front and side storytelling.",
+        "Combined bold illustration with metallic type for shelf presence in the RTD category.",
+        "Presented 330ml can mockups showing continuous art from three angles.",
+      ],
+      skills: [
+        "Packaging Design",
+        "Label Design",
+        "Illustration",
+        "Typography",
+        "Beverage Branding",
+        "Wraparound Layout",
+        "Product Mockups",
+        "Colour Direction",
+      ],
+      results:
+        "A high-energy craft rum can system — illustrative wrap, gold type and structured side panels — built to stop shoppers and hold up in the cooler.",
     },
   },
   {

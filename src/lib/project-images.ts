@@ -31,6 +31,7 @@ import imgLogoCollection2 from "@/assets/projects/project-logo-collection-2.png"
 import imgAestheticsBeaverton from "@/assets/projects/project-aesthetics-beaverton.png";
 import imgGalloperWorld from "@/assets/projects/project-galloper-world.png";
 import imgCastleSoap from "@/assets/projects/project-castle-soap.png";
+import imgLovebomb from "@/assets/projects/project-lovebomb.png";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -67,4 +68,5 @@ export const projectImages: Record<ProjectImageKey, string> = {
   aestheticsbeaverton: imgAestheticsBeaverton,
   galloperworld: imgGalloperWorld,
   castlesoap: imgCastleSoap,
+  lovebomb: imgLovebomb,
 };
