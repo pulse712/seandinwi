@@ -10,9 +10,11 @@ import imgPatMyBack from "@/assets/projects/project-pat-my-back.png";
 import imgChocolateWood from "@/assets/projects/project-chocolate-wood.png";
 import imgArtByNumber from "@/assets/projects/project-art-by-number.png";
 import imgDailyNetwork from "@/assets/projects/project-daily-network.png";
-import type { Project } from "@/data/portfolio";
+import imgZantopheria from "@/assets/projects/project-zantopheria-front.png";
+import imgZantopheriaBack from "@/assets/projects/project-zantopheria-back.png";
+import type { ProjectImageKey } from "@/data/portfolio";
 
-export const projectImages: Record<Project["image"], string> = {
+export const projectImages: Record<ProjectImageKey, string> = {
   saas: imgSaas,
   ecommerce: imgEcommerce,
   automation: imgAutomation,
@@ -25,4 +27,6 @@ export const projectImages: Record<Project["image"], string> = {
   chocolatewood: imgChocolateWood,
   artbynumber: imgArtByNumber,
   dailynetwork: imgDailyNetwork,
+  zantopheria: imgZantopheria,
+  zantopheriaback: imgZantopheriaBack,
 };

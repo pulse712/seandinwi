@@ -40,6 +40,22 @@ export type ProjectDetailGroup = {
   items: string[];
 };
 
+export type ProjectImageKey =
+  | "saas"
+  | "ecommerce"
+  | "automation"
+  | "brand"
+  | "video"
+  | "trading"
+  | "mobile"
+  | "game"
+  | "patmyback"
+  | "chocolatewood"
+  | "artbynumber"
+  | "dailynetwork"
+  | "zantopheria"
+  | "zantopheriaback";
+
 export type ProjectDetail = {
   role: string;
   client: string;
@@ -54,6 +70,7 @@ export type ProjectDetail = {
   highlights: string[];
   skills: string[];
   results?: string;
+  gallery?: Array<{ label: string; image: ProjectImageKey }>;
 };
 
 export type Project = {
@@ -64,19 +81,7 @@ export type Project = {
   summary: string;
   stack: string[];
   accent: ProjectAccent;
-  image:
-    | "saas"
-    | "ecommerce"
-    | "automation"
-    | "brand"
-    | "video"
-    | "trading"
-    | "mobile"
-    | "game"
-    | "patmyback"
-    | "chocolatewood"
-    | "artbynumber"
-    | "dailynetwork";
+  image: ProjectImageKey;
   url?: string;
   detail?: ProjectDetail;
 };
@@ -662,6 +667,107 @@ export const projects: Project[] = [
       ],
       results:
         "The platform became a complete entry point into Daily Network — protocol education, infrastructure, wallet onboarding, developer tooling, monitoring and ecosystem growth in one branded experience. Users can move from Discover Network → Understand Technology → Create Wallet → Connect Mainnet/Testnet → Explore Transactions → Test with Faucet → Stake → Access DEX → Build on the Network.",
+    },
+  },
+  {
+    slug: "zantopheria-cover",
+    title: "Zantopheria — Epic Fantasy Book Cover",
+    category: "Logo & Graphic Design",
+    badge: "Cover Design · Illustration · Typography",
+    summary:
+      "Designed the front and back covers for Zantopheria — a cinematic underwater fantasy novel — with ornate gold typography, bioluminescent world-building, and print-ready layout for the full jacket.",
+    stack: ["Cover Design", "Illustration", "Typography", "Print Layout"],
+    accent: "violet",
+    image: "zantopheria",
+    detail: {
+      role: "Cover Designer / Digital Illustrator",
+      client: "Todd W. Hildreth — The Chronicles of Zantopheria",
+      stackFull: [
+        "Digital Illustration",
+        "Book Cover Design",
+        "Typography & Lettering",
+        "Colour Direction",
+        "Print Layout (Front / Back)",
+        "Composition & Visual Storytelling",
+      ],
+      overview:
+        "Zantopheria is an epic underwater fantasy title. I created a matched front and back cover pair that sells the world at a glance: a lone warrior before a glowing city under a protective dome, a vast sea predator in the depths, and a back jacket that frames the story blurb with monumental underwater architecture and gold series branding.",
+      problem:
+        "Fantasy covers need to feel epic without becoming cluttered. The design had to carry series branding, author credit, a cinematic scene, and a readable back-cover synopsis — while staying print-ready and genre-true for middle-grade / adventure fantasy shelves.",
+      solution:
+        "I built a dark, bioluminescent palette with metallic gold typography as the brand signal. The front cover focuses on a single dramatic silhouette against the lit city and monster for scale; the back cover uses statue-framed architecture, gold-highlighted character names in the blurb, and taglines that close the emotional pitch.",
+      featureGroups: [
+        {
+          title: "Front cover",
+          items: [
+            "Series lockup: The Chronicles of Zantopheria",
+            "Ornate metallic title treatment with custom emblem in the letter O",
+            "Hero silhouette on jagged rock facing the glowing underwater city",
+            "Protective energy dome and bioluminescent city light as primary light source",
+            "Massive sea predator and supporting marine silhouettes for scale and menace",
+            "Author credit: Todd W. Hildreth",
+          ],
+        },
+        {
+          title: "Back cover",
+          items: [
+            "Matching gold series and title branding",
+            "Story synopsis with gold emphasis on key names (Eddy Swanson, Zantopheria, Neixar)",
+            "Architectural frame with monumental trident-bearing statues",
+            "Crystal city vista through a stone arch for world continuity",
+            "Taglines: Some worlds are discovered / Others choose who may enter / And some adventures change everything",
+            "Barcode / ISBN placement reserved for print production",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I owned the visual direction and cover execution for both sides of the jacket — composition, colour, typography, and print-aware layout.",
+      contributions: [
+        {
+          title: "Concept & composition",
+          items: [
+            "Established the underwater epic scene hierarchy: hero → city/dome → predator → deep-sea environment.",
+          ],
+        },
+        {
+          title: "Typography & branding",
+          items: [
+            "Designed an ornate gold title system with series lines and flourishes that reads at thumbnail and full print size.",
+          ],
+        },
+        {
+          title: "Colour & lighting",
+          items: [
+            "Used midnight blues against cyan city light and gold type so the covers feel cinematic and shelf-distinct.",
+          ],
+        },
+        {
+          title: "Back jacket storytelling",
+          items: [
+            "Laid out the synopsis, highlighted names, taglines and barcode zone so the back sells the plot without competing with the art.",
+          ],
+        },
+      ],
+      highlights: [
+        "Delivered a cohesive front/back cover system for an underwater fantasy novel.",
+        "Balanced epic illustration with clear series branding and author presentation.",
+        "Built a print-ready jacket layout including synopsis emphasis and barcode placement.",
+      ],
+      skills: [
+        "Book Cover Design",
+        "Digital Illustration",
+        "Typography",
+        "Colour Direction",
+        "Print Layout",
+        "Visual Storytelling",
+        "Brand Consistency",
+      ],
+      results:
+        "A finished fantasy cover pair that communicates world, tone and series identity at a glance — strong enough for retail thumbnails and detailed enough for full-size print.",
+      gallery: [
+        { label: "Front cover", image: "zantopheria" },
+        { label: "Back cover", image: "zantopheriaback" },
+      ],
     },
   },
   {

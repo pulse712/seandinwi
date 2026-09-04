@@ -52,13 +52,33 @@ function ProjectDetailPage() {
           <ArrowLeft className="size-3.5" /> Back to projects
         </Link>
 
-        <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-surface">
-          <img
-            src={projectImages[project.image]}
-            alt={`${project.title} cover`}
-            className="aspect-[16/10] w-full object-cover object-center"
-          />
-        </div>
+        {detail.gallery?.length ? (
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {detail.gallery.map((item) => (
+              <figure
+                key={item.label}
+                className="overflow-hidden rounded-2xl border border-border bg-surface"
+              >
+                <img
+                  src={projectImages[item.image]}
+                  alt={`${project.title} — ${item.label}`}
+                  className="mx-auto aspect-[2/3] w-full object-contain object-center"
+                />
+                <figcaption className="border-t border-border px-4 py-2.5 font-mono text-[10px] uppercase tracking-[0.16em] text-muted-foreground">
+                  {item.label}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        ) : (
+          <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-surface">
+            <img
+              src={projectImages[project.image]}
+              alt={`${project.title} cover`}
+              className="aspect-[16/10] w-full object-cover object-center"
+            />
+          </div>
+        )}
 
         <p className="mt-8 font-mono text-[11px] uppercase tracking-[0.22em] text-primary">
           {project.badge ?? project.category}
