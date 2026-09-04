@@ -74,7 +74,8 @@ export type ProjectImageKey =
   | "aestheticsbeaverton"
   | "galloperworld"
   | "castlesoap"
-  | "lovebomb";
+  | "lovebomb"
+  | "flyerbrochure";
 
 export type ProjectDetail = {
   role: string;
@@ -2387,6 +2388,93 @@ export const projects: Project[] = [
       ],
       results:
         "A high-energy craft rum can system — illustrative wrap, gold type and structured side panels — built to stop shoppers and hold up in the cooler.",
+    },
+  },
+  {
+    slug: "flyer-brochure-design",
+    title: "Flyer & Brochure Design",
+    category: "Logo & Graphic Design",
+    badge: "Print Design · Flyers · Retail · Hospitality",
+    summary:
+      "A set of print-ready flyers across pet retail, restaurant grand opening and bar promo — photo-led layouts, promo CTAs, trust badges and QR reservation flows.",
+    stack: ["Flyer Design", "Print Layout", "Typography", "Promo Design"],
+    accent: "sky",
+    image: "flyerbrochure",
+    detail: {
+      role: "Print / Graphic Designer",
+      client: "Multi-industry flyer & brochure design set",
+      stackFull: [
+        "Flyer & Brochure Design",
+        "Print Layout & Hierarchy",
+        "Typography Direction",
+        "Photo-Led Composition",
+        "Promo / Offer Design",
+        "QR Code Campaign Integration",
+        "Retail & Hospitality Branding",
+      ],
+      overview:
+        "A three-flyer portfolio board covering pet retail (Luwello Family), a restaurant grand opening (Xi Restaurant, Houston Center) and a free-beer hospitality night (Frei Bier / Schmankerl Stub’n). Each piece balances photography, offer messaging and clear CTAs — including QR codes for shop and reservation paths.",
+      problem:
+        "Flyers fail when every industry gets the same template. Pet retail needs trust badges and product shots; restaurants need food hero photography; bar events need date, offer and scan-to-reserve clarity — all while staying printable and readable at arm’s length.",
+      solution:
+        "I designed category-true layouts: cream/teal pet promo with USA / woman-owned / lifetime badges; yellow-wave restaurant opening with food hero and Houston visit cue; dark-blue bar flyer with beer mug, date pill and QR reservation block.",
+      featureGroups: [
+        {
+          title: "Flyer set",
+          items: [
+            "Luwello Family — pet collars/leash promo, puppy hero, trust badges, 15% off CTA + QR",
+            "Xi Restaurant — grand opening flyer with food photography and Houston Center visit badge",
+            "Frei Bier — free beer with entrée event flyer, date CTA, QR reservation and hours/location footer",
+          ],
+        },
+        {
+          title: "Design craft",
+          items: [
+            "Mixed script + sans typography for headline energy without clutter",
+            "Photo-led compositions with clear offer and scan-to-act blocks",
+            "Industry-specific colour systems (cream/teal, yellow/grey, navy/yellow)",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I owned concept, layout, typography and promo hierarchy across the three-industry flyer set.",
+      contributions: [
+        {
+          title: "Layout & hierarchy",
+          items: [
+            "Structured each flyer so headline, offer and CTA read in seconds on print and phone camera.",
+          ],
+        },
+        {
+          title: "Industry voice",
+          items: [
+            "Tuned pet retail, restaurant and bar tones with distinct palettes and photo treatments.",
+          ],
+        },
+        {
+          title: "Conversion details",
+          items: [
+            "Integrated discount bars, visit badges, date pills and QR codes for shop/reserve actions.",
+          ],
+        },
+      ],
+      highlights: [
+        "Delivered three print-ready flyers spanning pet retail, restaurant and hospitality.",
+        "Combined strong photography with clear promo CTAs and QR campaign hooks.",
+        "Kept each piece on-brand for its industry while holding a cohesive craft standard.",
+      ],
+      skills: [
+        "Flyer Design",
+        "Brochure / Print Layout",
+        "Typography",
+        "Promo Design",
+        "Retail Branding",
+        "Restaurant Marketing",
+        "Event Flyer Design",
+        "QR Campaign Design",
+      ],
+      results:
+        "A versatile flyer portfolio that shows print marketing range — retail promo, restaurant opening and bar event — with clear offers and scan-ready CTAs.",
     },
   },
   {

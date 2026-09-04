@@ -32,6 +32,7 @@ import imgAestheticsBeaverton from "@/assets/projects/project-aesthetics-beavert
 import imgGalloperWorld from "@/assets/projects/project-galloper-world.png";
 import imgCastleSoap from "@/assets/projects/project-castle-soap.png";
 import imgLovebomb from "@/assets/projects/project-lovebomb.png";
+import imgFlyerBrochure from "@/assets/projects/project-flyer-brochure.png";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -69,4 +70,5 @@ export const projectImages: Record<ProjectImageKey, string> = {
   galloperworld: imgGalloperWorld,
   castlesoap: imgCastleSoap,
   lovebomb: imgLovebomb,
+  flyerbrochure: imgFlyerBrochure,
 };
