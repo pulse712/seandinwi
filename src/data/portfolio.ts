@@ -289,7 +289,6 @@ export type Testimonial = {
   id: string;
   quote: string;
   name: string;
-  role: string;
   countryCode: string;
   country: string;
   rating: number;
@@ -310,7 +309,7 @@ export const testimonialCategories: Array<"All Testimonials" | TestimonialCatego
 ];
 
 export const testimonialStats = [
-  { value: "40+", label: "Happy Clients" },
+  { value: "24/7", label: "Support" },
   { value: "5.0", label: "Average Rating" },
   { value: "100%", label: "Client Satisfaction" },
 ];
@@ -321,7 +320,6 @@ export const testimonials: Testimonial[] = [
     quote:
       "Sean replaced what we thought was a six-month roadmap in eleven weeks. The code is the cleanest we've inherited from a contractor, full stop.",
     name: "Nadia Okonkwo",
-    role: "CTO, Harbor Ops",
     countryCode: "us",
     country: "United States",
     rating: 5,
@@ -333,7 +331,6 @@ export const testimonials: Testimonial[] = [
     quote:
       "Rare combination: writes serious backend code and has real taste in the UI. Our investors thought we had a design team.",
     name: "Tomas Rieger",
-    role: "Startup Founder",
     countryCode: "de",
     country: "Germany",
     rating: 5,
@@ -345,7 +342,6 @@ export const testimonials: Testimonial[] = [
     quote:
       "Communicates like a partner, not a vendor. Told us to cut two features that would have sunk the timeline — he was right.",
     name: "Priya Raman",
-    role: "Head of Product",
     countryCode: "au",
     country: "Australia",
     rating: 5,
@@ -357,7 +353,6 @@ export const testimonials: Testimonial[] = [
     quote:
       "Our brand finally feels consistent across web and print. Sean delivered a system we can actually hand to any designer.",
     name: "Marcus Chen",
-    role: "Creative Director",
     countryCode: "ca",
     country: "Canada",
     rating: 5,
@@ -369,7 +364,6 @@ export const testimonials: Testimonial[] = [
     quote:
       "The launch videos looked premium and converted. Fast turns, clear feedback loops, zero drama.",
     name: "Elena Vargas",
-    role: "Marketing Lead",
     countryCode: "es",
     country: "Spain",
     rating: 5,
@@ -381,7 +375,6 @@ export const testimonials: Testimonial[] = [
     quote:
       "Solid trading tooling with careful risk controls. He understood the domain and didn't oversell magic bots.",
     name: "James Whitfield",
-    role: "Independent Trader",
     countryCode: "gb",
     country: "United Kingdom",
     rating: 5,
@@ -393,7 +386,6 @@ export const testimonials: Testimonial[] = [
     quote:
       "Shipped our iOS and Android apps on one codebase. Smooth store submission and a polish pass that felt native.",
     name: "Aisha Rahman",
-    role: "Business Owner",
     countryCode: "us",
     country: "United States",
     rating: 5,
@@ -405,7 +397,6 @@ export const testimonials: Testimonial[] = [
     quote:
       "Gameplay felt snappy and the live-ops pipeline was documented. Rare to get both craft and production sense.",
     name: "Leo Martins",
-    role: "Indie Studio Lead",
     countryCode: "br",
     country: "Brazil",
     rating: 5,
@@ -417,7 +408,6 @@ export const testimonials: Testimonial[] = [
     quote:
       "From discovery to deploy, every Friday we saw real progress. Best freelance engagement we've had in years.",
     name: "Sofia Andersson",
-    role: "Operations Manager",
     countryCode: "se",
     country: "Sweden",
     rating: 5,

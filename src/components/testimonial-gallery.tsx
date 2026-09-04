@@ -81,15 +81,10 @@ function TestimonialCard({ item, ariaHidden }: { item: Testimonial; ariaHidden?:
         >
           {initials(item.name)}
         </span>
-        <div>
-          <p className="flex items-center gap-2 font-display text-sm font-semibold tracking-tight">
-            {item.name}
-            <CountryFlag code={item.countryCode} country={item.country} />
-          </p>
-          <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
-            {item.role}
-          </p>
-        </div>
+        <p className="flex items-center gap-2 font-display text-sm font-semibold tracking-tight">
+          {item.name}
+          <CountryFlag code={item.countryCode} country={item.country} />
+        </p>
       </div>
     </article>
   );
