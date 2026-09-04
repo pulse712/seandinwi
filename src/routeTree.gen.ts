@@ -14,6 +14,7 @@ import { Route as ServicesRouteImport } from './routes/services'
 import { Route as StartRouteImport } from './routes/start'
 import { Route as TestminalRouteImport } from './routes/testminal'
 import { Route as WorkRouteImport } from './routes/work'
+import { Route as WorkIndexRouteImport } from './routes/work.index'
 import { Route as WorkSlugRouteImport } from './routes/work.$slug'
 
 const IndexRoute = IndexRouteImport.update({
@@ -41,10 +42,15 @@ const WorkRoute = WorkRouteImport.update({
   path: '/work',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorkIndexRoute = WorkIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => WorkRoute,
+} as any)
 const WorkSlugRoute = WorkSlugRouteImport.update({
-  id: '/work/$slug',
-  path: '/work/$slug',
-  getParentRoute: () => rootRouteImport,
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => WorkRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
@@ -52,16 +58,17 @@ export interface FileRoutesByFullPath {
   '/services': typeof ServicesRoute
   '/start': typeof StartRoute
   '/testminal': typeof TestminalRoute
-  '/work': typeof WorkRoute
+  '/work': typeof WorkRouteWithChildren
   '/work/$slug': typeof WorkSlugRoute
+  '/work/': typeof WorkIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/services': typeof ServicesRoute
   '/start': typeof StartRoute
   '/testminal': typeof TestminalRoute
-  '/work': typeof WorkRoute
   '/work/$slug': typeof WorkSlugRoute
+  '/work': typeof WorkIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -69,15 +76,31 @@ export interface FileRoutesById {
   '/services': typeof ServicesRoute
   '/start': typeof StartRoute
   '/testminal': typeof TestminalRoute
-  '/work': typeof WorkRoute
+  '/work': typeof WorkRouteWithChildren
   '/work/$slug': typeof WorkSlugRoute
+  '/work/': typeof WorkIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/services' | '/start' | '/testminal' | '/work' | '/work/$slug'
+  fullPaths:
+    | '/'
+    | '/services'
+    | '/start'
+    | '/testminal'
+    | '/work'
+    | '/work/$slug'
+    | '/work/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/services' | '/start' | '/testminal' | '/work' | '/work/$slug'
-  id: '__root__' | '/' | '/services' | '/start' | '/testminal' | '/work' | '/work/$slug'
+  to: '/' | '/services' | '/start' | '/testminal' | '/work/$slug' | '/work'
+  id:
+    | '__root__'
+    | '/'
+    | '/services'
+    | '/start'
+    | '/testminal'
+    | '/work'
+    | '/work/$slug'
+    | '/work/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -85,8 +108,7 @@ export interface RootRouteChildren {
   ServicesRoute: typeof ServicesRoute
   StartRoute: typeof StartRoute
   TestminalRoute: typeof TestminalRoute
-  WorkRoute: typeof WorkRoute
-  WorkSlugRoute: typeof WorkSlugRoute
+  WorkRoute: typeof WorkRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -126,23 +148,41 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WorkRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/work/': {
+      id: '/work/'
+      path: '/'
+      fullPath: '/work/'
+      preLoaderRoute: typeof WorkIndexRouteImport
+      parentRoute: typeof WorkRoute
+    }
     '/work/$slug': {
       id: '/work/$slug'
-      path: '/work/$slug'
+      path: '/$slug'
       fullPath: '/work/$slug'
       preLoaderRoute: typeof WorkSlugRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof WorkRoute
     }
   }
 }
+
+interface WorkRouteChildren {
+  WorkSlugRoute: typeof WorkSlugRoute
+  WorkIndexRoute: typeof WorkIndexRoute
+}
+
+const WorkRouteChildren: WorkRouteChildren = {
+  WorkSlugRoute: WorkSlugRoute,
+  WorkIndexRoute: WorkIndexRoute,
+}
+
+const WorkRouteWithChildren = WorkRoute._addFileChildren(WorkRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ServicesRoute: ServicesRoute,
   StartRoute: StartRoute,
   TestminalRoute: TestminalRoute,
-  WorkRoute: WorkRoute,
-  WorkSlugRoute: WorkSlugRoute,
+  WorkRoute: WorkRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
