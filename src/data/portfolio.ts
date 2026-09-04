@@ -334,13 +334,6 @@ export function getProjectBySlug(slug: string) {
   return projects.find((project) => project.slug === slug);
 }
 
-export const workStats = [
-  { value: "100s", label: "Projects Delivered" },
-  { value: "15+", label: "Years Experience" },
-  { value: "100%", label: "Client Satisfaction" },
-  { value: "High", label: "Quality Standards" },
-];
-
 export const engagementShapes = [
   {
     title: "Product engineering",
