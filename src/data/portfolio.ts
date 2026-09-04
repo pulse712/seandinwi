@@ -188,17 +188,25 @@ export type ServiceOffering = {
   body: string;
   tags: string[];
   accent: ServiceAccent;
-  image: "web" | "automation" | "design" | "video" | "trading" | "mobile" | "game";
+  image: "web" | "ecommerce" | "automation" | "design" | "video" | "trading" | "mobile" | "game";
 };
 
 export const serviceCatalog: ServiceOffering[] = [
   {
-    slug: "web-app-ecommerce",
-    title: "Web, App & Ecommerce Development",
-    body: "Responsive websites, web apps and online stores built to convert — from landing pages to full storefronts with payments and admin.",
-    tags: ["Web Development", "Shopify", "WordPress", "React"],
+    slug: "web-saas-api",
+    title: "Web, SaaS, API Development",
+    body: "Modern websites, SaaS products and robust APIs — from dashboards and auth to billing, integrations and deploy pipelines that hold up in production.",
+    tags: ["Web", "SaaS", "APIs", "React"],
     accent: "cyan",
     image: "web",
+  },
+  {
+    slug: "ecommerce-development",
+    title: "Ecommerce Development",
+    body: "Conversion-focused online stores with catalogs, checkout, payments and inventory — Shopify, custom storefronts or headless builds that sell.",
+    tags: ["Shopify", "Checkout", "Payments", "Stores"],
+    accent: "sky",
+    image: "ecommerce",
   },
   {
     slug: "automation",

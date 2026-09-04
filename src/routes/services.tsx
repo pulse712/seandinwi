@@ -10,6 +10,7 @@ import { profile, serviceCatalog, type ServiceAccent } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
 
 import imgWeb from "@/assets/services/service-web.jpg";
+import imgEcommerce from "@/assets/services/service-ecommerce.jpg";
 import imgAutomation from "@/assets/services/service-automation.jpg";
 import imgDesign from "@/assets/services/service-design.jpg";
 import imgVideo from "@/assets/services/service-video.jpg";
@@ -19,6 +20,7 @@ import imgGame from "@/assets/services/service-game.jpg";
 
 const images = {
   web: imgWeb,
+  ecommerce: imgEcommerce,
   automation: imgAutomation,
   design: imgDesign,
   video: imgVideo,
