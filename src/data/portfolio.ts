@@ -45,9 +45,11 @@ export type ProjectDetail = {
   client: string;
   liveUrl?: string;
   stackFull: string[];
+  overview?: string;
   problem: string;
   solution: string;
   featureGroups: ProjectDetailGroup[];
+  contributionIntro?: string;
   contributions: ProjectDetailGroup[];
   highlights: string[];
   skills: string[];
@@ -58,10 +60,21 @@ export type Project = {
   slug: string;
   title: string;
   category: ProjectCategory;
+  badge?: string;
   summary: string;
   stack: string[];
   accent: ProjectAccent;
-  image: "saas" | "ecommerce" | "automation" | "brand" | "video" | "trading" | "mobile" | "game" | "patmyback";
+  image:
+    | "saas"
+    | "ecommerce"
+    | "automation"
+    | "brand"
+    | "video"
+    | "trading"
+    | "mobile"
+    | "game"
+    | "patmyback"
+    | "chocolatewood";
   url?: string;
   detail?: ProjectDetail;
 };
@@ -111,6 +124,8 @@ export const projects: Project[] = [
         "People need on-demand encouragement and coaching (career, emotional support, music lessons, and more) without booking friction. Providers need tools to set availability, price, and earn by the minute.",
       solution:
         "A marketplace with two sides — clients buy credits and start sessions; Pat Pals go live and take chat/calls; admins approve providers, manage promos/trial codes, and moderate the platform.",
+      contributionIntro:
+        "Primary full-stack ownership of a live client product (~150+ commits on main).",
       featureGroups: [
         {
           title: "Marketplace & profiles",
@@ -236,6 +251,133 @@ export const projects: Project[] = [
       ],
       results:
         "Delivered and maintained a live client product (patmyback.com), turning repeated mobile/call UX feedback into shipped features (call history, landscape fullscreen, camera flip, WhatsApp-style PiP swap) while owning auth, billing, and admin reliability.",
+    },
+  },
+  {
+    slug: "chocolate-wood",
+    title: "Chocolate Wood — Premium Furniture eCommerce",
+    category: "eCommerce",
+    badge: "eCommerce · Shopify · UI/UX · Web Development",
+    summary:
+      "Developed a premium Shopify eCommerce website for an Australian furniture retailer, featuring a large multi-category catalogue, custom-made collections, clearance sales, product viewing, wishlist, search, customer accounts and responsive shopping experiences.",
+    stack: ["Shopify", "Liquid", "JavaScript", "Responsive UI/UX"],
+    accent: "ember",
+    image: "chocolatewood",
+    url: "https://chocolatewood.com.au",
+    detail: {
+      role: "Full-Stack / Shopify Developer",
+      client: "Chocolate Wood — Sydney furniture retailer (live production store)",
+      liveUrl: "https://chocolatewood.com.au",
+      stackFull: [
+        "Shopify",
+        "Liquid / Theme Customisation",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Responsive Web Design",
+        "Product & Collection Management",
+        "SEO-Friendly Structure",
+      ],
+      overview:
+        "Chocolate Wood is a Sydney-based furniture retailer specialising in timber furniture, Australian custom-made pieces, rattan furniture, outdoor furniture, and home furnishings. The website supports a large catalogue covering living rooms, dining rooms, bedrooms, hallways, outdoor furniture, clearance products, and custom-made collections. I developed the eCommerce experience with a strong focus on premium visual presentation, easy product discovery, mobile usability, and conversion-focused shopping flows — translating the quality and craftsmanship of the physical furniture showroom into a polished online shopping experience.",
+      problem:
+        "The business had a broad furniture catalogue with many product categories, materials, styles, sizes, custom-made options, and clearance items. Customers need to find the right product quickly without becoming overwhelmed. Furniture is also a considered purchase — people want dimensions, materials, delivery options, and sometimes to see a product before buying. Chocolate Wood needed more than a basic catalogue: a site that connects online shopping with the physical showroom experience, including product viewing enquiries.",
+      solution:
+        "I created a clean, premium eCommerce experience that makes the large catalogue easier to explore while keeping furniture photography and products at the centre of the design. Information architecture is organised around intuitive categories such as Living Room, Dining Room, Hallway, Bedroom, Australian Custom Made, Rattan Furniture, Outdoor Furniture, in-store stock and Sale. The visual direction uses spacious layouts, neutral tones, elegant typography, large product imagery, and restrained UI so the timber aesthetic leads.",
+      featureGroups: [
+        {
+          title: "Key features",
+          items: [
+            "Large-scale Shopify furniture catalogue",
+            "Multi-level product/category navigation",
+            "Living, dining, bedroom and outdoor collections",
+            "Australian custom-made furniture",
+            "Rattan and timber furniture collections",
+            "Clearance and promotional pricing",
+            "Product search, wishlist, customer accounts",
+            "Shopping cart and checkout",
+            "Detailed specifications and product information",
+            "Product viewing / showroom journey",
+            "Responsive mobile experience",
+            "Secure online purchasing",
+            "Delivery and warranty information",
+            "Contact and showroom integration",
+            "SEO-friendly product/category structure",
+          ],
+        },
+      ],
+      contributions: [
+        {
+          title: "eCommerce architecture & development",
+          items: [
+            "Structured the Shopify storefront around a large multi-category furniture catalogue with clear paths from discovery through product detail, cart, and checkout.",
+          ],
+        },
+        {
+          title: "Responsive UI/UX development",
+          items: [
+            "Created layouts that adapt cleanly across desktop, tablet, and mobile so browsing and purchasing stay comfortable on smaller screens.",
+          ],
+        },
+        {
+          title: "Navigation & product discovery",
+          items: [
+            "Organised complex categories and subcategories so customers can browse by room, furniture type, style, and collection instead of relying only on search.",
+          ],
+        },
+        {
+          title: "Product presentation",
+          items: [
+            "Built product-focused layouts for pricing, discounts, dimensions, timber/material specs, finishes, assembly, stock information, and warranty details.",
+          ],
+        },
+        {
+          title: "Sales & clearance experience",
+          items: [
+            "Supported promotional pricing and clearance merchandising with visible discount percentages, previous/current pricing, and dedicated sale categories.",
+          ],
+        },
+        {
+          title: "Custom-made furniture experience",
+          items: [
+            "Incorporated dedicated navigation and product structures for the Australian custom-made range — dining tables, chairs, bedroom furniture, TV units, cabinets, desks and more.",
+          ],
+        },
+        {
+          title: "Product viewing / offline-to-online",
+          items: [
+            "Integrated a product-viewing journey so customers can investigate whether furniture can be inspected at the Sydney showroom or partner showrooms before purchasing.",
+          ],
+        },
+        {
+          title: "Search, account & shopping features",
+          items: [
+            "Delivered customer login, search, shopping cart and wishlist for a complete retail experience.",
+          ],
+        },
+        {
+          title: "Trust & conversion elements",
+          items: [
+            "Structured high-value purchase information around secure payments, delivery, warranty, customer service and showroom contact — supporting Australia-wide sales while connecting users with the Sydney location.",
+          ],
+        },
+      ],
+      highlights: [
+        "Built and customised a production Shopify furniture eCommerce platform with extensive product collections, sale pricing, search, cart, accounts and wishlist functionality.",
+        "Designed a premium mobile-responsive shopping experience supporting furniture discovery by room, category, custom-made range and product type.",
+        "Connected online commerce with the physical retail experience through detailed product information, customer-service flows and showroom/product-viewing functionality.",
+      ],
+      skills: [
+        "Shopify",
+        "Liquid",
+        "JavaScript",
+        "Responsive UI/UX",
+        "eCommerce",
+        "Theme Customisation",
+        "SEO-Friendly Structure",
+      ],
+      results:
+        "The finished product is a live production eCommerce platform supporting Chocolate Wood’s ongoing retail operations and extensive furniture catalogue — easier navigation, stronger premium presentation, and a consistent journey across desktop, mobile, checkout, custom furniture discovery, and in-person product viewing.",
     },
   },
   {

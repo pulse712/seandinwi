@@ -7,6 +7,7 @@ import imgTrading from "@/assets/projects/project-trading.jpg";
 import imgMobile from "@/assets/projects/project-mobile.jpg";
 import imgGame from "@/assets/projects/project-game.jpg";
 import imgPatMyBack from "@/assets/projects/project-pat-my-back.png";
+import imgChocolateWood from "@/assets/projects/project-chocolate-wood.png";
 import type { Project } from "@/data/portfolio";
 
 export const projectImages: Record<Project["image"], string> = {
@@ -19,4 +20,5 @@ export const projectImages: Record<Project["image"], string> = {
   mobile: imgMobile,
   game: imgGame,
   patmyback: imgPatMyBack,
+  chocolatewood: imgChocolateWood,
 };

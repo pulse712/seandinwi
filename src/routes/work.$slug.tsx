@@ -61,7 +61,7 @@ function ProjectDetailPage() {
         </div>
 
         <p className="mt-8 font-mono text-[11px] uppercase tracking-[0.22em] text-primary">
-          {project.category}
+          {project.badge ?? project.category}
         </p>
         <h1 className="mt-3 font-display text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
           {project.title}
@@ -105,6 +105,17 @@ function ProjectDetailPage() {
             <dd className="mt-1.5 text-sm leading-relaxed">{detail.client}</dd>
           </div>
         </dl>
+
+        {detail.overview && (
+          <section className="mt-10">
+            <h2 className="font-display text-2xl font-semibold tracking-tight">
+              Project overview
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
+              {detail.overview}
+            </p>
+          </section>
+        )}
 
         <section className="mt-10">
           <h2 className="font-display text-2xl font-semibold tracking-tight">Stack</h2>
@@ -163,9 +174,11 @@ function ProjectDetailPage() {
 
         <section className="mt-14">
           <h2 className="font-display text-2xl font-semibold tracking-tight">What I did</h2>
-          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            Primary full-stack ownership of a live client product (~150+ commits on main).
-          </p>
+          {detail.contributionIntro && (
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              {detail.contributionIntro}
+            </p>
+          )}
           <div className="mt-6 space-y-8">
             {detail.contributions.map((group) => (
               <div key={group.title}>

@@ -191,7 +191,7 @@ function ProjectCard({ project }: { project: Project }) {
       </div>
       <div className="flex flex-1 flex-col p-5">
         <p className={cn("font-mono text-[11px] uppercase tracking-[0.16em]", styles.category)}>
-          {project.category}
+          {project.badge ?? project.category}
         </p>
         <h2 className="mt-2 font-display text-xl font-semibold tracking-tight">{project.title}</h2>
         <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{project.summary}</p>
