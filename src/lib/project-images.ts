@@ -25,6 +25,7 @@ import imgMarieGems from "@/assets/projects/project-marie-gems.jpg";
 import imgKofi from "@/assets/projects/project-kofi.png";
 import imgFire from "@/assets/projects/project-fire.png";
 import imgSouthernDiesel from "@/assets/projects/project-southern-diesel.png";
+import imgMarquisVillage from "@/assets/projects/project-marquis-village.png";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -55,4 +56,5 @@ export const projectImages: Record<ProjectImageKey, string> = {
   kofi: imgKofi,
   fire: imgFire,
   southerndiesel: imgSouthernDiesel,
+  marquisvillage: imgMarquisVillage,
 };

@@ -67,7 +67,8 @@ export type ProjectImageKey =
   | "mariegems"
   | "kofi"
   | "fire"
-  | "southerndiesel";
+  | "southerndiesel"
+  | "marquisvillage";
 
 export type ProjectDetail = {
   role: string;
@@ -1768,6 +1769,94 @@ export const projects: Project[] = [
       ],
       results:
         "A durable, classic trucking badge that presents Southern Diesel LLC as a local diesel brand — clear, reproducible and ready for real-world use in Pecos, Texas.",
+    },
+  },
+  {
+    slug: "marquis-village",
+    title: "Marquis Village — Luxury Brand Identity",
+    category: "Logo & Graphic Design",
+    badge: "Brand Identity · Logo · Stationery · Luxury",
+    summary:
+      "Premium identity for Marquis Village Residential — geometric gold monogram, refined type system, and matte black / cream business cards with foil-style gold detailing.",
+    stack: ["Logo Design", "Brand Identity", "Stationery", "Typography"],
+    accent: "violet",
+    image: "marquisvillage",
+    detail: {
+      role: "Brand / Graphic Designer",
+      client: "Marquis Village Residential LLC — Charleston, SC",
+      stackFull: [
+        "Logo Design",
+        "Monogram / Crest Mark",
+        "Brand Identity System",
+        "Typography Direction",
+        "Business Card / Stationery Design",
+        "Luxury Print Presentation",
+        "Colour & Finish Direction",
+      ],
+      overview:
+        "Marquis Village is positioned as a luxury residential brand. I designed a geometric “M” crest with a star sparkle, a clean MARQUIS / VILLAGE type lockup in metallic gold, and a vertical stationery system: matte black front card with centered gold mark and cream reverse with address and contact hierarchy for Charleston, SC.",
+      problem:
+        "Luxury residential brands need restraint — prestige without clutter. A weak monogram looks generic; overcrowded cards feel like realtor templates instead of a village-level property identity.",
+      solution:
+        "I built a minimal crest + type system and proved it on high-contrast stationery: black card for brand presence, cream card for information, gold as the only accent so the identity feels foil-ready and consistent across print touchpoints.",
+      featureGroups: [
+        {
+          title: "Core identity",
+          items: [
+            "Geometric shield-like M monogram with four-point star accent",
+            "All-caps MARQUIS wordmark with tracked VILLAGE subline",
+            "Metallic gold on black / cream for a premium residential tone",
+          ],
+        },
+        {
+          title: "Stationery system",
+          items: [
+            "Vertical matte black business card — centered gold logo and website",
+            "Vertical cream reverse — logo, name, divider, address and contact stack",
+            "Clear hierarchy for company, Charleston address, phone, email and web",
+            "Presentation mockup against a black / chocolate studio backdrop",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I owned the monogram concept, typography lockup, colour/finish direction and business-card layouts for Marquis Village.",
+      contributions: [
+        {
+          title: "Monogram & mark",
+          items: [
+            "Designed a sharp, symmetrical M crest with a subtle sparkle so the brand reads as crest-like without becoming ornate.",
+          ],
+        },
+        {
+          title: "Typography system",
+          items: [
+            "Set a refined all-caps lockup with spacing that stays elegant at foil size and on the cream info card.",
+          ],
+        },
+        {
+          title: "Stationery layout",
+          items: [
+            "Split brand presence (black) and contact detail (cream) across a vertical card pair with gold as the unifying accent.",
+          ],
+        },
+      ],
+      highlights: [
+        "Delivered a complete Marquis Village identity board: crest logo and dual business-card system.",
+        "Built a black / cream / gold palette suited to luxury residential print.",
+        "Kept hierarchy quiet and premium — strong mark, restrained type, clear contact layout.",
+      ],
+      skills: [
+        "Logo Design",
+        "Brand Identity",
+        "Monogram Design",
+        "Typography",
+        "Stationery Design",
+        "Luxury Branding",
+        "Print Presentation",
+        "Real Estate Identity",
+      ],
+      results:
+        "A polished luxury residential brand toolkit — monogram, type and stationery — that presents Marquis Village as elevated, calm and print-ready.",
     },
   },
   {
