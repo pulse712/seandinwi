@@ -76,7 +76,8 @@ export type ProjectImageKey =
   | "castlesoap"
   | "lovebomb"
   | "flyerbrochure"
-  | "flyerpostergrid";
+  | "flyerpostergrid"
+  | "blok";
 
 export type ProjectDetail = {
   role: string;
@@ -2566,6 +2567,101 @@ export const projects: Project[] = [
       ],
       results:
         "A high-volume flyer portfolio that proves marketing design range — from nightlife and tropical events to air quality, insurance and wellness promotions.",
+    },
+  },
+  {
+    slug: "blok-watches",
+    title: "Blok Watches — Kids' Analog Time Store",
+    category: "eCommerce",
+    badge: "eCommerce · Shopify · Product Storytelling · Interactive UX",
+    summary:
+      "Built a Shopify storefront for Blok — Swiss-powered analog kids' watches with interactive dial demos, BLOK 33 / 38 merchandising, bundles, straps and education-led product storytelling.",
+    stack: ["Shopify", "Custom JS", "Product UX", "Merchandising"],
+    accent: "cyan",
+    image: "blok",
+    url: "https://blokwatches.com/",
+    detail: {
+      role: "Full-Stack / Shopify Developer",
+      client: "Blok Watches — live educational kids' watch brand",
+      liveUrl: "https://blokwatches.com/",
+      stackFull: [
+        "Shopify",
+        "Liquid / Theme Customisation",
+        "Custom JavaScript (interactive dial / bezel demo)",
+        "Product Catalogue & Variants",
+        "Collections & Merchandising",
+        "Bundles & Accessories",
+        "International Shipping / Multi-Currency",
+        "Email Capture & Reviews Integrations",
+        "Responsive Product Storytelling UX",
+      ],
+      overview:
+        "Blok Watches sells Swiss-powered analog watches that teach kids time with visual “Bloks” on the bezel — no gimmicks, no alarms. The live Shopify storefront at blokwatches.com presents BLOK 33 (from $189) and BLOK 38 GMT (from $379), colourways, straps, bundles, build specs (sapphire crystal, 100m WR, Swiss movements) and an interactive hero that lets shoppers set a blok and watch the dial demo before buying.",
+      problem:
+        "Premium kids' watches are sold on trust and understanding — parents need to grasp the dial innovation and timer bezel, not just see pretty product shots. Generic watch themes bury education, specs and social proof under flat grids.",
+      solution:
+        "I shaped a product-story storefront: interactive dial/bezel demo, clear BLOK 33 vs BLOK 38 paths, colourway merchandising, bundles and straps, trust (returns, warranty, ages 4+), press logos, owner quotes and FAQ/shipping support — so the concept sells before checkout.",
+      featureGroups: [
+        {
+          title: "Storefront capabilities",
+          items: [
+            "Interactive hero dial demo (colourways + 5/10/15/30 minute blok setter)",
+            "BLOK 33 and BLOK 38 GMT product lines with colourway variants",
+            "Bundles (e.g. parent/child sets) and strap accessories",
+            "Spec storytelling: sapphire crystal, 100m WR, LumiNova, Swiss quartz / GMT movements",
+            "Dial innovation explainer (conventional vs Blok dial)",
+            "Owner testimonials and press logo strip",
+            "Promo messaging (tote/beanie offer, first-order email discount)",
+            "International shipping and multi-currency checkout markets",
+            "Help paths: FAQs, shipping/returns, user guide, contact",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I developed the Shopify commerce and product-education experience — interactive demo UX, merchandising structure and conversion storytelling for a live watch brand.",
+      contributions: [
+        {
+          title: "Interactive product demo",
+          items: [
+            "Integrated a bezel/dial demo so shoppers can set a blok and understand the timer concept before purchase.",
+          ],
+        },
+        {
+          title: "Catalogue & merchandising",
+          items: [
+            "Organised BLOK 33 / 38 colourways, bundles and straps into clear shop paths with pricing and availability.",
+          ],
+        },
+        {
+          title: "Education-led conversion",
+          items: [
+            "Built dial innovation, build-quality and owner-story sections so parents buy the concept, not only the SKU.",
+          ],
+        },
+        {
+          title: "Commerce operations UX",
+          items: [
+            "Supported trust signals, email capture, reviews integrations and international checkout flows on Shopify.",
+          ],
+        },
+      ],
+      highlights: [
+        "Launched a production Shopify storefront at blokwatches.com for educational kids' watches.",
+        "Combined interactive dial demos with clear BLOK 33 / 38 merchandising and accessories.",
+        "Positioned a premium analog brand with specs, press, reviews and parent-focused storytelling.",
+      ],
+      skills: [
+        "Shopify",
+        "eCommerce UX",
+        "Custom JavaScript",
+        "Product Storytelling",
+        "Merchandising",
+        "Theme Customisation",
+        "Responsive Web Design",
+        "Conversion Optimisation",
+      ],
+      results:
+        "A live educational watch commerce site that helps parents understand and buy Blok — interactive demos, clear product lines and trust-backed checkout from $189.",
     },
   },
   {
