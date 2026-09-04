@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { profile } from "@/data/portfolio";
 import { Portrait } from "@/components/site-chrome";
+import brandBg from "@/assets/home-brand-bg.jpg";
 
 const title = "About Sean — Freelance Full-Stack Developer in Oregon";
 const description = profile.intro;
@@ -28,9 +29,15 @@ function Home() {
   return (
     <section className="relative">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 grid-field opacity-40" />
+        <img
+          src={brandBg}
+          alt=""
+          className="absolute left-1/2 top-8 h-[min(70vh,40rem)] w-auto max-w-none -translate-x-1/2 object-contain opacity-[0.22] sm:top-12 sm:h-[min(75vh,48rem)] sm:opacity-[0.28]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/75 to-background" />
+        <div className="absolute inset-0 grid-field opacity-25" />
         <div
-          className="absolute -top-40 right-[-10%] size-[34rem] rounded-full opacity-25 blur-3xl"
+          className="absolute -top-40 right-[-10%] size-[34rem] rounded-full opacity-20 blur-3xl"
           style={{ background: "radial-gradient(circle, var(--primary), transparent 65%)" }}
         />
       </div>
