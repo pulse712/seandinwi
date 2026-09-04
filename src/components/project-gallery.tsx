@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import {
   ArrowUpRight,
   Clapperboard,
@@ -194,15 +195,11 @@ export function ProjectGallery() {
 
 function ProjectCard({ project }: { project: Project }) {
   const styles = accentStyles[project.accent];
-  const href = project.url ?? profile.hireUrl;
+  const hasDetail = Boolean(project.detail);
+  const externalHref = project.url ?? profile.hireUrl;
 
-  return (
-    <article
-      className={cn(
-        "group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1",
-        styles.ring,
-      )}
-    >
+  const content = (
+    <>
       <div className="relative aspect-[16/10] overflow-hidden bg-surface">
         <img
           src={images[project.image]}
@@ -230,18 +227,34 @@ function ProjectCard({ project }: { project: Project }) {
             </span>
           ))}
         </div>
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
+        <span
           className={cn(
             "mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full border px-4 py-2.5 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-muted-foreground transition-colors",
             styles.btn,
           )}
         >
-          View Project <ArrowUpRight className="size-3.5" />
-        </a>
+          {hasDetail ? "View case study" : "View Project"} <ArrowUpRight className="size-3.5" />
+        </span>
       </div>
-    </article>
+    </>
+  );
+
+  const shellClass = cn(
+    "group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1",
+    styles.ring,
+  );
+
+  if (hasDetail) {
+    return (
+      <Link to="/work/$slug" params={{ slug: project.slug }} className={shellClass}>
+        {content}
+      </Link>
+    );
+  }
+
+  return (
+    <a href={externalHref} target="_blank" rel="noopener noreferrer" className={shellClass}>
+      {content}
+    </a>
   );
 }

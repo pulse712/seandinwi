@@ -35,6 +35,25 @@ export type ProjectCategory =
 
 export type ProjectAccent = "cyan" | "lime" | "ember" | "violet" | "sky";
 
+export type ProjectDetailGroup = {
+  title: string;
+  items: string[];
+};
+
+export type ProjectDetail = {
+  role: string;
+  client: string;
+  liveUrl?: string;
+  stackFull: string[];
+  problem: string;
+  solution: string;
+  featureGroups: ProjectDetailGroup[];
+  contributions: ProjectDetailGroup[];
+  highlights: string[];
+  skills: string[];
+  results?: string;
+};
+
 export type Project = {
   slug: string;
   title: string;
@@ -44,6 +63,7 @@ export type Project = {
   accent: ProjectAccent;
   image: "saas" | "ecommerce" | "automation" | "brand" | "video" | "trading" | "mobile" | "game";
   url?: string;
+  detail?: ProjectDetail;
 };
 
 export const projectCategories: Array<"All" | ProjectCategory> = [
@@ -60,6 +80,164 @@ export const projectCategories: Array<"All" | ProjectCategory> = [
 ];
 
 export const projects: Project[] = [
+  {
+    slug: "pat-my-back",
+    title: "Pat My Back",
+    category: "App Development",
+    summary:
+      "Peer-support marketplace PWA where clients connect with vetted coaches via realtime chat, audio, and video — billed per minute from a prepaid wallet.",
+    stack: ["React", "Supabase", "Stripe", "Agora"],
+    accent: "lime",
+    image: "mobile",
+    url: "https://patmyback.com",
+    detail: {
+      role: "Full-stack engineer (sole primary developer)",
+      client: "Pat My Back — live production web app / PWA",
+      liveUrl: "https://patmyback.com",
+      stackFull: [
+        "React 19",
+        "TypeScript",
+        "TanStack Start + Router",
+        "Tailwind CSS 4",
+        "shadcn/ui",
+        "Supabase (Postgres + Auth + Realtime + RLS)",
+        "Stripe",
+        "Agora RTC",
+        "Resend",
+        "Web Push (VAPID)",
+        "Vercel",
+      ],
+      problem:
+        "People need on-demand encouragement and coaching (career, emotional support, music lessons, and more) without booking friction. Providers need tools to set availability, price, and earn by the minute.",
+      solution:
+        "A marketplace with two sides — clients buy credits and start sessions; Pat Pals go live and take chat/calls; admins approve providers, manage promos/trial codes, and moderate the platform.",
+      featureGroups: [
+        {
+          title: "Marketplace & profiles",
+          items: [
+            "Role-based access: client, pat_pal, admin, super_admin",
+            "Browse Pat Pals by category (mentorship, coaching, music lessons, etc.)",
+            "Pat Pal profiles: headline, price/min, availability, photos",
+            "Booking calendars / hours for scheduled sessions",
+          ],
+        },
+        {
+          title: "Real-time communication",
+          items: [
+            "Instant messaging with read receipts",
+            "In-call chat (draggable corner panel) so users don’t leave the call",
+            "Incoming call overlays, ringtone, message chimes",
+            "Block / report users, Terms & Privacy",
+          ],
+        },
+        {
+          title: "Audio / video calling (Agora)",
+          items: [
+            "1:1 audio and video sessions",
+            "Live call timer + remaining balance countdown",
+            "Mid-call wallet top-up (Stripe) without dropping the call",
+            "Grace period when balance hits zero",
+            "Mute, camera on/off, volume presets, minimize-to-pill",
+            "Front ↔ back camera switch on mobile",
+            "WhatsApp-style fullscreen landscape controls + tap PiP to swap views",
+            "Persistent call across in-app navigation",
+          ],
+        },
+        {
+          title: "Billing & growth",
+          items: [
+            "Prepaid wallet (seconds-based) via Stripe Checkout + webhooks",
+            "Per-minute billing with session ledger",
+            "Trial codes (timed / unlimited minutes)",
+            "Post-session ratings + tips",
+            "Staff complimentary-minute gifts",
+          ],
+        },
+        {
+          title: "Admin & account lifecycle",
+          items: [
+            "Signup approval gate (Pat Pals pending; clients auto-approved)",
+            "Account states: pending, approved, deactivated, deleted",
+            "Live admin alerts for new Pat Pal signups",
+            "User delete/disable, promo banners, pricing, analytics tabs",
+            "Push notifications (web) + PWA install (iOS/Android home screen)",
+          ],
+        },
+      ],
+      contributions: [
+        {
+          title: "Calling & media UX",
+          items: [
+            "Built/refined the full CallScreen: Agora join/publish, billing timers, top-up, rating/tips",
+            "Redesigned in-call UI toward native/WhatsApp patterns (2×3 controls, overlay chrome, landscape fullscreen for music lessons)",
+            "Fixed bidirectional front/back camera switching on iOS/Android",
+            "Added tap-to-swap PiP ↔ main video like WhatsApp",
+            "Kept calls alive across navigation with a floating minimized pill",
+            "Hardened reconnect/session cleanup so calls don’t strand as “active”",
+          ],
+        },
+        {
+          title: "Messaging, notifications & mobile UX",
+          items: [
+            "Chat alerts, read receipts, safe-area / mobile layout fixes",
+            "Service-worker push: suppress sender’s own notifications; survive SW restarts",
+            "Configurable message sounds + client ringtone assets for production",
+            "Bottom nav / desktop sidebar IA: Home, Browse, Chats, Calls, Profile",
+            "Call history page + Profile links so users can find chats and call logs",
+            "PWA install fix (icon size mismatch blocking iPhone “Add to Home Screen”)",
+          ],
+        },
+        {
+          title: "Auth, security & admin ops",
+          items: [
+            "Server-side approval gate so pending/banned users can’t enter the app",
+            "Admin delete/disable users; sticky new-Pal signup alerts",
+            "RLS / RPC security fixes (e.g. cancel-session trust, report validation)",
+            "Block/report, Terms/Privacy pages",
+          ],
+        },
+        {
+          title: "Payments & marketplace reliability",
+          items: [
+            "Wallet/session billing edge cases (billing start, stuck sessions, mid-call top-up)",
+            "Trial codes, promo banners, Pat pricing controls",
+            "Booking calendars + availability/presence (don’t show everyone as online)",
+          ],
+        },
+        {
+          title: "Delivery & production quality",
+          items: [
+            "Deployed on Vercel with Supabase migrations",
+            "Fixed stale-chunk 404s after deploys (service worker cache)",
+            "Iterated directly from client bug reports and screen recordings",
+          ],
+        },
+      ],
+      highlights: [
+        "Shipped a production peer-support marketplace PWA with chat, Agora A/V, and per-minute Stripe wallet billing",
+        "Designed WhatsApp-like video call UX: fullscreen landscape overlays, auto-hiding controls, PiP swap, front/rear camera flip",
+        "Implemented realtime messaging, web push, read receipts, and in-call chat without leaving the session",
+        "Built admin approval workflows, RLS-backed account gates, and moderation (block/report)",
+        "Hardened mobile PWA install, safe areas, and post-deploy cache recovery for real users on iPhone",
+      ],
+      skills: [
+        "TypeScript",
+        "React 19",
+        "TanStack Start/Router",
+        "Tailwind",
+        "Supabase (SQL, RLS, Realtime)",
+        "Stripe",
+        "Agora RTC",
+        "Web Push / Service Workers",
+        "PWA",
+        "Vercel",
+        "Mobile-first UX",
+        "Client-facing product iteration",
+      ],
+      results:
+        "Delivered and maintained a live client product (patmyback.com), turning repeated mobile/call UX feedback into shipped features (call history, landscape fullscreen, camera flip, WhatsApp-style PiP swap) while owning auth, billing, and admin reliability.",
+    },
+  },
   {
     slug: "saas-dashboard",
     title: "SaaS Dashboard Platform",
@@ -151,6 +329,10 @@ export const projects: Project[] = [
     image: "game",
   },
 ];
+
+export function getProjectBySlug(slug: string) {
+  return projects.find((project) => project.slug === slug);
+}
 
 export const workStats = [
   { value: "100s", label: "Projects Delivered" },
