@@ -83,7 +83,8 @@ export type ProjectImageKey =
   | "languagecafe"
   | "cirkus"
   | "ringforensic"
-  | "scanneralert";
+  | "scanneralert"
+  | "bubbledalle";
 
 export type ProjectDetail = {
   role: string;
@@ -3362,10 +3363,13 @@ export const projects: Project[] = [
       "Integrated and repaired DALL·E 3 image generation in an existing Bubble.io app — text-to-image workflow wired so the result area renders highly detailed generated images instead of an empty black box.",
     stack: ["Bubble.io", "DALL·E 3", "API Workflows", "Backend"],
     accent: "violet",
-    image: "saas",
+    image: "bubbledalle",
+    url: "https://www.freelancer.com/projects/ai-hw-sw/Integrate-DALL-Bubble-App/proposals",
     detail: {
       role: "Bubble.io / AI Integration Developer",
       client: "Existing Bubble app — DALL·E 3 generation completion",
+      liveUrl:
+        "https://www.freelancer.com/projects/ai-hw-sw/Integrate-DALL-Bubble-App/proposals",
       stackFull: [
         "Bubble.io App Development",
         "OpenAI DALL·E 3 API Integration",
