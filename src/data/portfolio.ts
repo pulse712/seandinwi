@@ -3447,6 +3447,98 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "mlb-scenario-odds-analysis",
+    title: "MLB — Four-Season Scenario & Odds Analysis",
+    category: "Trading & Blockchain",
+    badge: "MLB · Statistics · Odds Analysis · Excel / R",
+    summary:
+      "Statistics-driven review of four seasons of Major League Baseball game outcomes vs betting odds — win rate, average line, implied vs actual probability and ROI for each supplied scenario, ranked by viability.",
+    stack: ["Statistics", "Excel", "R", "Data Viz"],
+    accent: "sky",
+    image: "trading",
+    detail: {
+      role: "Sports Statistician / Data Analyst (MLB)",
+      client: "Private MLB scenario & odds assessment (descriptive analytics)",
+      stackFull: [
+        "Major League Baseball Domain Knowledge",
+        "Descriptive Statistics",
+        "Game Outcomes vs Betting Odds",
+        "Win Rate / Average Line / Implied vs Actual Probability / ROI",
+        "Season-Consistent Methodology (4 seasons)",
+        "Excel / Spreadsheet Deliverables",
+        "R / Statistical Analysis",
+        "Clear Visualisations & Scenario Ranking",
+      ],
+      overview:
+        "The client already holds full season-by-season MLB data for the last four years plus a set of game-based scenarios. The engagement delivers a clean, statistics-driven assessment of whether each scenario holds water — using identical methods across seasons, computing key descriptive measures against corresponding betting odds, and packaging results so profitable-looking angles and non-viable ones are obvious at a glance.",
+      problem:
+        "Raw multi-season MLB files and scenario ideas don’t answer viability. Without consistent descriptive stats (and someone who understands MLB), implied odds get confused with actual hit rates, and scenarios can’t be compared fairly across years.",
+      solution:
+        "I apply a repeatable descriptive framework per scenario and season: join game outcomes to lines/odds, compute win rate, average line, implied vs actual probability and simple ROI, keep methods identical year to year, then deliver per-scenario tables plus a short ranking summary — with optional clear charts.",
+      featureGroups: [
+        {
+          title: "Analysis scope",
+          items: [
+            "Four seasons of Major League Baseball game data (client-supplied access)",
+            "Straightforward descriptive statistics on outcomes alongside betting odds",
+            "Per-scenario metrics: win rate, average line, implied vs actual probability, simple ROI",
+            "Identical methodology across seasons for consistency",
+            "Separate results for every scenario supplied",
+            "Short summary ranking scenarios by viability",
+          ],
+        },
+        {
+          title: "Deliverables",
+          items: [
+            "Concise write-up of findings",
+            "Supporting tables or well-commented spreadsheet",
+            "Optional clear visualisations for at-a-glance comparison",
+            "MLB-literate interpretation — not generic spreadsheet churn",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I bring working MLB knowledge plus a consistent descriptive-stats pipeline so each wagering scenario is judged on the same footing across four seasons.",
+      contributions: [
+        {
+          title: "Odds vs outcomes framing",
+          items: [
+            "Aligned game results with corresponding lines to compute implied probability, actual hit rate and simple ROI per scenario.",
+          ],
+        },
+        {
+          title: "Season-consistent methods",
+          items: [
+            "Kept definitions and calculations identical year to year so multi-season comparisons stay valid.",
+          ],
+        },
+        {
+          title: "Decision-ready packaging",
+          items: [
+            "Delivered per-scenario tables and a short viability ranking so strong and weak angles are obvious quickly.",
+          ],
+        },
+      ],
+      highlights: [
+        "Four-season MLB descriptive analysis of game outcomes vs betting odds.",
+        "Standard metrics per scenario: win rate, average line, implied vs actual probability, ROI.",
+        "Clear ranking write-up and spreadsheet/tables for fast viability decisions.",
+      ],
+      skills: [
+        "MLB Domain Knowledge",
+        "Statistical Analysis",
+        "Descriptive Statistics",
+        "Excel / Spreadsheets",
+        "R Programming",
+        "Data Analytics",
+        "Data Visualization",
+        "Sports Odds Analysis",
+      ],
+      results:
+        "A clean, MLB-aware statistical assessment that shows — scenario by scenario — which angles look viable across four seasons and which do not, with transparent metrics and a ranked summary.",
+    },
+  },
+  {
     slug: "saas-dashboard",
     title: "SaaS Dashboard Platform",
     category: "Web & SaaS",
