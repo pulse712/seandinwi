@@ -4264,12 +4264,12 @@ export const projects: Project[] = [
     stack: ["Illustration", "Picture Book", "Character Design", "Print Layout"],
     accent: "lime",
     image: "mousetrapcover",
-    url: "https://drive.google.com/file/d/1URrBBr0ScG5DcwyllQhSzcwgy2Ir9aRM/view",
+    url: "https://drive.google.com/file/d/1b0t0nIVUHPfvcpV2NUy26bbMtQ9BC6s_/view?usp=sharing",
     detail: {
       role: "Children's Book Illustrator / Picture Book Designer",
       client: "Mouse Trap — picture book by Amos Powell (illus. Sophia Bennett)",
       liveUrl:
-        "https://drive.google.com/file/d/1URrBBr0ScG5DcwyllQhSzcwgy2Ir9aRM/view",
+        "https://drive.google.com/file/d/1b0t0nIVUHPfvcpV2NUy26bbMtQ9BC6s_/view?usp=sharing",
       stackFull: [
         "Children's Picture Book Design",
         "Character Illustration (Christopher the Mouse)",
