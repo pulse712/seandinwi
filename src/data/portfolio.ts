@@ -87,7 +87,8 @@ export type ProjectImageKey =
   | "bubbledalle"
   | "mlbscenario"
   | "customerpricing"
-  | "worldofsightwords";
+  | "worldofsightwords"
+  | "weatherforddeals";
 
 export type ProjectDetail = {
   role: string;
@@ -3271,7 +3272,7 @@ export const projects: Project[] = [
       "Lifestyle iOS app for Weatherford and Parker County, Texas — local restaurant, shopping, gym, entertainment, auto, hotel and more deals, with in-app directions to each merchant’s front door.",
     stack: ["iOS", "Local Deals", "Maps / Directions", "Lifestyle"],
     accent: "lime",
-    image: "mobile",
+    image: "weatherforddeals",
     url: "https://apps.apple.com/us/app/weatherford-deals/id1450246746",
     detail: {
       role: "iOS App Developer",
