@@ -93,7 +93,9 @@ export type ProjectImageKey =
   | "polymarketsol"
   | "polymarketbtc"
   | "ninjatraderstrategy"
-  | "thinkorswimanalytics";
+  | "thinkorswimanalytics"
+  | "tradingviewpivots"
+  | "tradingviewppv1";
 
 export type ProjectDetail = {
   role: string;
@@ -4056,6 +4058,108 @@ export const projects: Project[] = [
         {
           label: "Thinkorswim — gap/spike/range analytics overlay",
           image: "thinkorswimanalytics",
+        },
+      ],
+    },
+  },
+  {
+    slug: "tradingview-pine-strategy-suite",
+    title: "TradingView Pine Strategies — Pivots, Breakouts & PPV1",
+    category: "Trading & Blockchain",
+    badge: "TradingView · Pine Script v5 · Crypto · Signal Strategies",
+    summary:
+      "Custom TradingView Pine Script strategies and overlays — pivot/missed-reversal structure on BTC, plus PPV1 with breakout signals, Adaptive SuperTrend context and ATR volatility clustering on crypto pairs.",
+    stack: ["TradingView", "Pine Script", "Crypto Charts", "Signals"],
+    accent: "violet",
+    image: "tradingviewppv1",
+    detail: {
+      role: "Pine Script / Trading Strategy Developer",
+      client: "Custom TradingView crypto strategy & indicator suite",
+      stackFull: [
+        "TradingView Charting Platform",
+        "Pine Script v5 Strategies",
+        "Pivot High/Low & Missed Reversal Levels",
+        "Breakout Signal Overlays",
+        "Adaptive SuperTrend Context",
+        "ATR Volatility Clustering Table",
+        "Buy / Sell Signal Annotation",
+        "Multi-Pair Crypto Charts (BTC, SUI and more)",
+      ],
+      overview:
+        "A TradingView-centred strategy suite built in Pine Script: structural pivot and missed-reversal mapping on BTC/USD, and the PPV1 strategy combining D-shape breakout signals, Adaptive SuperTrend bias and a live ATR volatility-cluster table so traders see regime, structure and entries on one chart.",
+      problem:
+        "Off-the-shelf indicators don’t encode a trader’s specific pivot, breakout and volatility rules. Crypto desks need Pine strategies that mark highs/lows, missed reversals, breakout ups/downs and current ATR regime without jumping between scripts.",
+      solution:
+        "I developed and charted Pine Script overlays and the PPV1 strategy — pivot high/low with missed-reversal markers and zigzag structure, plus breakout buy/sell boxes, SuperTrend context and a volatility cluster summary — runnable on TradingView across Bitstamp, Binance and similar feeds.",
+      featureGroups: [
+        {
+          title: "Pivot structure & missed reversals",
+          items: [
+            "Pivot Points High Low & Missed Reversal Levels overlay on BTC/USD (Bitstamp)",
+            "Teal/red pivot arrows at local troughs and peaks",
+            "Missed-reversal (ghost) markers where structure was skipped",
+            "Zigzag structure lines and horizontal support/resistance from pivots",
+            "Multi-hour 3-minute session monitoring through sharp bearish moves",
+          ],
+        },
+        {
+          title: "PPV1 strategy & volatility regime",
+          items: [
+            "Pine Script v5 strategy(\"PPV1 Strategy\", overlay=true)",
+            "LuxAlgo-style D-shape breakout buy/sell signal boxes",
+            "Adaptive SuperTrend shaded trend context",
+            "Cluster Number (Volatility Level) table — high/medium/low ATR centroids and sizes",
+            "Current volatility status (e.g. LOW ATR) on SUI/USDT and other crypto pairs",
+            "1-minute execution-style charting with Pine Editor workflow",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I authored the Pine Script strategy and chart overlays so structure, breakouts and volatility regime stay visible for discretionary confirmation or automated signal review on TradingView.",
+      contributions: [
+        {
+          title: "Structural pivot mapping",
+          items: [
+            "Implemented pivot high/low and missed-reversal visualisation so market structure stays readable on fast BTC charts.",
+          ],
+        },
+        {
+          title: "PPV1 signal stack",
+          items: [
+            "Combined breakout ups/downs with Adaptive SuperTrend bias inside a Pine v5 strategy overlay.",
+          ],
+        },
+        {
+          title: "Volatility clustering HUD",
+          items: [
+            "Added ATR-based high/medium/low cluster stats and a current-regime readout for strategy filters.",
+          ],
+        },
+      ],
+      highlights: [
+        "TradingView Pine suite spanning BTC pivot/missed-reversal structure and PPV1 crypto signals.",
+        "Breakout buy/sell markers with Adaptive SuperTrend and ATR volatility clustering.",
+        "Pine Script v5 strategy workflow shown live in the Pine Editor on crypto pairs.",
+      ],
+      skills: [
+        "TradingView",
+        "Pine Script v5",
+        "Crypto Technical Analysis",
+        "Strategy Development",
+        "Pivot / Structure Indicators",
+        "Volatility / ATR Analytics",
+        "Signal Overlay Design",
+      ],
+      results:
+        "A TradingView Pine strategy suite that maps pivot structure and missed reversals on BTC, and runs PPV1 breakout/SuperTrend/volatility-cluster signals on crypto pairs for clearer, rule-based chart decisions.",
+      gallery: [
+        {
+          label: "PPV1 Strategy — breakouts, SuperTrend & ATR clusters (SUI/USDT)",
+          image: "tradingviewppv1",
+        },
+        {
+          label: "Pivot high/low & missed reversals — BTC/USD Bitstamp",
+          image: "tradingviewpivots",
         },
       ],
     },
