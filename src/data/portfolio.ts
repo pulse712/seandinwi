@@ -84,7 +84,9 @@ export type ProjectImageKey =
   | "cirkus"
   | "ringforensic"
   | "scanneralert"
-  | "bubbledalle";
+  | "bubbledalle"
+  | "mlbscenario"
+  | "customerpricing";
 
 export type ProjectDetail = {
   role: string;
@@ -3455,10 +3457,13 @@ export const projects: Project[] = [
       "Statistics-driven review of four seasons of Major League Baseball game outcomes vs betting odds — win rate, average line, implied vs actual probability and ROI for each supplied scenario, ranked by viability.",
     stack: ["Statistics", "Excel", "R", "Data Viz"],
     accent: "sky",
-    image: "trading",
+    image: "mlbscenario",
+    url: "https://www.freelancer.com/projects/data-analysis/MLB-Betting-Scenarios-Statistical/proposals",
     detail: {
       role: "Sports Statistician / Data Analyst (MLB)",
       client: "Private MLB scenario & odds assessment (descriptive analytics)",
+      liveUrl:
+        "https://www.freelancer.com/projects/data-analysis/MLB-Betting-Scenarios-Statistical/proposals",
       stackFull: [
         "Major League Baseball Domain Knowledge",
         "Descriptive Statistics",
@@ -3536,6 +3541,107 @@ export const projects: Project[] = [
       ],
       results:
         "A clean, MLB-aware statistical assessment that shows — scenario by scenario — which angles look viable across four seasons and which do not, with transparent metrics and a ranked summary.",
+    },
+  },
+  {
+    slug: "customer-pricing-excel-macro",
+    title: "Customer Pricing Analysis — Excel Macro Workbook",
+    category: "Automation",
+    badge: "Excel VBA · Pricing Analysis · Macro-Enabled Workbook",
+    summary:
+      "Fully automated macro-enabled Excel workbook for customer pricing analysis — select a customer by name, pull effective net and shareholder prices, model Pricing Incentive % changes, and auto-update variance to shareholder.",
+    stack: ["Excel VBA", "Macros", "Pricing Logic", "Data Validation"],
+    accent: "ember",
+    image: "customerpricing",
+    url: "https://www.freelancer.com/projects/excel-macros/Excel-Macro-Automation-40570123/proposals",
+    detail: {
+      role: "Excel VBA / Spreadsheet Automation Developer",
+      client: "Customer pricing analysis template (macro-enabled workbook)",
+      liveUrl:
+        "https://www.freelancer.com/projects/excel-macros/Excel-Macro-Automation-40570123/proposals",
+      stackFull: [
+        "Excel VBA / Macro Automation",
+        "Customer Name Dropdown (Data Validation)",
+        "Effective Net Price from PriceLists",
+        "Shareholder Pricing Baseline Comparison",
+        "Pricing Incentive % → Updated Net Price",
+        "Updated Variance to Shareholder",
+        "Auto-Clear Incentives on Customer Change",
+        "Item Prices / SKU Matching",
+      ],
+      overview:
+        "A pricing template that used to be locked to fake Plastermax data becomes a reusable analysis tool: pick any customer from Customer List by name, load their effective net prices and shareholder baselines onto Data Update, enter Pricing Incentive percentages, and let the macro recalculate updated net prices and variance to shareholder — clearing stale incentives whenever the customer changes.",
+      problem:
+        "Manual customer swaps leave old incentive percentages behind, Price P/M doesn’t reflect true effective net from PriceLists, and incentive math that tweaks approximate base discount instead of the current effective net price produces the wrong final prices and variance.",
+      solution:
+        "I built a macro-enabled workbook workflow: Customer List drives a name dropdown; selection loads PriceLists effective net prices and shareholder prices onto Data Update (Price P/M renamed to Effective Net Price); Pricing Incentive % adjusts the current effective net (negative % raises price, positive % lowers it); Updated Variance to Shareholder recalculates automatically; changing customers clears the incentive column.",
+      featureGroups: [
+        {
+          title: "Customer selection & data pull",
+          items: [
+            "Dropdown of customer names from the Customer List sheet (by name, not account number)",
+            "Replaces template Plastermax placeholder data when another customer is selected",
+            "Pulls item pricing context from Item Prices for SKU/code matching",
+            "Loads effective net prices from PriceLists onto Data Update",
+            "Pulls shareholder pricing first as the baseline comparison",
+            "Clears/resets Pricing Incentive column on customer change to prevent carry-over mistakes",
+          ],
+        },
+        {
+          title: "Pricing incentive & variance logic",
+          items: [
+            "Renames/adjusts Price P/M → Effective Net Price (true net from PriceLists)",
+            "Pricing Incentive accepts percentage change against current effective net price — not approximate base discount",
+            "Negative % (e.g. −2%) reduces discount → final price goes up",
+            "Positive % (e.g. +2%) increases discount → final price goes down",
+            "Example: item 12703600 at $1.91/m with −2% adjusts that $1.91 by 2%, not the discount rate alone",
+            "Updated Variance to Shareholder recalculates from the new effective net vs shareholder price",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I automated the full pricing-analysis loop in Excel so analysts can switch customers, model incentive percentages correctly against effective net, and see shareholder variance update without spreadsheet guesswork.",
+      contributions: [
+        {
+          title: "Name-based customer switch",
+          items: [
+            "Wired Customer List into a dropdown and reset Pricing Incentive whenever the selection changed.",
+          ],
+        },
+        {
+          title: "Effective net as source of truth",
+          items: [
+            "Bound Data Update to PriceLists effective net prices and shareholder baselines instead of approximate P/M labels.",
+          ],
+        },
+        {
+          title: "Incentive on current net, not base discount",
+          items: [
+            "Implemented % adjustments against the customer’s current effective net so −/+ incentives move price in the intended direction.",
+          ],
+        },
+        {
+          title: "Auto variance refresh",
+          items: [
+            "Recalculated Updated Variance to Shareholder after every incentive-driven net price change.",
+          ],
+        },
+      ],
+      highlights: [
+        "Macro-enabled Excel: customer-by-name dropdown, auto price pull, incentive modelling, variance update.",
+        "Incentive % applied to current effective net price — not approximate base discount.",
+        "Pricing Incentive column clears on customer change to avoid stale percentages.",
+      ],
+      skills: [
+        "Excel VBA / Macros",
+        "Spreadsheet Automation",
+        "Pricing Analysis",
+        "Data Validation / Dropdowns",
+        "Financial Spreadsheet Logic",
+        "Workbook Architecture",
+      ],
+      results:
+        "A working .xlsm pricing template that selects customers by name, pulls customer and shareholder prices, applies incentive percentages to effective net correctly, updates variance to shareholder, and resets incentives on customer change.",
     },
   },
   {

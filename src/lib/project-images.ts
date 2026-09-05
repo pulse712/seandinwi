@@ -43,6 +43,8 @@ import imgCirkus from "@/assets/projects/project-cirkus.png";
 import imgRingForensic from "@/assets/projects/project-ring-forensic.png";
 import imgScannerAlert from "@/assets/projects/project-scanner-alert.png";
 import imgBubbleDalle from "@/assets/projects/project-bubble-dalle.png";
+import imgMlbScenario from "@/assets/projects/project-mlb-scenario.png";
+import imgCustomerPricing from "@/assets/projects/project-customer-pricing.jpg";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -91,4 +93,6 @@ export const projectImages: Record<ProjectImageKey, string> = {
   ringforensic: imgRingForensic,
   scanneralert: imgScannerAlert,
   bubbledalle: imgBubbleDalle,
+  mlbscenario: imgMlbScenario,
+  customerpricing: imgCustomerPricing,
 };
