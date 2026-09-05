@@ -96,7 +96,9 @@ export type ProjectImageKey =
   | "thinkorswimanalytics"
   | "tradingviewpivots"
   | "tradingviewppv1"
-  | "shortstrategybacktest";
+  | "shortstrategybacktest"
+  | "mousetrapcover"
+  | "mousetrapinterior";
 
 export type ProjectDetail = {
   role: string;
@@ -4250,6 +4252,109 @@ export const projects: Project[] = [
       ],
       results:
         "A clear short-strategy backtest visualisation that shows where entries fired, where profit targets filled, and how regime filters and channels framed the bearish move.",
+    },
+  },
+  {
+    slug: "mouse-trap-picture-book",
+    title: "Mouse Trap — Children's Picture Book",
+    category: "Logo & Graphic Design",
+    badge: "Picture Book · Illustration · Children's Story · Print Layout",
+    summary:
+      "Illustrated children's picture book Mouse Trap — a Pixar-style farm fable about empathy and awareness, following Christopher the mouse when friends dismiss the danger of mouse traps.",
+    stack: ["Illustration", "Picture Book", "Character Design", "Print Layout"],
+    accent: "lime",
+    image: "mousetrapcover",
+    url: "https://drive.google.com/file/d/1URrBBr0ScG5DcwyllQhSzcwgy2Ir9aRM/view",
+    detail: {
+      role: "Children's Book Illustrator / Picture Book Designer",
+      client: "Mouse Trap — picture book by Amos Powell (illus. Sophia Bennett)",
+      liveUrl:
+        "https://drive.google.com/file/d/1URrBBr0ScG5DcwyllQhSzcwgy2Ir9aRM/view",
+      stackFull: [
+        "Children's Picture Book Design",
+        "Character Illustration (Christopher the Mouse)",
+        "3D / Pixar-Style Farm World",
+        "Cover Design & Title Typography",
+        "Interior Page Layout & Image Wrap",
+        "Print-Ready Square Format (BookWright)",
+        "Story Sequencing Across Spreads",
+      ],
+      overview:
+        "Mouse Trap is a charming farmyard picture book: early one morning Mouse races to warn Chicken, Pig and Cow that the Farmer has set mouse traps — but each friend shrugs that “a mouse trap isn’t for me.” When Mouse overhears the Farmer’s feast plans, he learns a harder lesson about empathy, awareness and who truly cares. Bright 3D Pixar-style scenes carry Christopher the mouse through a funny, meaningful story for young readers.",
+      problem:
+        "Moral stories for kids fall flat without warm characters and readable pacing. Flat clip-art farms don’t sell the panic, humour or heart of Mouse’s warning — and print books need a cohesive cover-to-interior system, not disconnected doodles.",
+      solution:
+        "I delivered a complete illustrated picture-book treatment: expressive animal characters in a glowing farm world, a cover starring Christopher with bindle under the moon, and sequenced interiors that match dialogue beats — chicken, pig and cow indifference, the stove hideout and the feast reveal — ready as a square print PDF.",
+      featureGroups: [
+        {
+          title: "Story & characters",
+          items: [
+            "Protagonist Christopher the mouse — red vest, bindle, big expressive eyes",
+            "Supporting cast: Chicken, Pig and Cow who dismiss the danger",
+            "Themes: empathy, awareness and caring even when “it’s not my problem”",
+            "Reflection prompt tied to Proverbs 18:24 — good friends are hard to find",
+            "Cliffhanger close: packed bag, washed hands, leaving the farm (“To be continued”)",
+          ],
+        },
+        {
+          title: "Art & print delivery",
+          items: [
+            "Bright 3D Pixar-style farmhouse, barn and night-path environments",
+            "Cover: MOUSE TRAP title, Author Amos Powell, moonlit farm path",
+            "Interior spreads timed to dialogue and emotion beats",
+            "Large-square print layout (BookWright / premium lustre production path)",
+            "Full manuscript PDF for review and print handoff",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I shaped Mouse Trap as a finished children's picture book — character-led illustration, cover hierarchy and print-ready page flow that keep the moral story warm and funny.",
+      contributions: [
+        {
+          title: "Character-first world",
+          items: [
+            "Designed Christopher and the farm cast so panic, pride and indifference read clearly to kids.",
+          ],
+        },
+        {
+          title: "Cover that sells the journey",
+          items: [
+            "Built a moonlit cover of Mouse leaving the farm with bindle — title-forward and emotionally clear.",
+          ],
+        },
+        {
+          title: "Print-ready sequencing",
+          items: [
+            "Laid out square interiors that pace warning → rejection → revelation for a cohesive book PDF.",
+          ],
+        },
+      ],
+      highlights: [
+        "Complete Mouse Trap children's picture book with Pixar-style farm illustration.",
+        "Empathy-focused fable: mouse traps, indifferent friends and a hard choice to leave.",
+        "Print-ready square PDF cover and interiors for author Amos Powell.",
+      ],
+      skills: [
+        "Children's Book Illustration",
+        "Character Design",
+        "Picture Book Layout",
+        "Cover Design",
+        "Digital Illustration",
+        "Print Production",
+        "Storyboarding / Sequencing",
+      ],
+      results:
+        "A finished illustrated picture book PDF — Mouse Trap — that teaches empathy through Christopher the mouse’s farmyard journey, with cover and interiors ready for print review.",
+      gallery: [
+        {
+          label: "Cover — Christopher leaving the farm under the moon",
+          image: "mousetrapcover",
+        },
+        {
+          label: "Interior spread — farmyard story scene",
+          image: "mousetrapinterior",
+        },
+      ],
     },
   },
   {

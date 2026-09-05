@@ -55,6 +55,8 @@ import imgThinkorswimAnalytics from "@/assets/projects/project-thinkorswim-analy
 import imgTradingviewPivots from "@/assets/projects/project-tradingview-pivots.jpg";
 import imgTradingviewPpv1 from "@/assets/projects/project-tradingview-ppv1.jpg";
 import imgShortStrategyBacktest from "@/assets/projects/project-short-strategy-backtest.png";
+import imgMouseTrapCover from "@/assets/projects/project-mouse-trap-cover.png";
+import imgMouseTrapInterior from "@/assets/projects/project-mouse-trap-interior.png";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -115,4 +117,6 @@ export const projectImages: Record<ProjectImageKey, string> = {
   tradingviewpivots: imgTradingviewPivots,
   tradingviewppv1: imgTradingviewPpv1,
   shortstrategybacktest: imgShortStrategyBacktest,
+  mousetrapcover: imgMouseTrapCover,
+  mousetrapinterior: imgMouseTrapInterior,
 };
