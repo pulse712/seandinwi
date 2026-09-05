@@ -47,6 +47,9 @@ import imgMlbScenario from "@/assets/projects/project-mlb-scenario.png";
 import imgCustomerPricing from "@/assets/projects/project-customer-pricing.jpg";
 import imgWorldOfSightWords from "@/assets/projects/project-world-of-sight-words.jpg";
 import imgWeatherfordDeals from "@/assets/projects/project-weatherford-deals.jpg";
+import imgPolymarketBot from "@/assets/projects/project-polymarket-bot.jpg";
+import imgPolymarketSol from "@/assets/projects/project-polymarket-sol.jpg";
+import imgPolymarketBtc from "@/assets/projects/project-polymarket-btc.jpg";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -99,4 +102,7 @@ export const projectImages: Record<ProjectImageKey, string> = {
   customerpricing: imgCustomerPricing,
   worldofsightwords: imgWorldOfSightWords,
   weatherforddeals: imgWeatherfordDeals,
+  polymarketbot: imgPolymarketBot,
+  polymarketsol: imgPolymarketSol,
+  polymarketbtc: imgPolymarketBtc,
 };

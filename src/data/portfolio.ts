@@ -88,7 +88,10 @@ export type ProjectImageKey =
   | "mlbscenario"
   | "customerpricing"
   | "worldofsightwords"
-  | "weatherforddeals";
+  | "weatherforddeals"
+  | "polymarketbot"
+  | "polymarketsol"
+  | "polymarketbtc";
 
 export type ProjectDetail = {
   role: string;
@@ -3838,6 +3841,120 @@ export const projects: Project[] = [
       ],
       results:
         "A working .xlsm pricing template that selects customers by name, pulls customer and shareholder prices, applies incentive percentages to effective net correctly, updates variance to shareholder, and resets incentives on customer change.",
+    },
+  },
+  {
+    slug: "polymarket-trading-bot",
+    title: "Polymarket Trading Bot — Automated Prediction Markets",
+    category: "Trading & Blockchain",
+    badge: "Polymarket · Smart Contracts · APIs · Automated Trading",
+    summary:
+      "Custom Polymarket trading bot that automates prediction-market strategies — real-time market monitoring, smart order execution, copy trading, risk controls and on-chain wallet/position management via Polymarket smart contracts and APIs.",
+    stack: ["Polymarket", "Smart Contracts", "Trading APIs", "Risk Logic"],
+    accent: "sky",
+    image: "polymarketbot",
+    detail: {
+      role: "Blockchain / Trading Systems Developer",
+      client: "Custom Polymarket prediction-market trading bot",
+      stackFull: [
+        "Polymarket Smart Contract Integration",
+        "Polymarket / CLOB APIs",
+        "Automated Market Monitoring",
+        "Smart Order Execution (Buy / Sell)",
+        "Copy Trading",
+        "Position Management",
+        "Risk Management (Sizing, Stops, Exposure Limits)",
+        "Wallet & On-Chain Transaction Handling",
+        "Configurable Strategy Logic",
+        "Low-Latency Execution Path",
+      ],
+      overview:
+        "A custom Polymarket trading bot built to automate prediction-market strategies with speed, accuracy and reliability. It talks directly to Polymarket’s smart contracts and APIs for continuous market monitoring, order execution, copy trading and position management — with configurable strategy logic and risk controls suited to competitive, fast-moving markets.",
+      problem:
+        "Manual Polymarket trading can’t keep up with rapid price moves, multi-market watching or consistent risk rules. Traders need automated monitoring and execution that still respects position sizing, stops and exposure limits — without fragile, high-latency scripts.",
+      solution:
+        "I developed a bot that streams Polymarket events and prices, places buy/sell orders from predefined strategies, supports copy trading, manages open positions, and handles wallet/on-chain transactions securely — with strategy knobs and risk gates for different market conditions.",
+      featureGroups: [
+        {
+          title: "Market monitoring & execution",
+          items: [
+            "Automated real-time tracking of Polymarket events and price movements",
+            "Smart order execution — places buy/sell orders instantly from predefined strategies",
+            "Copy trading support alongside primary strategy flows",
+            "Position management for open prediction-market exposure",
+            "Direct interaction with Polymarket smart contracts and APIs",
+            "High-performance, low-latency path optimised for competitive markets",
+          ],
+        },
+        {
+          title: "Risk, wallets & configuration",
+          items: [
+            "Risk management logic: position sizing, stop conditions and exposure limits",
+            "Secure wallet interaction and on-chain transaction handling",
+            "Easily configurable strategy logic for different market conditions",
+            "Reliable automation focused on speed, accuracy and consistent rule enforcement",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I designed and built the Polymarket automation stack end to end — market feeds, contract/API execution, copy trading, risk gates and wallet/position handling.",
+      contributions: [
+        {
+          title: "Contract & API integration",
+          items: [
+            "Connected the bot to Polymarket smart contracts and APIs for monitoring and on-chain/order-book execution.",
+          ],
+        },
+        {
+          title: "Strategy-driven order flow",
+          items: [
+            "Implemented instant buy/sell execution from configurable strategies, including copy-trading paths.",
+          ],
+        },
+        {
+          title: "Risk & exposure controls",
+          items: [
+            "Added position sizing, stop conditions and exposure limits so automation stays bounded.",
+          ],
+        },
+        {
+          title: "Wallet & position ops",
+          items: [
+            "Handled secure wallet transactions and ongoing position management for live prediction markets.",
+          ],
+        },
+      ],
+      highlights: [
+        "Custom Polymarket bot for automated prediction-market monitoring and execution.",
+        "Smart orders, copy trading and position management via Polymarket contracts and APIs.",
+        "Risk controls and configurable strategies tuned for low-latency competitive markets.",
+      ],
+      skills: [
+        "Polymarket / Prediction Markets",
+        "Smart Contract Integration",
+        "Trading Bot Development",
+        "API Integration",
+        "Risk Management Systems",
+        "Wallet / On-Chain Execution",
+        "Low-Latency Automation",
+        "Strategy Configuration",
+      ],
+      results:
+        "A reliable Polymarket trading bot that monitors markets in real time, executes strategy-driven orders, manages positions and wallets on-chain, and enforces risk limits under configurable trading logic.",
+      gallery: [
+        {
+          label: "Bot execution log & BTC/ETH signal dashboard",
+          image: "polymarketbot",
+        },
+        {
+          label: "Solana Up or Down — live Polymarket trade UI",
+          image: "polymarketsol",
+        },
+        {
+          label: "Bitcoin Up or Down — live Polymarket trade UI",
+          image: "polymarketbtc",
+        },
+      ],
     },
   },
   {
