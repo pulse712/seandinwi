@@ -41,6 +41,7 @@ import imgCarbide from "@/assets/projects/project-carbide.png";
 import imgLanguageCafe from "@/assets/projects/project-language-cafe.png";
 import imgCirkus from "@/assets/projects/project-cirkus.png";
 import imgRingForensic from "@/assets/projects/project-ring-forensic.png";
+import imgScannerAlert from "@/assets/projects/project-scanner-alert.png";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -87,4 +88,5 @@ export const projectImages: Record<ProjectImageKey, string> = {
   languagecafe: imgLanguageCafe,
   cirkus: imgCirkus,
   ringforensic: imgRingForensic,
+  scanneralert: imgScannerAlert,
 };

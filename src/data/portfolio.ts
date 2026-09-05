@@ -82,7 +82,8 @@ export type ProjectImageKey =
   | "carbide"
   | "languagecafe"
   | "cirkus"
-  | "ringforensic";
+  | "ringforensic"
+  | "scanneralert";
 
 export type ProjectDetail = {
   role: string;
@@ -3248,7 +3249,7 @@ export const projects: Project[] = [
   },
   {
     slug: "stl-fire-ems-dispatch-monitor",
-    title: "St. Louis Fire/EMS — Private Dispatch Monitor",
+    title: "ScannerAlert — St. Louis Fire/EMS Dispatch Monitor",
     category: "Automation",
     categories: ["Automation", "Web & SaaS"],
     badge: "macOS · Broadcastify · STT · Telegram · Personal Use",
@@ -3256,10 +3257,13 @@ export const projects: Project[] = [
       "Private macOS app that monitors a St. Louis County Fire & EMS Broadcastify feed 24/7 — detects dispatch tones, transcribes audio, extracts call data, filters by unit, and pushes Telegram alerts with the original recording to iPhone.",
     stack: ["macOS", "Audio Stream", "Speech-to-Text", "Telegram"],
     accent: "ember",
-    image: "automation",
+    image: "scanneralert",
+    url: "https://www.freelancer.com/projects/audio-processing/Real-Time-Fire-EMS-Dispatch/proposals",
     detail: {
       role: "macOS / Automation Developer",
       client: "Personal-use Fire/EMS dispatch monitor (private, not publicly distributed)",
+      liveUrl:
+        "https://www.freelancer.com/projects/audio-processing/Real-Time-Fire-EMS-Dispatch/proposals",
       stackFull: [
         "macOS Desktop Application",
         "Broadcastify Audio Stream Monitoring",
