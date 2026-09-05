@@ -98,7 +98,8 @@ export type ProjectImageKey =
   | "tradingviewppv1"
   | "shortstrategybacktest"
   | "mousetrapcover"
-  | "mousetrapinterior";
+  | "mousetrapinterior"
+  | "mousetrapanimation";
 
 export type ProjectDetail = {
   role: string;
@@ -2693,6 +2694,98 @@ export const projects: Project[] = [
           image: "mousetrapinterior",
         },
       ],
+    },
+  },
+  {
+    slug: "mouse-trap-talking-to-pig-animation",
+    title: "Mouse Trap — Mouse Talking to Pig Animation",
+    category: "Video Editing",
+    categories: ["Video Editing", "Logo & Graphic Design"],
+    badge: "3D Animation · Kling AI · Children's Story · Character Performance",
+    summary:
+      "Short Pixar-style 3D animation from Mouse Trap — Christopher the mouse frantically warns a blissful mud-rolling pig about the farmer’s traps, generated and polished as a story beat for the picture-book world.",
+    stack: ["3D Animation", "Kling AI", "Character Acting", "Story Beat"],
+    accent: "lime",
+    image: "mousetrapanimation",
+    url: "https://drive.google.com/file/d/11G6RmKCKSQvu9axABB5Q152I9AGK_DRT/view?usp=sharing",
+    detail: {
+      role: "3D / AI Animation Artist",
+      client: "Mouse Trap — animated story beat (mouse warns the pig)",
+      liveUrl:
+        "https://drive.google.com/file/d/11G6RmKCKSQvu9axABB5Q152I9AGK_DRT/view?usp=sharing",
+      stackFull: [
+        "3D Character Animation",
+        "Kling AI Video Generation",
+        "Pixar-Style Farm World Continuity",
+        "Expressive Character Performance",
+        "Cinematic Lighting & Atmosphere",
+        "Short-Form Story Beat (~5s)",
+        "Drive Delivery / Review Cut",
+      ],
+      overview:
+        "A short animated beat from the Mouse Trap story world: Christopher (red vest) frantically tries to warn the Pig, who is happily rolling in mud with corn-and-butter on his head — matching the book’s “a mouse trap isn’t a pig trap” indifference with humour and clear emotion. Delivered as an MP4 for review via Google Drive.",
+      problem:
+        "Still illustrations alone don’t sell the panic-vs-bliss contrast of Mouse’s warning. The farm cast needs a living performance moment — especially Pig’s carefree mud wallow against Mouse’s alarm — without a full feature pipeline.",
+      solution:
+        "I produced a focused Kling-assisted 3D clip that locks character looks to the Mouse Trap picture book, stages the talking-to-pig beat with strong acting, mud/corn comedy props and golden-hour farm lighting, then packaged a clean short for client review.",
+      featureGroups: [
+        {
+          title: "Story performance",
+          items: [
+            "Christopher the mouse — red vest, wide-eyed panic, raised paws",
+            "Pig blissfully in mud with corn cob and melting butter gag",
+            "Clear emotional contrast: alarm vs “it’s got nothing to do with me” energy",
+            "Direct story continuity with the Mouse Trap picture book",
+          ],
+        },
+        {
+          title: "Craft & delivery",
+          items: [
+            "Pixar-style 3D look — fur, mud splatters, soft sunset farm backdrop",
+            "Wooden fence pasture staging and cinematic warm lighting",
+            "Kling AI–assisted generation refined into a reviewable MP4 (~5 seconds, HD)",
+            "Shareable Google Drive cut for stakeholders",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I turned a key Mouse Trap dialogue beat into a short animated performance so the book’s humour and empathy theme read in motion.",
+      contributions: [
+        {
+          title: "Character continuity",
+          items: [
+            "Kept Christopher’s red-vest look and farm tone aligned with the illustrated book world.",
+          ],
+        },
+        {
+          title: "Comic contrast staging",
+          items: [
+            "Framed panic vs piggy bliss (mud, corn, butter) so the moral beat lands visually in seconds.",
+          ],
+        },
+        {
+          title: "AI-assisted delivery",
+          items: [
+            "Used Kling to accelerate the 3D pass and delivered a clean Drive MP4 for review.",
+          ],
+        },
+      ],
+      highlights: [
+        "Short Mouse Trap animation: mouse warns the mud-loving pig.",
+        "Pixar-style farm characters with clear comic emotional contrast.",
+        "Kling-assisted HD clip delivered via Google Drive for review.",
+      ],
+      skills: [
+        "3D Animation",
+        "AI Video (Kling)",
+        "Character Performance",
+        "Children's Content",
+        "Cinematic Lighting",
+        "Storyboarding / Beat Design",
+        "Short-Form Video Delivery",
+      ],
+      results:
+        "A shareable ~5-second HD animation that brings the Mouse Trap “talking to the pig” beat to life for picture-book promotion and story review.",
     },
   },
   {

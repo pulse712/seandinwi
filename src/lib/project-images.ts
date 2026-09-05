@@ -57,6 +57,7 @@ import imgTradingviewPpv1 from "@/assets/projects/project-tradingview-ppv1.jpg";
 import imgShortStrategyBacktest from "@/assets/projects/project-short-strategy-backtest.png";
 import imgMouseTrapCover from "@/assets/projects/project-mouse-trap-cover.png";
 import imgMouseTrapInterior from "@/assets/projects/project-mouse-trap-interior.png";
+import imgMouseTrapAnimation from "@/assets/projects/project-mouse-trap-animation.jpg";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -119,4 +120,5 @@ export const projectImages: Record<ProjectImageKey, string> = {
   shortstrategybacktest: imgShortStrategyBacktest,
   mousetrapcover: imgMouseTrapCover,
   mousetrapinterior: imgMouseTrapInterior,
+  mousetrapanimation: imgMouseTrapAnimation,
 };
