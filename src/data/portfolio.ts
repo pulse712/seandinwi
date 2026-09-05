@@ -3159,6 +3159,110 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "world-of-sight-words",
+    title: "World of Sight Words — Fry Words Speech Learning App",
+    category: "Mobile Apps",
+    badge: "iOS · EdTech · Speech Recognition · Fry Sight Words",
+    summary:
+      "Educational iOS app that teaches the 1,000 Fry sight words with Apple speech recognition, real-time speaking feedback, per-user progress tracking, in-app reports and shareable PDF progress reports.",
+    stack: ["iOS", "Speech Recognition", "EdTech", "Progress Reports"],
+    accent: "sky",
+    image: "worldofsightwords",
+    url: "https://apps.apple.com/us/app/world-of-sight-words/id1462526005",
+    detail: {
+      role: "iOS / EdTech App Developer",
+      client: "World of Sight Words — live App Store education app",
+      appStoreUrl:
+        "https://apps.apple.com/us/app/world-of-sight-words/id1462526005",
+      stackFull: [
+        "iOS / iPadOS App",
+        "Apple Speech Recognition (Siri-class)",
+        "Fry Sight Words Curriculum (1,000 words)",
+        "Realtime Pronunciation Feedback",
+        "Per-User Progress Tracking",
+        "In-App Success / Failure Reports",
+        "Shareable PDF Progress Reports",
+        "In-App Purchase (full word set + reports)",
+      ],
+      overview:
+        "World of Sight Words turns Fry sight-word practice into a solar-system journey: learners hear and speak words while Apple speech recognition gives real-time feedback, accounts track progress, and reports highlight misses for instructors and family. The free tier covers the first 100 words; an upgrade unlocks all 1,000 words plus shareable PDF progress reports.",
+      problem:
+        "Sight-word flashcards don’t confirm whether a child can say the word correctly, and paper checklists don’t scale across learners. Families and teachers need speaking practice with instant feedback, multi-user progress, and reports that show which words still need work.",
+      solution:
+        "I built an iOS education app on Apple speech recognition: quiz flows that listen for correct pronunciation, visual rewards on success, playable word lists, per-user accounts, in-app success/failure reporting, and optional unlock of the full 1,000-word set with PDF reports for sharing.",
+      featureGroups: [
+        {
+          title: "Learning & speech practice",
+          items: [
+            "Curriculum centred on the 1,000 Fry sight words",
+            "Solar-system journey framing as learners build proficiency",
+            "Speech quiz powered by Apple speech recognition (same class of tech as Siri)",
+            "Realtime feedback on whether the spoken word matches the target",
+            "Visual reward on every successful turn",
+            "Full playable word list so learners can hear each word",
+            "US English speech path; microphone + Speech Dictation/Siri permissions required",
+            "Internet connection required for the speech-recognition quiz",
+          ],
+        },
+        {
+          title: "Progress, reports & monetisation",
+          items: [
+            "Individual user accounts for progress tracking",
+            "In-app reporting of successes and failures, highlighting incorrect words",
+            "Free tier: first 100 words + core tracking/reporting",
+            "In-app purchase unlock: all 1,000 words",
+            "Per-user PDF progress reports shareable with instructors and family",
+            "Live on the App Store for iPhone and iPad",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I developed World of Sight Words as a production EdTech iOS app — speech-driven practice, multi-user progress and reportable outcomes around the Fry 1,000-word list.",
+      contributions: [
+        {
+          title: "Speech-recognition quiz loop",
+          items: [
+            "Integrated Apple speech recognition so learners get immediate speak-back feedback instead of passive flashcard taps.",
+          ],
+        },
+        {
+          title: "Fry curriculum & word playback",
+          items: [
+            "Structured the 100 / 1,000 word progression with a browsable, playable word list for hearing and practice.",
+          ],
+        },
+        {
+          title: "Multi-user progress & reports",
+          items: [
+            "Added per-user accounts, success/failure tracking and miss highlighting so practice stays directed.",
+          ],
+        },
+        {
+          title: "Shareable PDF unlock",
+          items: [
+            "Shipped IAP for the full word set plus PDF reports parents and instructors can share.",
+          ],
+        },
+      ],
+      highlights: [
+        "Live App Store education app teaching Fry sight words with speech recognition feedback.",
+        "Per-user progress tracking, in-app miss reports and shareable PDF progress documents.",
+        "Free first 100 words; upgrade unlocks all 1,000 words and full reporting.",
+      ],
+      skills: [
+        "iOS Development",
+        "Speech Recognition",
+        "EdTech / Learning Apps",
+        "Progress Tracking & Reporting",
+        "PDF Generation / Sharing",
+        "In-App Purchases",
+        "Child / Education UX",
+      ],
+      results:
+        "A live educational speech-recognition app on the App Store that teaches Fry sight words with realtime speaking feedback, progress tracking and shareable reports for learners, families and instructors.",
+    },
+  },
+  {
     slug: "ring-doorbell-forensic-review",
     title: "Ring Doorbell — Forensic Hand-Object Examination",
     category: "Video Editing",
@@ -3643,110 +3747,6 @@ export const projects: Project[] = [
       ],
       results:
         "A working .xlsm pricing template that selects customers by name, pulls customer and shareholder prices, applies incentive percentages to effective net correctly, updates variance to shareholder, and resets incentives on customer change.",
-    },
-  },
-  {
-    slug: "world-of-sight-words",
-    title: "World of Sight Words — Fry Words Speech Learning App",
-    category: "Mobile Apps",
-    badge: "iOS · EdTech · Speech Recognition · Fry Sight Words",
-    summary:
-      "Educational iOS app that teaches the 1,000 Fry sight words with Apple speech recognition, real-time speaking feedback, per-user progress tracking, in-app reports and shareable PDF progress reports.",
-    stack: ["iOS", "Speech Recognition", "EdTech", "Progress Reports"],
-    accent: "sky",
-    image: "worldofsightwords",
-    url: "https://apps.apple.com/us/app/world-of-sight-words/id1462526005",
-    detail: {
-      role: "iOS / EdTech App Developer",
-      client: "World of Sight Words — live App Store education app",
-      appStoreUrl:
-        "https://apps.apple.com/us/app/world-of-sight-words/id1462526005",
-      stackFull: [
-        "iOS / iPadOS App",
-        "Apple Speech Recognition (Siri-class)",
-        "Fry Sight Words Curriculum (1,000 words)",
-        "Realtime Pronunciation Feedback",
-        "Per-User Progress Tracking",
-        "In-App Success / Failure Reports",
-        "Shareable PDF Progress Reports",
-        "In-App Purchase (full word set + reports)",
-      ],
-      overview:
-        "World of Sight Words turns Fry sight-word practice into a solar-system journey: learners hear and speak words while Apple speech recognition gives real-time feedback, accounts track progress, and reports highlight misses for instructors and family. The free tier covers the first 100 words; an upgrade unlocks all 1,000 words plus shareable PDF progress reports.",
-      problem:
-        "Sight-word flashcards don’t confirm whether a child can say the word correctly, and paper checklists don’t scale across learners. Families and teachers need speaking practice with instant feedback, multi-user progress, and reports that show which words still need work.",
-      solution:
-        "I built an iOS education app on Apple speech recognition: quiz flows that listen for correct pronunciation, visual rewards on success, playable word lists, per-user accounts, in-app success/failure reporting, and optional unlock of the full 1,000-word set with PDF reports for sharing.",
-      featureGroups: [
-        {
-          title: "Learning & speech practice",
-          items: [
-            "Curriculum centred on the 1,000 Fry sight words",
-            "Solar-system journey framing as learners build proficiency",
-            "Speech quiz powered by Apple speech recognition (same class of tech as Siri)",
-            "Realtime feedback on whether the spoken word matches the target",
-            "Visual reward on every successful turn",
-            "Full playable word list so learners can hear each word",
-            "US English speech path; microphone + Speech Dictation/Siri permissions required",
-            "Internet connection required for the speech-recognition quiz",
-          ],
-        },
-        {
-          title: "Progress, reports & monetisation",
-          items: [
-            "Individual user accounts for progress tracking",
-            "In-app reporting of successes and failures, highlighting incorrect words",
-            "Free tier: first 100 words + core tracking/reporting",
-            "In-app purchase unlock: all 1,000 words",
-            "Per-user PDF progress reports shareable with instructors and family",
-            "Live on the App Store for iPhone and iPad",
-          ],
-        },
-      ],
-      contributionIntro:
-        "I developed World of Sight Words as a production EdTech iOS app — speech-driven practice, multi-user progress and reportable outcomes around the Fry 1,000-word list.",
-      contributions: [
-        {
-          title: "Speech-recognition quiz loop",
-          items: [
-            "Integrated Apple speech recognition so learners get immediate speak-back feedback instead of passive flashcard taps.",
-          ],
-        },
-        {
-          title: "Fry curriculum & word playback",
-          items: [
-            "Structured the 100 / 1,000 word progression with a browsable, playable word list for hearing and practice.",
-          ],
-        },
-        {
-          title: "Multi-user progress & reports",
-          items: [
-            "Added per-user accounts, success/failure tracking and miss highlighting so practice stays directed.",
-          ],
-        },
-        {
-          title: "Shareable PDF unlock",
-          items: [
-            "Shipped IAP for the full word set plus PDF reports parents and instructors can share.",
-          ],
-        },
-      ],
-      highlights: [
-        "Live App Store education app teaching Fry sight words with speech recognition feedback.",
-        "Per-user progress tracking, in-app miss reports and shareable PDF progress documents.",
-        "Free first 100 words; upgrade unlocks all 1,000 words and full reporting.",
-      ],
-      skills: [
-        "iOS Development",
-        "Speech Recognition",
-        "EdTech / Learning Apps",
-        "Progress Tracking & Reporting",
-        "PDF Generation / Sharing",
-        "In-App Purchases",
-        "Child / Education UX",
-      ],
-      results:
-        "A live educational speech-recognition app on the App Store that teaches Fry sight words with realtime speaking feedback, progress tracking and shareable reports for learners, families and instructors.",
     },
   },
   {
