@@ -3354,6 +3354,95 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "bubble-dalle-image-generation",
+    title: "Bubble App — DALL·E 3 Image Generation Fix",
+    category: "Web & SaaS",
+    badge: "Bubble.io · DALL·E 3 · AI Image Generation · Backend API",
+    summary:
+      "Integrated and repaired DALL·E 3 image generation in an existing Bubble.io app — text-to-image workflow wired so the result area renders highly detailed generated images instead of an empty black box.",
+    stack: ["Bubble.io", "DALL·E 3", "API Workflows", "Backend"],
+    accent: "violet",
+    image: "saas",
+    detail: {
+      role: "Bubble.io / AI Integration Developer",
+      client: "Existing Bubble app — DALL·E 3 generation completion",
+      stackFull: [
+        "Bubble.io App Development",
+        "OpenAI DALL·E 3 API Integration",
+        "Bubble Backend / API Workflows",
+        "Image URL Capture & Display Binding",
+        "Camera / Upload + Text Prompt Flows",
+        "Error Handling & Generation Debugging",
+        "Realistic High-Detail Image Output",
+      ],
+      overview:
+        "The client’s Bubble home screen and camera capture were already working, but the empty black result box never showed the AI-generated image. I completed the generation side of an otherwise finished workflow: connect user text descriptions to DALL·E 3, return a usable image URL/file, and bind it into the Bubble UI so highly detailed, realistic generations appear where the black box was.",
+      problem:
+        "Many Bubble + AI builds fail after the API call — the prompt runs, but the response isn’t saved, the image element isn’t bound, privacy/API keys block the call, or the workflow never updates the repeating group / image element. The visible symptom is a working camera/UI with a permanently empty black generation panel.",
+      solution:
+        "I debugged and finished the Bubble backend workflow for DALL·E 3: reliable API call from text input, capture of the generated image URL, write to the correct data field, and bind the result image element so generation completes end-to-end inside the existing app.",
+      featureGroups: [
+        {
+          title: "Integration scope",
+          items: [
+            "AI image generation from user-provided text descriptions",
+            "DALL·E 3 integration into an existing Bubble.io app",
+            "Preserve working home screen and camera / image capture flows",
+            "Populate the previously empty black result box with the generated image",
+            "Backend workflow completion for generation, storage and UI update",
+            "Focus on high-quality, realistic detailed image output",
+          ],
+        },
+        {
+          title: "Delivery focus",
+          items: [
+            "Diagnose why generation failed despite a mostly complete workflow",
+            "Wire API response → Bubble data → image element binding",
+            "Keep the existing UX intact while fixing the generation path",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I specialised in finishing Bubble + OpenAI image pipelines — especially cases where the UI is ready but the generation response never reaches the screen.",
+      contributions: [
+        {
+          title: "DALL·E 3 API wiring",
+          items: [
+            "Connected text prompts to DALL·E 3 through Bubble API Connector / backend workflows for reliable generation calls.",
+          ],
+        },
+        {
+          title: "Result binding fix",
+          items: [
+            "Captured the returned image URL and bound it to the empty result image element so the black box displays the generation.",
+          ],
+        },
+        {
+          title: "Existing app continuity",
+          items: [
+            "Left the working home screen and camera flows intact while completing only the broken generation path.",
+          ],
+        },
+      ],
+      highlights: [
+        "Completed DALL·E 3 generation inside an existing Bubble.io app.",
+        "Fixed the empty black result panel so generated images render after text prompts.",
+        "Delivered a production-minded Bubble + AI image workflow focused on realistic detail.",
+      ],
+      skills: [
+        "Bubble.io",
+        "DALL·E 3 / OpenAI APIs",
+        "API Connector Workflows",
+        "No-Code Backend Logic",
+        "Image Display Binding",
+        "AI Feature Debugging",
+        "Product UX Continuity",
+      ],
+      results:
+        "A Bubble app where text-to-image generation with DALL·E 3 completes end-to-end — camera and home UI preserved, and the result area shows the generated image instead of an empty black box.",
+    },
+  },
+  {
     slug: "saas-dashboard",
     title: "SaaS Dashboard Platform",
     category: "Web & SaaS",
