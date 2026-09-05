@@ -3247,6 +3247,109 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "stl-fire-ems-dispatch-monitor",
+    title: "St. Louis Fire/EMS — Private Dispatch Monitor",
+    category: "Automation",
+    categories: ["Automation", "Web & SaaS"],
+    badge: "macOS · Broadcastify · STT · Telegram · Personal Use",
+    summary:
+      "Private macOS app that monitors a St. Louis County Fire & EMS Broadcastify feed 24/7 — detects dispatch tones, transcribes audio, extracts call data, filters by unit, and pushes Telegram alerts with the original recording to iPhone.",
+    stack: ["macOS", "Audio Stream", "Speech-to-Text", "Telegram"],
+    accent: "ember",
+    image: "automation",
+    detail: {
+      role: "macOS / Automation Developer",
+      client: "Personal-use Fire/EMS dispatch monitor (private, not publicly distributed)",
+      stackFull: [
+        "macOS Desktop Application",
+        "Broadcastify Audio Stream Monitoring",
+        "Dispatch Tone Detection",
+        "Real-Time Speech-to-Text",
+        "Structured Call Extraction (units, nature, address, cross street)",
+        "Unit Number Filtering",
+        "Telegram Bot Push Notifications + Audio Attachment",
+        "Dispatch Audio Capture / Clip Recording",
+        "Local Web Dashboard (call log, search, playback)",
+        "Auto-Reconnect & 24/7 Reliability Logging",
+      ],
+      overview:
+        "A private, personal-use macOS desktop application that continuously monitors the St. Louis County Fire & EMS – South Broadcastify feed (Feed ID 19463). The feed uses clear computer-generated dispatch voice. After detecting the two tones that precede every announcement, the app transcribes in near real time, extracts structured call fields, records the dispatch clip, and — when a selected unit is involved — immediately notifies the owner’s iPhone via Telegram with the parsed details plus the original audio.",
+      problem:
+        "Listening to a live scanner all day is impractical. Missed tones mean missed calls for specific apparatus. Generic STT pipelines that buffer audio create backlog and delay. The owner needs seconds-fast alerts for selected units, a verifiable audio clip when transcription is imperfect, and a machine that runs for weeks without silently stopping.",
+      solution:
+        "I designed a tone-triggered, low-latency pipeline: continuous stream listen → dual-tone detect → immediate clip capture + STT → parse date/time, units, nature, address, cross street → unit filter → Telegram notification with recording → local dashboard log. Auto-reconnect and health logs keep the monitor alive 24/7, prioritising speed over perfect transcripts.",
+      featureGroups: [
+        {
+          title: "Scanner monitoring & transcription",
+          items: [
+            "24/7 monitoring of Broadcastify feed: St. Louis County Fire & EMS – South (ID 19463)",
+            "Detection of the two dispatch tones immediately before each announcement",
+            "Immediate processing and real-time speech-to-text after tones",
+            "Structured extraction: date/time, unit(s), nature, address, cross street (when spoken)",
+            "Recording starts after tones and continues until the announcement completes",
+            "Speed-first design — notify within a few seconds; avoid audio backlog on long runs",
+          ],
+        },
+        {
+          title: "Alerts, filtering & dashboard",
+          items: [
+            "Filter notifications to selected unit numbers (specific apparatus / ambulances)",
+            "Immediate iPhone notification via Telegram bot when a selected unit is dispatched",
+            "Notification payload: units, nature, address, cross street, plus original dispatch recording",
+            "Local web dashboard: call log, fields, audio playback, search and filtering",
+            "Auto-reconnect on stream disconnect; recover if transcription stalls",
+            "Operational logs for tone detection, transcription and notification send events",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I scoped and built the private dispatch-monitor architecture — tone detection, low-latency STT, unit filtering, Telegram delivery with audio, and a durable local ops dashboard.",
+      contributions: [
+        {
+          title: "Tone-triggered pipeline",
+          items: [
+            "Started capture and transcription only after the dual dispatch tones so processing stays aligned to each call.",
+          ],
+        },
+        {
+          title: "Speed over perfection",
+          items: [
+            "Optimised for few-second Telegram delivery and continuous streaming without backlog, with audio clips for human verification.",
+          ],
+        },
+        {
+          title: "Unit-aware alerting",
+          items: [
+            "Extracted unit lists and filtered pushes so only selected fire/EMS units reach the iPhone.",
+          ],
+        },
+        {
+          title: "Reliability & local ops",
+          items: [
+            "Added auto-reconnect, recovery if STT stops, and a searchable local call log with recordings.",
+          ],
+        },
+      ],
+      highlights: [
+        "Private macOS monitor for St. Louis County Fire & EMS Broadcastify feed 19463.",
+        "Tone detection → fast STT → structured fields → Telegram alert with original audio.",
+        "Unit filtering, local dashboard and 24/7 reconnect/logging for unattended operation.",
+      ],
+      skills: [
+        "macOS Desktop Development",
+        "Audio Stream Processing",
+        "Tone / Event Detection",
+        "Speech-to-Text Integration",
+        "Structured Data Extraction",
+        "Telegram Bot Notifications",
+        "Local Dashboard UX",
+        "Reliability / Watchdog Design",
+      ],
+      results:
+        "A personal 24/7 Fire/EMS dispatch monitor that turns Broadcastify audio into fast, unit-filtered iPhone alerts — with transcription, structured call data and the original recording for instant verification.",
+    },
+  },
+  {
     slug: "saas-dashboard",
     title: "SaaS Dashboard Platform",
     category: "Web & SaaS",
