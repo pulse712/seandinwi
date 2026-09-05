@@ -45,6 +45,7 @@ import imgScannerAlert from "@/assets/projects/project-scanner-alert.png";
 import imgBubbleDalle from "@/assets/projects/project-bubble-dalle.png";
 import imgMlbScenario from "@/assets/projects/project-mlb-scenario.png";
 import imgCustomerPricing from "@/assets/projects/project-customer-pricing.jpg";
+import imgWorldOfSightWords from "@/assets/projects/project-world-of-sight-words.jpg";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -95,4 +96,5 @@ export const projectImages: Record<ProjectImageKey, string> = {
   bubbledalle: imgBubbleDalle,
   mlbscenario: imgMlbScenario,
   customerpricing: imgCustomerPricing,
+  worldofsightwords: imgWorldOfSightWords,
 };
