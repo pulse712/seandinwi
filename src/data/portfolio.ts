@@ -91,7 +91,9 @@ export type ProjectImageKey =
   | "weatherforddeals"
   | "polymarketbot"
   | "polymarketsol"
-  | "polymarketbtc";
+  | "polymarketbtc"
+  | "ninjatraderstrategy"
+  | "thinkorswimanalytics";
 
 export type ProjectDetail = {
   role: string;
@@ -3953,6 +3955,107 @@ export const projects: Project[] = [
         {
           label: "Bitcoin Up or Down — live Polymarket trade UI",
           image: "polymarketbtc",
+        },
+      ],
+    },
+  },
+  {
+    slug: "automated-trading-strategy-suite",
+    title: "Automated Trading Strategy Suite — NinjaTrader & Analytics",
+    category: "Trading & Blockchain",
+    badge: "NinjaTrader · Thinkorswim · Algo Execution · Risk Management",
+    summary:
+      "Automated trading strategy suite with NinjaTrader long/short execution, trailing stops and close logic, plus Thinkorswim custom analytics for gaps, spikes, range and volume-driven decision support.",
+    stack: ["NinjaTrader", "Thinkorswim", "Algo Trading", "Risk Logic"],
+    accent: "ember",
+    image: "ninjatraderstrategy",
+    detail: {
+      role: "Algorithmic Trading / Strategy Developer",
+      client: "Automated futures/equity trading strategy suite",
+      stackFull: [
+        "NinjaTrader Strategy Automation",
+        "Long / Short Order Execution",
+        "Trailing Stop & Close-Position Logic",
+        "Chart Signal Annotation (Entries / Exits)",
+        "Thinkorswim Custom Analytics Overlay",
+        "Gap / Spike / Range Statistical Summaries",
+        "Volume & Price-Action Decision Support",
+        "Risk Management Visualisation",
+      ],
+      overview:
+        "A discretionary-to-automated trading toolkit spanning execution and research: NinjaTrader strategies that place and manage long/short trades with trail stops and explicit close markers, paired with Thinkorswim chart analytics that surface gap frequency, average spikes, open-to-close behaviour and volume context for faster strategy decisions.",
+      problem:
+        "Manual chart watching misses entries, trailing exits and post-trade review. Traders need strategies that mark fills and trail risk on the chart, plus research overlays that quantify gaps, spikes and range behaviour instead of reinventing stats each session.",
+      solution:
+        "I built and demonstrated an automated NinjaTrader execution layer (long/short entries, trail stops, close-position paths with support/resistance context) and a Thinkorswim analytics overlay that aggregates gap, spike, range and volume statistics directly on the price chart for strategy monitoring and refinement.",
+      featureGroups: [
+        {
+          title: "NinjaTrader automated execution",
+          items: [
+            "Candlestick chart strategy with annotated long and short entries",
+            "Close-position markers showing exact exit prices",
+            "Trailing stop path visualised against live price action",
+            "Support/resistance style levels for context around entries and exits",
+            "Session-length monitoring from open through afternoon price discovery",
+          ],
+        },
+        {
+          title: "Thinkorswim research analytics",
+          items: [
+            "Custom top-of-chart stats: gaps above threshold, average gap %, average spike",
+            "Open/close behaviour summaries (close above/below open averages)",
+            "Average dollar range and previous-volume context",
+            "Signal markers and event lines over multi-year daily charts",
+            "Gap-high reference levels plotted against current price",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I developed the strategy execution and analytics presentation so automated trades and statistical context stay visible on the same platforms traders already use.",
+      contributions: [
+        {
+          title: "Execution & risk on chart",
+          items: [
+            "Wired NinjaTrader long/short fills, trail stops and close markers so every trade path is auditable on the candlestick chart.",
+          ],
+        },
+        {
+          title: "Statistical decision overlay",
+          items: [
+            "Built Thinkorswim analytics boxes for gaps, spikes, range and volume so research feeds the next strategy tweak.",
+          ],
+        },
+        {
+          title: "Session & multi-timeframe clarity",
+          items: [
+            "Presented intraday automated runs alongside multi-year daily analytics for both live execution review and historical study.",
+          ],
+        },
+      ],
+      highlights: [
+        "NinjaTrader strategy chart with long/short entries, trail stops and close-position paths.",
+        "Thinkorswim overlay quantifying gaps, spikes, range and volume for strategy research.",
+        "Clear visual proof of automated execution plus data-driven market monitoring.",
+      ],
+      skills: [
+        "NinjaTrader Strategy Development",
+        "Algorithmic Trading",
+        "Thinkorswim / Chart Analytics",
+        "Risk Management (Trailing Stops)",
+        "Technical Analysis Automation",
+        "Trade Execution Visualisation",
+        "Statistical Market Research",
+      ],
+      results:
+        "A trading strategy suite that shows automated NinjaTrader entries, exits and trail-stop risk on chart, with Thinkorswim analytics that quantify gap/spike/range behaviour for ongoing strategy improvement.",
+      gallery: [
+        {
+          label: "NinjaTrader — automated long/short entries & trail stops",
+          image: "ninjatraderstrategy",
+        },
+        {
+          label: "Thinkorswim — gap/spike/range analytics overlay",
+          image: "thinkorswimanalytics",
         },
       ],
     },

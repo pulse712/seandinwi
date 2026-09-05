@@ -50,6 +50,8 @@ import imgWeatherfordDeals from "@/assets/projects/project-weatherford-deals.jpg
 import imgPolymarketBot from "@/assets/projects/project-polymarket-bot.jpg";
 import imgPolymarketSol from "@/assets/projects/project-polymarket-sol.jpg";
 import imgPolymarketBtc from "@/assets/projects/project-polymarket-btc.jpg";
+import imgNinjatraderStrategy from "@/assets/projects/project-ninjatrader-strategy.jpg";
+import imgThinkorswimAnalytics from "@/assets/projects/project-thinkorswim-analytics.jpg";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -105,4 +107,6 @@ export const projectImages: Record<ProjectImageKey, string> = {
   polymarketbot: imgPolymarketBot,
   polymarketsol: imgPolymarketSol,
   polymarketbtc: imgPolymarketBtc,
+  ninjatraderstrategy: imgNinjatraderStrategy,
+  thinkorswimanalytics: imgThinkorswimAnalytics,
 };
