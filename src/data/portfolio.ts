@@ -3263,6 +3263,96 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "weatherford-deals",
+    title: "Weatherford.deals — Local Deals & Merchant Directory App",
+    category: "Mobile Apps",
+    badge: "iOS · Local Deals · Weatherford & Parker County · Lifestyle",
+    summary:
+      "Lifestyle iOS app for Weatherford and Parker County, Texas — local restaurant, shopping, gym, entertainment, auto, hotel and more deals, with in-app directions to each merchant’s front door.",
+    stack: ["iOS", "Local Deals", "Maps / Directions", "Lifestyle"],
+    accent: "lime",
+    image: "mobile",
+    url: "https://apps.apple.com/us/app/weatherford-deals/id1450246746",
+    detail: {
+      role: "iOS App Developer",
+      client: "Weatherford.deals — live App Store lifestyle / local-deals app",
+      appStoreUrl:
+        "https://apps.apple.com/us/app/weatherford-deals/id1450246746",
+      stackFull: [
+        "iOS / iPadOS App",
+        "Local Merchant & Deals Directory",
+        "Weatherford & Parker County, Texas Focus",
+        "Category Browsing (dining, shopping, gyms, entertainment, auto, hotels, more)",
+        "In-App Directions to Merchant Locations",
+        "Lifestyle / Local Discovery UX",
+        "Performance & Speed Upgrades (ongoing App Store releases)",
+      ],
+      overview:
+        "Weatherford.deals puts local savings for Weatherford and Parker County in one app: restaurants, shopping, gyms, entertainment, sports, auto service, hotels and more. Users browse deals and use built-in directions to navigate to each merchant’s front door — with support via weatherford.deals.",
+      problem:
+        "Local deals are scattered across flyers, Facebook posts and one-off coupons. Residents and visitors need a single, simple place to discover what’s on offer nearby and get there without hunting for an address.",
+      solution:
+        "I built a focused lifestyle iOS app that catalogues Weatherford & Parker County merchants and deals by category, keeps discovery simple, and deep-links navigation so every listing can route users to the merchant’s door.",
+      featureGroups: [
+        {
+          title: "Local deals discovery",
+          items: [
+            "Deals across restaurants, shopping, gyms, entertainment, sports, auto service, hotels and more",
+            "Weatherford & Parker County, Texas geographic focus",
+            "Simple browse/discover flows for everyday use",
+            "Free App Store download for iPhone and iPad",
+          ],
+        },
+        {
+          title: "Navigation & product polish",
+          items: [
+            "Directions feature to navigate to every merchant’s front door",
+            "Lifestyle-category App Store presence with sustained version updates",
+            "Speed and performance upgrades across multiple App Store releases",
+            "Contact/support path via weatherford.deals",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I developed Weatherford.deals as a production local-deals iOS app — merchant discovery for Weatherford & Parker County plus door-to-door directions for each listing.",
+      contributions: [
+        {
+          title: "Local merchant & deals catalog",
+          items: [
+            "Structured category browsing so dining, retail, fitness, entertainment, auto and lodging deals stay easy to find.",
+          ],
+        },
+        {
+          title: "Directions to the door",
+          items: [
+            "Wired navigation so users can go from a deal listing straight to the merchant’s location.",
+          ],
+        },
+        {
+          title: "Ongoing App Store delivery",
+          items: [
+            "Shipped iterative performance and speed upgrades while keeping the free lifestyle app live on the store.",
+          ],
+        },
+      ],
+      highlights: [
+        "Live App Store lifestyle app for Weatherford & Parker County local deals.",
+        "Category coverage from restaurants and shopping to gyms, entertainment, auto and hotels.",
+        "In-app directions that navigate users to each merchant’s front door.",
+      ],
+      skills: [
+        "iOS Development",
+        "Local Discovery / Directory Apps",
+        "Maps & Directions Integration",
+        "Lifestyle / Consumer UX",
+        "App Store Product Maintenance",
+        "Performance Optimisation",
+      ],
+      results:
+        "A live free iOS app that helps Weatherford and Parker County users find local deals and get turn-by-turn guidance to participating merchants.",
+    },
+  },
+  {
     slug: "ring-doorbell-forensic-review",
     title: "Ring Doorbell — Forensic Hand-Object Examination",
     category: "Video Editing",
