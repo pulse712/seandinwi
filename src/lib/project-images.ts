@@ -54,6 +54,7 @@ import imgNinjatraderStrategy from "@/assets/projects/project-ninjatrader-strate
 import imgThinkorswimAnalytics from "@/assets/projects/project-thinkorswim-analytics.jpg";
 import imgTradingviewPivots from "@/assets/projects/project-tradingview-pivots.jpg";
 import imgTradingviewPpv1 from "@/assets/projects/project-tradingview-ppv1.jpg";
+import imgShortStrategyBacktest from "@/assets/projects/project-short-strategy-backtest.png";
 import type { ProjectImageKey } from "@/data/portfolio";
 
 export const projectImages: Record<ProjectImageKey, string> = {
@@ -113,4 +114,5 @@ export const projectImages: Record<ProjectImageKey, string> = {
   thinkorswimanalytics: imgThinkorswimAnalytics,
   tradingviewpivots: imgTradingviewPivots,
   tradingviewppv1: imgTradingviewPpv1,
+  shortstrategybacktest: imgShortStrategyBacktest,
 };

@@ -95,7 +95,8 @@ export type ProjectImageKey =
   | "ninjatraderstrategy"
   | "thinkorswimanalytics"
   | "tradingviewpivots"
-  | "tradingviewppv1";
+  | "tradingviewppv1"
+  | "shortstrategybacktest";
 
 export type ProjectDetail = {
   role: string;
@@ -4162,6 +4163,93 @@ export const projects: Project[] = [
           image: "tradingviewpivots",
         },
       ],
+    },
+  },
+  {
+    slug: "short-strategy-backtest-visualization",
+    title: "Short Strategy Backtest — Entries, Targets & Trend Regime",
+    category: "Trading & Blockchain",
+    badge: "Algo Backtest · Short Entries · Profit Targets · Trend Filters",
+    summary:
+      "Algorithmic short-strategy backtest visualization — annotated short entries, profit-target exits, magenta signal triggers and bearish regime shading with dynamic resistance channels on a trending candlestick chart.",
+    stack: ["Algo Backtesting", "Short Strategy", "Risk Targets", "Chart Signals"],
+    accent: "ember",
+    image: "shortstrategybacktest",
+    detail: {
+      role: "Algorithmic Trading / Backtest Developer",
+      client: "Short-bias strategy backtest & chart annotation suite",
+      stackFull: [
+        "Strategy Backtesting Visualisation",
+        "Short Entry Signal Annotation",
+        "Profit Target Exit Markers",
+        "Trend / Regime Background Filters",
+        "Dynamic Resistance Channel Overlays",
+        "Signal Trigger Markers",
+        "Trade Path Audit on Candlestick Charts",
+      ],
+      overview:
+        "A chart-first backtest view of a bearish short strategy: price falls through a red regime band while the system stamps Short #n entries, profit-target hits and proprietary signal squares — with jagged resistance channels tracking the downtrend so every fill and exit stays auditable on the candles.",
+      problem:
+        "Raw backtest P&L tables don’t show whether shorts fired at the right structure or if targets were hit cleanly. Traders need the full path — entry, target, regime filter and channel context — drawn on the same chart used for review.",
+      solution:
+        "I produced an annotated backtest visualisation that plots numbered short entries with prices, profit-target exits, magenta signal markers, red regime shading and multi-line bearish channels so strategy behaviour is readable at a glance during strong downtrends.",
+      featureGroups: [
+        {
+          title: "Trade execution annotations",
+          items: [
+            "Numbered short entries (Short #1, #2, …) with fill prices",
+            "Blue downward entry markers on the candlestick series",
+            "Profit target exits with circular markers and labeled prices",
+            "Magenta square signal triggers on selected bars",
+          ],
+        },
+        {
+          title: "Regime & structure context",
+          items: [
+            "Light-red vertical shading for bearish / active-strategy periods",
+            "Jagged red dynamic resistance / channel lines following price lower",
+            "Horizontal support/resistance stubs for local structure",
+            "Clear bearish session path from highs into sustained lower prices",
+          ],
+        },
+      ],
+      contributionIntro:
+        "I built the backtest chart layer so short entries, targets and regime filters stay visually tied to price — making strategy review faster than spreadsheet-only reports.",
+      contributions: [
+        {
+          title: "Entry & target labeling",
+          items: [
+            "Annotated each short fill and profit-target exit with sequence numbers and prices on the chart.",
+          ],
+        },
+        {
+          title: "Regime shading",
+          items: [
+            "Highlighted active bearish periods so viewers see when the strategy was allowed to press shorts.",
+          ],
+        },
+        {
+          title: "Channel context",
+          items: [
+            "Overlaid dynamic resistance channels so entries and exits sit in structural context, not floating markers alone.",
+          ],
+        },
+      ],
+      highlights: [
+        "Backtest chart with numbered short entries and labeled profit-target exits.",
+        "Bearish regime shading plus dynamic resistance channels for structure.",
+        "Signal squares and trade markers that make algo behaviour audit-ready.",
+      ],
+      skills: [
+        "Algorithmic Trading",
+        "Strategy Backtesting",
+        "Chart Annotation / Visualisation",
+        "Short-Bias Strategy Design",
+        "Risk / Profit Target Logic",
+        "Technical Trend Filters",
+      ],
+      results:
+        "A clear short-strategy backtest visualisation that shows where entries fired, where profit targets filled, and how regime filters and channels framed the bearish move.",
     },
   },
   {
